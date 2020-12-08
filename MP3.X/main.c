@@ -6,7 +6,10 @@
 #include "songs.h"
 #include "ssd.h"
 
+
+
 void main(void) {
+    
     songsInit();
     lcdInit();
     ssdInit();
@@ -15,7 +18,7 @@ void main(void) {
 
     lcdPosition(0, 6);
     lcdStr("MP3");
-    lcdPosition(1, 6);
+    lcdPosition(1, 4);
     lcdStr("Player");
     atraso_ms(2000);
     

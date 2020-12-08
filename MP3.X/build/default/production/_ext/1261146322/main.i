@@ -91,7 +91,10 @@ void playSong(void);
 # 7 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" 2
 
 
+
+
 void main(void) {
+
     songsInit();
     lcdInit();
     ssdInit();
@@ -100,7 +103,7 @@ void main(void) {
 
     lcdPosition(0, 6);
     lcdStr("MP3");
-    lcdPosition(1, 6);
+    lcdPosition(1, 4);
     lcdStr("Player");
     atraso_ms(2000);
 

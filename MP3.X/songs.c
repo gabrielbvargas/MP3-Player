@@ -1,7 +1,6 @@
 #include "songs.h"
-#include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
+#include <pic18f4520.h>
 #include "lcd.h"
 #include "bits.h"
 #include "keypad.h"
@@ -15,13 +14,13 @@ typedef struct {
 
 unsigned char nomes[10][17] = {"Estamos Vivos", "Cheia de Manias", "E Tarde Demais", "Sozinho", "Cigana", "Ciumes de Voce", "Extrapolei",
     "Deus me Livre", "Maravilha", "Medida Exata"};
-unsigned int duracoes[10] = {1800, 1800, 180, 180, 180, 180, 180, 180, 180, 180};
+unsigned int duracoes[10] = {180, 180, 180, 180, 180, 180, 180, 180, 180, 180};
 musica musicas[10];
 
 unsigned char tecla = 16, indice = 0, cont = 0, flag = 0, tempo, minuto1, minuto2, segundo1, segundo2, cnt = 0, pause = 1;
 
 void songsInit(void) {
-
+    TRISC=0x00;
     for (unsigned int i = 0; i < 10; i++) {
         musicas[i].duracao = duracoes[i];
         strcpy(musicas[i].nome, (char*) nomes[i]);
@@ -55,16 +54,7 @@ void chooseSong(void) {
                 } else if (bitTst(tecla, 0)) { //*
                     flag = 0;
                     break;
-                } //1 -> 7
-                /*else if (bitTst(tecla, 6)) { //5
-                    coluna++;
-                } else if (bitTst(tecla, 2)) { //4
-                    coluna--;
-                } else if (bitTst(tecla, 5)) { //8
-
-                } else if (bitTst(tecla, 4)) { //0
-
-                } */
+                }
                 lcdCommand(CLR);
                 lcdPosition(1, 0);
                 lcdStr("<-(1) (*)  (2)->");
@@ -86,6 +76,7 @@ void playSong() {
     lcdStr("-(1)  (*)  (2)+");
 
     tempo = musicas[indice].duracao;
+    
     while (tempo != 0) {
         minuto1 = (tempo / 60) % 10;
         minuto2 = (tempo / 60) / 10;
@@ -125,4 +116,7 @@ void playSong() {
             tempo -= 1;
         }
     }
+    bitSet(TRISC, 1);
+    atraso_ms(500);
+    bitSet(TRISC, 0);
 }
