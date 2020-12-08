@@ -20,7 +20,7 @@ void main(void) {
     lcdStr("MP3");
     lcdPosition(1, 4);
     lcdStr("Player");
-    atraso_ms(2000);
+    atraso_ms(5000);
     
     lcdCommand(CLR);
     lcdPosition(0, 0);

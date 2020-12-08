@@ -4555,9 +4555,9 @@ void playSong() {
     lcdStr("-(1)  (*)  (2)+");
 
     tempo = musicas[indice].duracao;
-
+    pwmSet(100);
     while (tempo != 0) {
-        pwmSet(100);
+
         minuto1 = (tempo / 60) % 10;
         minuto2 = (tempo / 60) / 10;
         segundo1 = (tempo % 60) % 10;
@@ -4612,6 +4612,9 @@ void playSong() {
         }
         if (pause == 0) {
             tempo -= 1;
+            pwmSet(100);
+        } else {
+            pwmSet(0);
         }
     }
     TRISA=0x00;
@@ -4630,7 +4633,6 @@ void alterarVolume(char opt) {
     }
     unsigned char old_D, old_A;
     old_D = TRISD;
-
 
     PORTA=0x00;
     TRISD = 0x00;

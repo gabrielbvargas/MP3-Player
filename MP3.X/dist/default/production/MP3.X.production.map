@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=D:\Programs\Microship\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\MP3.X.production.sym \
   --cmf=dist/default/production\MP3.X.production.cmf -z -Q18F4520 \
-  -oC:\Users\gabri\AppData\Local\Temp\skh8.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\gabri\AppData\Local\Temp\snec.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/MP3.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=02AAh-05FFh -pstack=STACK -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0600h-06FFhx122 \
@@ -21,7 +21,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\gabri\AppData\Local\Temp\skh8.o \
+  C:\Users\gabri\AppData\Local\Temp\snec.o \
   dist/default/production\MP3.X.production.o 
 
 Object code version is 3.11
@@ -31,7 +31,7 @@ Machine type is 18F4520
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\gabri\AppData\Local\Temp\skh8.o
+C:\Users\gabri\AppData\Local\Temp\snec.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0
@@ -39,83 +39,83 @@ dist/default/production\MP3.X.production.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 smallconst                          600      600       50      300       0
-                text29                             140C     140C       C4      328       0
-                text28                             14D0     14D0       B0      328       0
-                text27                             19AA     19AA       64      328       0
-                text26                             11C2     11C2      13E      328       0
-                text25                              DB8      DB8      17A      328       0
-                text24                             1CCE     1CCE        A      E3B       0
-                text23                             1CAC     1CAC       18      E3B       0
-                text22                             1C76     1C76       1C      E3B       0
-                text21                              B6A      B6A      24E      328       0
-                text20                             175C     175C       7E      328       0
-                text19                             1A70     1A70       5A      328       0
-                text18                             1B78     1B78       54      328       0
-                text17                             1852     1852       78      328       0
-                text16                             1300     1300      10C      328       0
-                text15                             1C30     1C30       26      328       0
-                text14                             1C92     1C92       1A      E3B       0
-                text13                             18CA     18CA       74      328       0
-                text12                             1C0A     1C0A       26      328       0
-                text11                             193E     193E       6C      328       0
-                text10                             1ACA     1ACA       58      328       0
-                text9                               F32      F32      150      328       0
-                text8                               650      650      2CC      328       0
-                text7                              1082     1082      140      328       0
-                text6                              1CC4     1CC4        A      E3B       0
-                text5                               91C      91C      24E      328       0
-                text4                              17DA     17DA       78      328       0
-                text3                              1BCC     1BCC       3E      328       0
-                text2                              162A     162A       A6      328       0
-                text1                              1B22     1B22       56      328       0
-                text0                              16D0     16D0       8C      328       0
+                text29                             141C     141C       C4      328       0
+                text28                             14E0     14E0       B0      328       0
+                text27                             19BA     19BA       64      328       0
+                text26                             11D2     11D2      13E      328       0
+                text25                              DC8      DC8      17A      328       0
+                text24                             1CDE     1CDE        A      E43       0
+                text23                             1CBC     1CBC       18      E43       0
+                text22                             1C86     1C86       1C      E43       0
+                text21                              B7A      B7A      24E      328       0
+                text20                             176C     176C       7E      328       0
+                text19                             1A80     1A80       5A      328       0
+                text18                             1B88     1B88       54      328       0
+                text17                             1862     1862       78      328       0
+                text16                             1310     1310      10C      328       0
+                text15                             1C40     1C40       26      328       0
+                text14                             1CA2     1CA2       1A      E43       0
+                text13                             18DA     18DA       74      328       0
+                text12                             1C1A     1C1A       26      328       0
+                text11                             194E     194E       6C      328       0
+                text10                             1ADA     1ADA       58      328       0
+                text9                               F42      F42      150      328       0
+                text8                               650      650      2DC      328       0
+                text7                              1092     1092      140      328       0
+                text6                              1CD4     1CD4        A      E43       0
+                text5                               92C      92C      24E      328       0
+                text4                              17EA     17EA       78      328       0
+                text3                              1BDC     1BDC       3E      328       0
+                text2                              163A     163A       A6      328       0
+                text1                              1B32     1B32       56      328       0
+                text0                              16E0     16E0       8C      328       0
                 cstackCOMRAM                         20       20       17        1       1
                 dataBANK2                           200      200       AA      200       1
                 bssBANK1                            100      100       BE      100       1
                 dataCOMRAM                            1        1       1F        1       1
                 bssCOMRAM                            37       37       15        1       1
-                cinit                              1A0E     1A0E       62      328       0
-                idataBANK2                         1580     1580       AA      328       0
-                idataCOMRAM                        1C56     1C56       1F      328       0
+                cinit                              1A1E     1A1E       62      328       0
+                idataBANK2                         1590     1590       AA      328       0
+                idataCOMRAM                        1C66     1C66       1F      328       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 init                                  0        0        4         0
-                text29                             140C     140C       C4         0
-                text28                             14D0     14D0       B0         0
-                text27                             19AA     19AA       64         0
-                text26                             11C2     11C2      13E         0
-                text25                              DB8      DB8      17A         0
-                text24                             1CCE     1CCE        A         0
-                text23                             1CAC     1CAC       18         0
-                text22                             1C76     1C76       1C         0
-                text21                              B6A      B6A      24E         0
-                text20                             175C     175C       7E         0
-                text19                             1A70     1A70       5A         0
-                text18                             1B78     1B78       54         0
-                text17                             1852     1852       78         0
-                text16                             1300     1300      10C         0
-                text15                             1C30     1C30       26         0
-                text14                             1C92     1C92       1A         0
-                text13                             18CA     18CA       74         0
-                text12                             1C0A     1C0A       26         0
-                text11                             193E     193E       6C         0
-                text10                             1ACA     1ACA       58         0
-                text9                               F32      F32      150         0
-                text8                               650      650      2CC         0
-                text7                              1082     1082      140         0
-                text6                              1CC4     1CC4        A         0
-                text5                               91C      91C      24E         0
-                text4                              17DA     17DA       78         0
-                text3                              1BCC     1BCC       3E         0
-                text2                              162A     162A       A6         0
-                text1                              1B22     1B22       56         0
-                text0                              16D0     16D0       8C         0
-                cinit                              1A0E     1A0E       62         0
-                idataBANK2                         1580     1580       AA         0
-                idataCOMRAM                        1C56     1C56       1F         0
+                text29                             141C     141C       C4         0
+                text28                             14E0     14E0       B0         0
+                text27                             19BA     19BA       64         0
+                text26                             11D2     11D2      13E         0
+                text25                              DC8      DC8      17A         0
+                text24                             1CDE     1CDE        A         0
+                text23                             1CBC     1CBC       18         0
+                text22                             1C86     1C86       1C         0
+                text21                              B7A      B7A      24E         0
+                text20                             176C     176C       7E         0
+                text19                             1A80     1A80       5A         0
+                text18                             1B88     1B88       54         0
+                text17                             1862     1862       78         0
+                text16                             1310     1310      10C         0
+                text15                             1C40     1C40       26         0
+                text14                             1CA2     1CA2       1A         0
+                text13                             18DA     18DA       74         0
+                text12                             1C1A     1C1A       26         0
+                text11                             194E     194E       6C         0
+                text10                             1ADA     1ADA       58         0
+                text9                               F42      F42      150         0
+                text8                               650      650      2DC         0
+                text7                              1092     1092      140         0
+                text6                              1CD4     1CD4        A         0
+                text5                               92C      92C      24E         0
+                text4                              17EA     17EA       78         0
+                text3                              1BDC     1BDC       3E         0
+                text2                              163A     163A       A6         0
+                text1                              1B32     1B32       56         0
+                text0                              16E0     16E0       8C         0
+                cinit                              1A1E     1A1E       62         0
+                idataBANK2                         1590     1590       AA         0
+                idataCOMRAM                        1C66     1C66       1F         0
 
         CLASS   CONST          
 
@@ -170,8 +170,8 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 bssBANK1                       000100  0000BE  0001BE       100       1  BANK1   
                 dataBANK2                      000200  0000AA  0002AA       200       1  BANK2   
                 smallconst                     000600  000050  000650       300       0  SMALLCON
-                text8                          000650  001625  001C75       328       0  CODE    
-                text22                         001C76  000062  001CD8       E3B       0  CODE    
+                text8                          000650  001635  001C85       328       0  CODE    
+                text22                         001C86  000062  001CE8       E43       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -187,21 +187,21 @@ UNUSED ADDRESS RANGES
                          0001BE-0001FF               42
                          0002AA-0005FF              356
         CODE             000004-0005FF              5FC
-                         001C75-001C75                1
-                         001CD8-007FFF             6328
+                         001C85-001C85                1
+                         001CE8-007FFF             6318
         COMRAM           00004C-00007F               34
         CONST            000004-0005FF              5FC
-                         001C75-001C75                1
-                         001CD8-007FFF             6328
+                         001C85-001C85                1
+                         001CE8-007FFF             6318
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      001C75-001C75                1
-                         001CD8-007FFF             6328
+        MEDIUMCONST      001C85-001C85                1
+                         001CE8-007FFF             6318
         RAM              000080-0000FF               80
                          0001BE-0001FF               42
                          0002AA-0005FF              100
         SFR              000F80-000FFF               80
-        SMALLCONST       001C75-001C75                1
-                         001CD8-007FFF              100
+        SMALLCONST       001C85-001C85                1
+                         001CE8-007FFF              100
         STACK            0002AA-0005FF              356
 
                                   Symbol Table
@@ -216,8 +216,8 @@ Delay2ms@i               cstackCOMRAM 000021
 Delay40us@i              cstackCOMRAM 000020
 _CCP1CON                 (abs)        000FBD
 _CCPR1L                  (abs)        000FBE
-_Delay2ms                text22       001C76
-_Delay40us               text23       001CAC
+_Delay2ms                text22       001C86
+_Delay40us               text23       001CBC
 _INTCON                  (abs)        000FF2
 _PORTA                   (abs)        000F80
 _PORTB                   (abs)        000F81
@@ -289,7 +289,7 @@ __Hreset_vec             reset_vec    000000
 __Hrparam                rparam       000000
 __Hsfr                   sfr          000000
 __Hsmallconst            smallconst   000650
-__Hspace_0               (abs)        001CD8
+__Hspace_0               (abs)        001CE8
 __Hspace_1               (abs)        0002AA
 __Hspace_2               (abs)        000000
 __Hspace_4               (abs)        60000E
@@ -420,31 +420,31 @@ __Ltext6                 text6        000000
 __Ltext7                 text7        000000
 __Ltext8                 text8        000000
 __Ltext9                 text9        000000
-__S0                     (abs)        001CD8
+__S0                     (abs)        001CE8
 __S1                     (abs)        0002AA
 __S2                     (abs)        000000
 __S4                     (abs)        000000
 __S5                     (abs)        000000
-___aldiv                 text16       001300
+___aldiv                 text16       001310
 ___aldiv@counter         cstackCOMRAM 000028
 ___aldiv@dividend        cstackCOMRAM 000020
 ___aldiv@divisor         cstackCOMRAM 000024
 ___aldiv@quotient        cstackCOMRAM 00002A
 ___aldiv@sign            cstackCOMRAM 000029
-___awdiv                 text29       00140C
+___awdiv                 text29       00141C
 ___awdiv@counter         cstackCOMRAM 000024
 ___awdiv@dividend        cstackCOMRAM 000020
 ___awdiv@divisor         cstackCOMRAM 000022
 ___awdiv@quotient        cstackCOMRAM 000026
 ___awdiv@sign            cstackCOMRAM 000025
-___awmod                 text28       0014D0
+___awmod                 text28       0014E0
 ___awmod@counter         cstackCOMRAM 00002C
 ___awmod@dividend        cstackCOMRAM 000028
 ___awmod@divisor         cstackCOMRAM 00002A
 ___awmod@sign            cstackCOMRAM 00002D
 ___inthi_sp              stack        000000
 ___intlo_sp              stack        000000
-___lwdiv                 text13       0018CA
+___lwdiv                 text13       0018DA
 ___lwdiv@counter         cstackCOMRAM 000026
 ___lwdiv@dividend        cstackCOMRAM 000020
 ___lwdiv@divisor         cstackCOMRAM 000022
@@ -452,85 +452,85 @@ ___lwdiv@quotient        cstackCOMRAM 000024
 ___param_bank            (abs)        000000
 ___rparam_used           (abs)        000001
 ___sp                    stack        000000
-___wmul                  text12       001C0A
+___wmul                  text12       001C1A
 ___wmul@multiplicand     cstackCOMRAM 000022
 ___wmul@multiplier       cstackCOMRAM 000020
 ___wmul@product          cstackCOMRAM 000024
 __accesstop              (abs)        000080
 __activetblptr           (abs)        000002
-__end_of_Delay2ms        text22       001C92
-__end_of_Delay40us       text23       001CC4
-__end_of___aldiv         text16       00140C
-__end_of___awdiv         text29       0014D0
-__end_of___awmod         text28       001580
-__end_of___lwdiv         text13       00193E
-__end_of___wmul          text12       001C30
-__end_of__initialization cinit        001A66
-__end_of_alterarVolume   text26       001300
-__end_of_atraso_ms       text27       001A0E
-__end_of_chooseSong      text7        0011C2
-__end_of_digitalWrite    text21       000DB8
-__end_of_kpDebounce      text25       000F32
-__end_of_kpInit          text6        001CCE
-__end_of_kpRead          text24       001CD8
-__end_of_lcdCommand      text20       0017DA
-__end_of_lcdData         text18       001BCC
-__end_of_lcdInit         text4        001852
-__end_of_lcdPosition     text19       001ACA
-__end_of_lcdStr          text17       0018CA
-__end_of_main            text0        00175C
-__end_of_pinMode         text5        000B6A
-__end_of_playSong        text8        00091C
-__end_of_pwmFrequency    text15       001C56
-__end_of_pwmInit         text14       001CAC
-__end_of_pwmSet          text11       0019AA
-__end_of_songsInit       text2        0016D0
-__end_of_ssdDigit        text10       001B22
-__end_of_ssdInit         text1        001B78
-__end_of_ssdUpdate       text9        001082
-__end_of_strcpy          text3        001C0A
+__end_of_Delay2ms        text22       001CA2
+__end_of_Delay40us       text23       001CD4
+__end_of___aldiv         text16       00141C
+__end_of___awdiv         text29       0014E0
+__end_of___awmod         text28       001590
+__end_of___lwdiv         text13       00194E
+__end_of___wmul          text12       001C40
+__end_of__initialization cinit        001A76
+__end_of_alterarVolume   text26       001310
+__end_of_atraso_ms       text27       001A1E
+__end_of_chooseSong      text7        0011D2
+__end_of_digitalWrite    text21       000DC8
+__end_of_kpDebounce      text25       000F42
+__end_of_kpInit          text6        001CDE
+__end_of_kpRead          text24       001CE8
+__end_of_lcdCommand      text20       0017EA
+__end_of_lcdData         text18       001BDC
+__end_of_lcdInit         text4        001862
+__end_of_lcdPosition     text19       001ADA
+__end_of_lcdStr          text17       0018DA
+__end_of_main            text0        00176C
+__end_of_pinMode         text5        000B7A
+__end_of_playSong        text8        00092C
+__end_of_pwmFrequency    text15       001C66
+__end_of_pwmInit         text14       001CBC
+__end_of_pwmSet          text11       0019BA
+__end_of_songsInit       text2        0016E0
+__end_of_ssdDigit        text10       001B32
+__end_of_ssdInit         text1        001B88
+__end_of_ssdUpdate       text9        001092
+__end_of_strcpy          text3        001C1A
 __end_of_valor           smallconst   000611
-__initialization         cinit        001A0E
+__initialization         cinit        001A1E
 __mediumconst            mediumconst  000000
 __pbssBANK1              bssBANK1     000100
 __pbssCOMRAM             bssCOMRAM    000037
-__pcinit                 cinit        001A0E
+__pcinit                 cinit        001A1E
 __pcstackCOMRAM          cstackCOMRAM 000020
 __pdataBANK2             dataBANK2    000200
 __pdataCOMRAM            dataCOMRAM   000001
-__pidataBANK2            idataBANK2   001580
-__pidataCOMRAM           idataCOMRAM  001C56
+__pidataBANK2            idataBANK2   001590
+__pidataCOMRAM           idataCOMRAM  001C66
 __psmallconst            smallconst   000600
-__ptext0                 text0        0016D0
-__ptext1                 text1        001B22
-__ptext10                text10       001ACA
-__ptext11                text11       00193E
-__ptext12                text12       001C0A
-__ptext13                text13       0018CA
-__ptext14                text14       001C92
-__ptext15                text15       001C30
-__ptext16                text16       001300
-__ptext17                text17       001852
-__ptext18                text18       001B78
-__ptext19                text19       001A70
-__ptext2                 text2        00162A
-__ptext20                text20       00175C
-__ptext21                text21       000B6A
-__ptext22                text22       001C76
-__ptext23                text23       001CAC
-__ptext24                text24       001CCE
-__ptext25                text25       000DB8
-__ptext26                text26       0011C2
-__ptext27                text27       0019AA
-__ptext28                text28       0014D0
-__ptext29                text29       00140C
-__ptext3                 text3        001BCC
-__ptext4                 text4        0017DA
-__ptext5                 text5        00091C
-__ptext6                 text6        001CC4
-__ptext7                 text7        001082
+__ptext0                 text0        0016E0
+__ptext1                 text1        001B32
+__ptext10                text10       001ADA
+__ptext11                text11       00194E
+__ptext12                text12       001C1A
+__ptext13                text13       0018DA
+__ptext14                text14       001CA2
+__ptext15                text15       001C40
+__ptext16                text16       001310
+__ptext17                text17       001862
+__ptext18                text18       001B88
+__ptext19                text19       001A80
+__ptext2                 text2        00163A
+__ptext20                text20       00176C
+__ptext21                text21       000B7A
+__ptext22                text22       001C86
+__ptext23                text23       001CBC
+__ptext24                text24       001CDE
+__ptext25                text25       000DC8
+__ptext26                text26       0011D2
+__ptext27                text27       0019BA
+__ptext28                text28       0014E0
+__ptext29                text29       00141C
+__ptext3                 text3        001BDC
+__ptext4                 text4        0017EA
+__ptext5                 text5        00092C
+__ptext6                 text6        001CD4
+__ptext7                 text7        001092
 __ptext8                 text8        000650
-__ptext9                 text9        000F32
+__ptext9                 text9        000F42
 __ramtop                 ramtop       000600
 __size_of_Delay2ms       (abs)        000000
 __size_of_Delay40us      (abs)        000000
@@ -563,44 +563,44 @@ __size_of_ssdInit        (abs)        000000
 __size_of_ssdUpdate      (abs)        000000
 __size_of_strcpy         (abs)        000000
 __smallconst             smallconst   000600
-_alterarVolume           text26       0011C2
-_atraso_ms               text27       0019AA
-_chooseSong              text7        001082
+_alterarVolume           text26       0011D2
+_atraso_ms               text27       0019BA
+_chooseSong              text7        001092
 _cnt                     bssCOMRAM    000044
-_digitalWrite            text21       000B6A
+_digitalWrite            text21       000B7A
 _display                 bssCOMRAM    000043
 _duracoes                dataCOMRAM   000001
 _flag                    bssCOMRAM    00004A
 _i                       bssCOMRAM    00003E
 _indice                  bssCOMRAM    00004B
-_kpDebounce              text25       000DB8
-_kpInit                  text6        001CC4
-_kpRead                  text24       001CCE
-_lcdCommand              text20       00175C
-_lcdData                 text18       001B78
-_lcdInit                 text4        0017DA
-_lcdPosition             text19       001A70
-_lcdStr                  text17       001852
-_main                    text0        0016D0
+_kpDebounce              text25       000DC8
+_kpInit                  text6        001CD4
+_kpRead                  text24       001CDE
+_lcdCommand              text20       00176C
+_lcdData                 text18       001B88
+_lcdInit                 text4        0017EA
+_lcdPosition             text19       001A80
+_lcdStr                  text17       001862
+_main                    text0        0016E0
 _minuto1                 bssCOMRAM    000048
 _minuto2                 bssCOMRAM    000047
 _musicas                 bssBANK1     000100
 _nomes                   dataBANK2    000200
 _pause                   dataCOMRAM   00001E
-_pinMode                 text5        00091C
+_pinMode                 text5        00092C
 _playSong                text8        000650
 _playSong$977            cstackCOMRAM 000030
 _playSong$978            cstackCOMRAM 000032
-_pwmFrequency            text15       001C30
-_pwmInit                 text14       001C92
-_pwmSet                  text11       00193E
+_pwmFrequency            text15       001C40
+_pwmInit                 text14       001CA2
+_pwmSet                  text11       00194E
 _segundo1                bssCOMRAM    000046
 _segundo2                bssCOMRAM    000045
-_songsInit               text2        00162A
-_ssdDigit                text10       001ACA
-_ssdInit                 text1        001B22
-_ssdUpdate               text9        000F32
-_strcpy                  text3        001BCC
+_songsInit               text2        00163A
+_ssdDigit                text10       001ADA
+_ssdInit                 text1        001B32
+_ssdUpdate               text9        000F42
+_strcpy                  text3        001BDC
 _tecla                   dataCOMRAM   00001F
 _teclas                  dataCOMRAM   000015
 _tempo                   bssCOMRAM    000049
@@ -619,7 +619,7 @@ atraso_ms@k              cstackCOMRAM 000025
 atraso_ms@t              cstackCOMRAM 000020
 digitalWrite@pin         cstackCOMRAM 000020
 digitalWrite@value       cstackCOMRAM 000022
-end_of_initialization    cinit        001A66
+end_of_initialization    cinit        001A76
 intlevel0                text         000000
 intlevel1                text         000000
 intlevel2                text         000000
@@ -652,7 +652,7 @@ ssdDigit@val             cstackCOMRAM 000021
 stackhi                  (abs)        0005FF
 stacklo                  (abs)        0002AA
 start                    init         000000
-start_initialization     cinit        001A0E
+start_initialization     cinit        001A1E
 strcpy@d                 cstackCOMRAM 00002C
 strcpy@dest              cstackCOMRAM 000026
 strcpy@s                 cstackCOMRAM 00002A
@@ -1510,7 +1510,7 @@ Total ram usage:       10 bytes
 
  *************** function _alterarVolume *****************
  Defined at:
-		line 149 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
+		line 152 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
  Parameters:    Size  Location     Type
   opt             1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1642,94 +1642,94 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\aldiv.c
-		___aldiv       		CODE           	1300	0000	269
+		___aldiv       		CODE           	1310	0000	269
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\aldiv.c estimated size: 269
 
 ssd.c
-		_ssdInit       		CODE           	1B22	0000	87
-		_ssdDigit      		CODE           	1ACA	0000	89
-		_ssdUpdate     		CODE           	0F32	0000	337
+		_ssdInit       		CODE           	1B32	0000	87
+		_ssdDigit      		CODE           	1ADA	0000	89
+		_ssdUpdate     		CODE           	0F42	0000	337
 
 ssd.c estimated size: 513
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
-		___wmul        		CODE           	1C0A	0000	39
+		___wmul        		CODE           	1C1A	0000	39
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c estimated size: 39
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-		_playSong      		CODE           	0650	0000	717
-		_chooseSong    		CODE           	1082	0000	321
-		_alterarVolume 		CODE           	11C2	0000	319
-		_songsInit     		CODE           	162A	0000	167
+		_playSong      		CODE           	0650	0000	733
+		_chooseSong    		CODE           	1092	0000	321
+		_alterarVolume 		CODE           	11D2	0000	319
+		_songsInit     		CODE           	163A	0000	167
 
-D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c estimated size: 1524
+D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c estimated size: 1540
 
 keypad.c
-		_kpInit        		CODE           	1CC4	0000	11
-		_kpDebounce    		CODE           	0DB8	0000	379
-		_kpRead        		CODE           	1CCE	0000	11
+		_kpInit        		CODE           	1CD4	0000	11
+		_kpDebounce    		CODE           	0DC8	0000	379
+		_kpRead        		CODE           	1CDE	0000	11
 
 keypad.c estimated size: 401
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-		_atraso_ms     		CODE           	19AA	0000	101
+		_atraso_ms     		CODE           	19BA	0000	101
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c estimated size: 101
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
-		_strcpy        		CODE           	1BCC	0000	63
+		_strcpy        		CODE           	1BDC	0000	63
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c estimated size: 63
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
-		___awmod       		CODE           	14D0	0000	177
+		___awmod       		CODE           	14E0	0000	177
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c estimated size: 177
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-		_digitalWrite  		CODE           	0B6A	0000	591
-		_pinMode       		CODE           	091C	0000	591
+		_digitalWrite  		CODE           	0B7A	0000	591
+		_pinMode       		CODE           	092C	0000	591
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c estimated size: 1182
 
 shared
 		_valor         		SMALLCONST     	0601	0000	17
-		__initialization		CODE           	1A0E	0000	89
+		__initialization		CODE           	1A1E	0000	89
 
 shared estimated size: 106
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\lwdiv.c
-		___lwdiv       		CODE           	18CA	0000	117
+		___lwdiv       		CODE           	18DA	0000	117
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\lwdiv.c estimated size: 117
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-		_main          		CODE           	16D0	0000	141
+		_main          		CODE           	16E0	0000	141
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c estimated size: 141
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.c
-		_pwmInit       		CODE           	1C92	0000	27
-		_pwmFrequency  		CODE           	1C30	0000	39
-		_pwmSet        		CODE           	193E	0000	109
+		_pwmInit       		CODE           	1CA2	0000	27
+		_pwmFrequency  		CODE           	1C40	0000	39
+		_pwmSet        		CODE           	194E	0000	109
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.c estimated size: 175
 
 lcd.c
-		_lcdCommand    		CODE           	175C	0000	127
-		_lcdPosition   		CODE           	1A70	0000	91
-		_Delay40us     		CODE           	1CAC	0000	25
-		_lcdInit       		CODE           	17DA	0000	121
-		_lcdData       		CODE           	1B78	0000	85
-		_Delay2ms      		CODE           	1C76	0000	29
-		_lcdStr        		CODE           	1852	0000	121
+		_lcdCommand    		CODE           	176C	0000	127
+		_lcdPosition   		CODE           	1A80	0000	91
+		_Delay40us     		CODE           	1CBC	0000	25
+		_lcdInit       		CODE           	17EA	0000	121
+		_lcdData       		CODE           	1B88	0000	85
+		_Delay2ms      		CODE           	1C86	0000	29
+		_lcdStr        		CODE           	1862	0000	121
 
 lcd.c estimated size: 599
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
-		___awdiv       		CODE           	140C	0000	197
+		___awdiv       		CODE           	141C	0000	197
 
 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c estimated size: 197
 

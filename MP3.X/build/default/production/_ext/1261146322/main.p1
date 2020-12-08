@@ -130,8 +130,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 22:     lcdStr("Player");
 [e ( _lcdStr (1 :s 2C ]
 "23
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 23:     atraso_ms(2000);
-[e ( _atraso_ms (1 -> 2000 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 23:     atraso_ms(5000);
+[e ( _atraso_ms (1 -> 5000 `i ]
 "25
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 25:     lcdCommand(0x01);
 [e ( _lcdCommand (1 -> -> 1 `i `uc ]

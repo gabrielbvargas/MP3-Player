@@ -109,7 +109,7 @@ PIN_E7 39
 [v _chooseSong chooseSong `(v  1 e 1 0 ]
 "73
 [v _playSong playSong `(v  1 e 1 0 ]
-"149
+"152
 [v _alterarVolume alterarVolume `(v  1 e 1 0 ]
 "7 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
@@ -294,7 +294,7 @@ PIN_E7 39
 {
 "95
 [v playSong@j j `uc  1 a 1 20 ]
-"147
+"150
 } 0
 "54 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
 [v _ssdUpdate ssdUpdate `(v  1 e 1 0 ]
@@ -457,16 +457,16 @@ PIN_E7 39
 [v kpDebounce@valorAntigo valorAntigo `ui  1 s 2 valorAntigo ]
 "87
 } 0
-"149 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+"152 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
 [v _alterarVolume alterarVolume `(v  1 e 1 0 ]
 {
 [v alterarVolume@opt opt `uc  1 a 1 wreg ]
-"155
+"158
 [v alterarVolume@old_D old_D `uc  1 a 1 7 ]
-"149
+"152
 [v alterarVolume@opt opt `uc  1 a 1 wreg ]
 [v alterarVolume@opt opt `uc  1 a 1 6 ]
-"183
+"185
 } 0
 "3 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
 [v _atraso_ms atraso_ms `(v  1 e 1 0 ]

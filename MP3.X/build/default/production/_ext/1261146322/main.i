@@ -106,7 +106,7 @@ void main(void) {
     lcdStr("MP3");
     lcdPosition(1, 4);
     lcdStr("Player");
-    atraso_ms(2000);
+    atraso_ms(5000);
 
     lcdCommand(0x01);
     lcdPosition(0, 0);
