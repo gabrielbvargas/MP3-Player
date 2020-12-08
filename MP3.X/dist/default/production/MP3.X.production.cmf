@@ -11,42 +11,45 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\gabri\AppData\Local\Temp\sb34.o
+$C:\Users\gabri\AppData\Local\Temp\s8c.o
 idloc IDLOC 5 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 4 300000 300000 E 1
 $dist/default/production\MP3.X.production.o
-cinit CODE 0 127E 127E 62 1
+cinit CODE 0 165A 165A 62 1
 idloc IDLOC 5 200000 200000 8 1
-text0 CODE 0 1020 1020 8C 1
-text1 CODE 0 1396 1396 56 1
-text2 CODE 0 F7E F7E A2 1
-text3 CODE 0 1440 1440 3E 1
-text4 CODE 0 147E 147E 26 1
-text5 CODE 0 112A 112A 78 1
-text6 CODE 0 640 640 24E 1
-text7 CODE 0 14F6 14F6 A 1
-text8 CODE 0 D96 D96 13E 1
-text9 CODE 0 C56 C56 140 1
-text10 CODE 0 12E0 12E0 5C 1
-text11 CODE 0 11A2 11A2 78 1
-text12 CODE 0 13EC 13EC 54 1
-text13 CODE 0 133C 133C 5A 1
-text14 CODE 0 10AC 10AC 7E 1
-text15 CODE 0 88E 88E 24E 1
-text16 CODE 0 14C2 14C2 1C 1
-text17 CODE 0 14DE 14DE 18 1
-text18 CODE 0 1500 1500 A 1
-text19 CODE 0 ADC ADC 17A 1
-text20 CODE 0 121A 121A 64 1
-idataCOMRAM CODE 0 14A4 14A4 1D 1
-cstackCOMRAM COMRAM 1 2E 2E 10 1
+text0 CODE 0 13FC 13FC 8C 1
+text1 CODE 0 176E 176E 56 1
+text2 CODE 0 135A 135A A2 1
+text3 CODE 0 1818 1818 3E 1
+text4 CODE 0 1856 1856 26 1
+text5 CODE 0 1506 1506 78 1
+text6 CODE 0 650 650 24E 1
+text7 CODE 0 18CE 18CE A 1
+text8 CODE 0 1000 1000 13C 1
+text9 CODE 0 AEC AEC 24A 1
+text10 CODE 0 EB0 EB0 150 1
+text11 CODE 0 1716 1716 58 1
+text12 CODE 0 157E 157E 78 1
+text13 CODE 0 17C4 17C4 54 1
+text14 CODE 0 16BC 16BC 5A 1
+text15 CODE 0 1488 1488 7E 1
+text16 CODE 0 89E 89E 24E 1
+text17 CODE 0 189A 189A 1C 1
+text18 CODE 0 18B6 18B6 18 1
+text19 CODE 0 18D8 18D8 A 1
+text20 CODE 0 D36 D36 17A 1
+text21 CODE 0 15F6 15F6 64 1
+text22 CODE 0 1200 1200 B0 1
+text23 CODE 0 113C 113C C4 1
+idataCOMRAM CODE 0 187C 187C 1E 1
+cstackCOMRAM COMRAM 1 1F 1F 17 1
 bssBANK1 BANK1 1 100 100 BE 1
-smallconst SMALLCONST 0 600 600 40 1
-idataBANK2 CODE 0 ED4 ED4 AA 1
+smallconst SMALLCONST 0 600 600 50 1
+idataBANK2 CODE 0 12B0 12B0 AA 1
 dataBANK2 BANK2 1 200 200 AA 1
-dataCOMRAM COMRAM 1 1 1 1D 1
-bssCOMRAM COMRAM 1 1E 1E 10 1
+dataCOMRAM COMRAM 1 1 1 1E 1
+bssCOMRAM COMRAM 1 36 36 16 1
 config CONFIG 4 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -65,21 +68,17 @@ BANK3 300-3FF 1
 BANK4 400-4FF 1
 BANK5 500-5FF 1
 CONST 4-5FF 1
-CONST 14C1-14C1 1
-CONST 150A-7FFF 1
+CONST 18E2-7FFF 1
 STACK 2AA-5FF 1
-SMALLCONST 14C1-14C1 1
-SMALLCONST 150A-7FFF 1
+SMALLCONST 18E2-7FFF 1
 CODE 4-5FF 1
-CODE 14C1-14C1 1
-CODE 150A-7FFF 1
-BIGRAM 3E-FF 1
+CODE 18E2-7FFF 1
+BIGRAM 4C-FF 1
 BIGRAM 1BE-1FF 1
 BIGRAM 2AA-5FF 1
-COMRAM 3E-7F 1
+COMRAM 4C-7F 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 14C1-14C1 1
-MEDIUMCONST 150A-7FFF 1
+MEDIUMCONST 18E2-7FFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -94,301 +93,392 @@ MEDIUMCONST 150A-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\MP3.X.production.o
-121A text20 CODE >3:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-121A text20 CODE >7:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-1226 text20 CODE >8:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-123E text20 CODE >9:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-125C text20 CODE >10:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-1262 text20 CODE >11:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-127C text20 CODE >12:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-ADC text19 CODE >41:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-ADC text19 CODE >49:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-AE0 text19 CODE >53:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-AE4 text19 CODE >55:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-AE8 text19 CODE >57:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-AEC text19 CODE >59:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-B08 text19 CODE >61:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-B0C text19 CODE >62:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-B2A text19 CODE >65:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-B52 text19 CODE >68:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-B56 text19 CODE >69:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-B82 text19 CODE >70:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-BAE text19 CODE >71:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-BB2 text19 CODE >72:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-BE6 text19 CODE >74:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-BF8 text19 CODE >75:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C0A text19 CODE >76:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C22 text19 CODE >77:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C24 text19 CODE >78:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C28 text19 CODE >79:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C2C text19 CODE >80:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C34 text19 CODE >81:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C34 text19 CODE >82:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C44 text19 CODE >83:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C4C text19 CODE >84:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C4C text19 CODE >85:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C50 text19 CODE >86:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-C54 text19 CODE >87:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-1500 text18 CODE >37:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-1500 text18 CODE >38:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-1508 text18 CODE >39:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-14DE text17 CODE >31:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-14DE text17 CODE >33:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-14F4 text17 CODE >34:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-14C2 text16 CODE >36:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-14C2 text16 CODE >38:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-14C6 text16 CODE >39:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-14CA text16 CODE >40:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-14DC text16 CODE >41:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-88E text15 CODE >14:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-88E text15 CODE >16:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-8AA text15 CODE >17:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-8DC text15 CODE >18:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-8FE text15 CODE >19:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-91A text15 CODE >20:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-922 text15 CODE >21:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-954 text15 CODE >22:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-976 text15 CODE >23:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-992 text15 CODE >24:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-99A text15 CODE >25:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-9CC text15 CODE >26:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-9EE text15 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-A0A text15 CODE >28:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-A12 text15 CODE >29:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-A44 text15 CODE >30:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-A66 text15 CODE >31:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-A82 text15 CODE >32:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-A8A text15 CODE >33:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-ABC text15 CODE >34:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-ADA text15 CODE >38:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-10AC text14 CODE >43:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-10AE text14 CODE >45:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-10B2 text14 CODE >48:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-10B6 text14 CODE >50:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-10CA text14 CODE >51:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-10CE text14 CODE >53:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-10E2 text14 CODE >54:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-10F6 text14 CODE >57:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-10FA text14 CODE >59:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-111C text14 CODE >60:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1120 text14 CODE >61:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1124 text14 CODE >62:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1128 text14 CODE >66:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-133C text13 CODE >115:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-133E text13 CODE >116:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1342 text13 CODE >117:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1358 text13 CODE >118:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-137E text13 CODE >119:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-138E text13 CODE >120:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-138E text13 CODE >125:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1394 text13 CODE >126:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-13EC text12 CODE >68:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-13EE text12 CODE >71:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-13F2 text12 CODE >73:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-13F6 text12 CODE >74:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-140A text12 CODE >76:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-140E text12 CODE >78:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1422 text12 CODE >79:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1436 text12 CODE >81:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-143A text12 CODE >83:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-143E text12 CODE >85:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-11A2 text11 CODE >128:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-11A2 text11 CODE >129:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-11A6 text11 CODE >131:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-11AA text11 CODE >132:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-11DA text11 CODE >133:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-11DC text11 CODE >131:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1218 text11 CODE >135:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-12E0 text10 CODE >38:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-12E2 text10 CODE >39:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-12E6 text10 CODE >40:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-12F6 text10 CODE >41:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-12FA text10 CODE >43:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-130A text10 CODE >44:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-130E text10 CODE >46:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-1320 text10 CODE >47:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-1324 text10 CODE >49:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-1336 text10 CODE >50:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-133A text10 CODE >53:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-C56 text9 CODE >55:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-C56 text9 CODE >59:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-C5A text9 CODE >61:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-C6E text9 CODE >62:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-C82 text9 CODE >63:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-C96 text9 CODE >64:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-CAA text9 CODE >67:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-CAE text9 CODE >70:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-CB2 text9 CODE >73:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-CC4 text9 CODE >74:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-CD8 text9 CODE >76:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-CDC text9 CODE >79:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-CEE text9 CODE >80:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D02 text9 CODE >82:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D06 text9 CODE >85:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D18 text9 CODE >86:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D2C text9 CODE >88:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D30 text9 CODE >91:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D42 text9 CODE >92:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D56 text9 CODE >94:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D5A text9 CODE >99:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D94 text9 CODE >100:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-D96 text8 CODE >32:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-D96 text8 CODE >33:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-D9A text8 CODE >34:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-DA2 text8 CODE >35:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-DBE text8 CODE >36:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-DC2 text8 CODE >38:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-DC6 text8 CODE >39:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-DCA text8 CODE >40:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-DD6 text8 CODE >41:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E08 text8 CODE >42:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E10 text8 CODE >43:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E1E text8 CODE >44:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E36 text8 CODE >45:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E3C text8 CODE >46:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E4A text8 CODE >47:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E64 text8 CODE >48:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E6A text8 CODE >49:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E7C text8 CODE >61:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E82 text8 CODE >62:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E8C text8 CODE >63:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-E98 text8 CODE >64:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-EA2 text8 CODE >67:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-EB6 text8 CODE >68:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-EC0 text8 CODE >69:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-EC8 text8 CODE >72:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-ED2 text8 CODE >74:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-14F6 text7 CODE >89:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-14F6 text7 CODE >91:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-14FA text7 CODE >93:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-14FE text7 CODE >94:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-640 text6 CODE >54:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-640 text6 CODE >56:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-65C text6 CODE >57:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-68E text6 CODE >58:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-6B0 text6 CODE >59:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-6CC text6 CODE >60:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-702 text6 CODE >61:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-728 text6 CODE >62:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-744 text6 CODE >63:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-77A text6 CODE >64:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-7A0 text6 CODE >65:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-7BC text6 CODE >66:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-7F2 text6 CODE >67:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-818 text6 CODE >68:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-834 text6 CODE >69:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-86A text6 CODE >70:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-88C text6 CODE >73:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-112A text5 CODE >87:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-112A text5 CODE >89:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-113E text5 CODE >90:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1152 text5 CODE >91:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1156 text5 CODE >94:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-115A text5 CODE >95:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-115E text5 CODE >96:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1162 text5 CODE >97:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1166 text5 CODE >98:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-116A text5 CODE >100:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1170 text5 CODE >101:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1174 text5 CODE >102:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1178 text5 CODE >103:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-117E text5 CODE >104:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1182 text5 CODE >105:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1188 text5 CODE >107:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-118E text5 CODE >108:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-1194 text5 CODE >111:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-119A text5 CODE >112:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-11A0 text5 CODE >113:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
-147E text4 CODE >15:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
-147E text4 CODE >37:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
-148A text4 CODE >38:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
-1492 text4 CODE >39:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
-149A text4 CODE >52:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
-14A2 text4 CODE >53:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
-1440 text3 CODE >3:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
-1440 text3 CODE >5:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
-1448 text3 CODE >6:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
-1450 text3 CODE >7:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
-147C text3 CODE >9:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
-F7E text2 CODE >23:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-F7E text2 CODE >25:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-F86 text2 CODE >26:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-FC0 text2 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-1004 text2 CODE >28:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-101E text2 CODE >30:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
-1396 text1 CODE >102:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-1396 text1 CODE >104:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-13AA text1 CODE >105:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-13BE text1 CODE >106:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-13D2 text1 CODE >107:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-13E6 text1 CODE >110:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-13EA text1 CODE >112:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-1020 text0 CODE >9:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1020 text0 CODE >10:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1024 text0 CODE >11:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1028 text0 CODE >12:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-102C text0 CODE >13:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1030 text0 CODE >14:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1036 text0 CODE >16:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1040 text0 CODE >17:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-104C text0 CODE >18:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1056 text0 CODE >19:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1062 text0 CODE >20:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-106E text0 CODE >22:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1074 text0 CODE >23:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-107E text0 CODE >24:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-108A text0 CODE >26:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1094 text0 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-10A0 text0 CODE >28:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-10A4 text0 CODE >29:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-127E cinit CODE >1615:C:\Users\gabri\AppData\Local\Temp\sb34.s
-127E cinit CODE >1617:C:\Users\gabri\AppData\Local\Temp\sb34.s
-127E cinit CODE >1620:C:\Users\gabri\AppData\Local\Temp\sb34.s
-127E cinit CODE >1697:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1280 cinit CODE >1698:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1282 cinit CODE >1699:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1284 cinit CODE >1700:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1286 cinit CODE >1701:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1288 cinit CODE >1702:C:\Users\gabri\AppData\Local\Temp\sb34.s
-128A cinit CODE >1703:C:\Users\gabri\AppData\Local\Temp\sb34.s
-128E cinit CODE >1704:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1292 cinit CODE >1705:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1292 cinit CODE >1706:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1294 cinit CODE >1707:C:\Users\gabri\AppData\Local\Temp\sb34.s
-1298 cinit CODE >1708:C:\Users\gabri\AppData\Local\Temp\sb34.s
-129A cinit CODE >1709:C:\Users\gabri\AppData\Local\Temp\sb34.s
-129C cinit CODE >1710:C:\Users\gabri\AppData\Local\Temp\sb34.s
-129E cinit CODE >1714:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12A0 cinit CODE >1715:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12A2 cinit CODE >1716:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12A4 cinit CODE >1717:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12A6 cinit CODE >1718:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12A8 cinit CODE >1719:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12AA cinit CODE >1720:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12AE cinit CODE >1721:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12B2 cinit CODE >1722:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12B2 cinit CODE >1723:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12B4 cinit CODE >1724:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12B8 cinit CODE >1725:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12BA cinit CODE >1726:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12BC cinit CODE >1727:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12BE cinit CODE >1731:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12C2 cinit CODE >1732:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12C4 cinit CODE >1733:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12C4 cinit CODE >1734:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12C6 cinit CODE >1735:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12C8 cinit CODE >1736:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12CA cinit CODE >1739:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12CE cinit CODE >1740:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12D0 cinit CODE >1741:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12D0 cinit CODE >1742:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12D2 cinit CODE >1743:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12D4 cinit CODE >1744:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12D6 cinit CODE >1750:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12D6 cinit CODE >1753:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12D8 cinit CODE >1754:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12DA cinit CODE >1755:C:\Users\gabri\AppData\Local\Temp\sb34.s
-12DC cinit CODE >1756:C:\Users\gabri\AppData\Local\Temp\sb34.s
+113C text23 CODE >7:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+113C text23 CODE >13:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+1140 text23 CODE >14:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+114E text23 CODE >15:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+1156 text23 CODE >16:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+115A text23 CODE >18:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+1168 text23 CODE >19:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+1170 text23 CODE >20:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+1174 text23 CODE >22:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+117C text23 CODE >23:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+118E text23 CODE >24:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+1192 text23 CODE >25:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+1196 text23 CODE >26:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+119C text23 CODE >27:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+119E text23 CODE >25:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11AC text23 CODE >30:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11B2 text23 CODE >31:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11C8 text23 CODE >32:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11D0 text23 CODE >33:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11D2 text23 CODE >35:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11D8 text23 CODE >36:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11DE text23 CODE >38:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11EE text23 CODE >39:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11F6 text23 CODE >40:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+11FE text23 CODE >41:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
+1200 text22 CODE >7:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1200 text22 CODE >12:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1204 text22 CODE >13:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1212 text22 CODE >14:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+121A text22 CODE >15:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+121E text22 CODE >17:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+122C text22 CODE >18:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1234 text22 CODE >19:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1246 text22 CODE >20:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+124A text22 CODE >21:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+124E text22 CODE >22:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1254 text22 CODE >23:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1256 text22 CODE >21:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1264 text22 CODE >26:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+127A text22 CODE >27:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1282 text22 CODE >28:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+1288 text22 CODE >29:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+128E text22 CODE >31:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+129E text22 CODE >32:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+12A6 text22 CODE >33:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+12AE text22 CODE >34:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
+15F6 text21 CODE >3:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
+15F6 text21 CODE >7:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
+1602 text21 CODE >8:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
+161A text21 CODE >9:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
+1638 text21 CODE >10:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
+163E text21 CODE >11:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
+1658 text21 CODE >12:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
+D36 text20 CODE >41:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+D36 text20 CODE >49:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+D3A text20 CODE >53:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+D3E text20 CODE >55:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+D42 text20 CODE >57:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+D46 text20 CODE >59:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+D62 text20 CODE >61:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+D66 text20 CODE >62:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+D84 text20 CODE >65:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+DAC text20 CODE >68:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+DB0 text20 CODE >69:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+DDC text20 CODE >70:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E08 text20 CODE >71:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E0C text20 CODE >72:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E40 text20 CODE >74:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E52 text20 CODE >75:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E64 text20 CODE >76:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E7C text20 CODE >77:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E7E text20 CODE >78:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E82 text20 CODE >79:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E86 text20 CODE >80:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E8E text20 CODE >81:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E8E text20 CODE >82:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+E9E text20 CODE >83:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+EA6 text20 CODE >84:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+EA6 text20 CODE >85:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+EAA text20 CODE >86:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+EAE text20 CODE >87:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+18D8 text19 CODE >37:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+18D8 text19 CODE >38:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+18E0 text19 CODE >39:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+18B6 text18 CODE >31:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+18B6 text18 CODE >33:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+18CC text18 CODE >34:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+189A text17 CODE >36:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+189A text17 CODE >38:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+189E text17 CODE >39:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+18A2 text17 CODE >40:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+18B4 text17 CODE >41:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+89E text16 CODE >14:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+89E text16 CODE >16:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+8BA text16 CODE >17:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+8EC text16 CODE >18:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+90E text16 CODE >19:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+92A text16 CODE >20:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+932 text16 CODE >21:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+964 text16 CODE >22:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+986 text16 CODE >23:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+9A2 text16 CODE >24:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+9AA text16 CODE >25:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+9DC text16 CODE >26:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+9FE text16 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+A1A text16 CODE >28:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+A22 text16 CODE >29:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+A54 text16 CODE >30:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+A76 text16 CODE >31:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+A92 text16 CODE >32:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+A9A text16 CODE >33:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+ACC text16 CODE >34:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+AEA text16 CODE >38:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+1488 text15 CODE >43:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+148A text15 CODE >45:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+148E text15 CODE >48:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1492 text15 CODE >50:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+14A6 text15 CODE >51:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+14AA text15 CODE >53:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+14BE text15 CODE >54:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+14D2 text15 CODE >57:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+14D6 text15 CODE >59:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+14F8 text15 CODE >60:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+14FC text15 CODE >61:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1500 text15 CODE >62:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1504 text15 CODE >66:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+16BC text14 CODE >115:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+16BE text14 CODE >116:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+16C2 text14 CODE >117:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+16D8 text14 CODE >118:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+16FE text14 CODE >119:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+170E text14 CODE >120:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+170E text14 CODE >125:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1714 text14 CODE >126:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+17C4 text13 CODE >68:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+17C6 text13 CODE >71:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+17CA text13 CODE >73:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+17CE text13 CODE >74:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+17E2 text13 CODE >76:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+17E6 text13 CODE >78:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+17FA text13 CODE >79:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+180E text13 CODE >81:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1812 text13 CODE >83:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1816 text13 CODE >85:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+157E text12 CODE >128:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+157E text12 CODE >129:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1582 text12 CODE >131:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1586 text12 CODE >132:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+15B6 text12 CODE >133:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+15B8 text12 CODE >131:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+15F4 text12 CODE >135:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1716 text11 CODE >38:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+1718 text11 CODE >39:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+1728 text11 CODE >40:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+172C text11 CODE >42:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+173C text11 CODE >43:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+1740 text11 CODE >45:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+1752 text11 CODE >46:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+1756 text11 CODE >48:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+1768 text11 CODE >49:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+176C text11 CODE >52:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+EB0 text10 CODE >54:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+EB0 text10 CODE >58:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+EB4 text10 CODE >60:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+EC8 text10 CODE >61:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+EDC text10 CODE >62:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+EF0 text10 CODE >63:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F04 text10 CODE >66:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F08 text10 CODE >69:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F0C text10 CODE >72:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F1E text10 CODE >73:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F32 text10 CODE >74:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F36 text10 CODE >75:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F3A text10 CODE >78:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F4C text10 CODE >79:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F60 text10 CODE >80:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F64 text10 CODE >81:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F68 text10 CODE >84:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F7A text10 CODE >85:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F8E text10 CODE >86:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F92 text10 CODE >87:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+F96 text10 CODE >90:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+FA8 text10 CODE >91:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+FBC text10 CODE >92:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+FC0 text10 CODE >93:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+FC4 text10 CODE >98:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+FFE text10 CODE >99:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+AEC text9 CODE >81:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+AEC text9 CODE >82:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+AF2 text9 CODE >83:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+AFC text9 CODE >84:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+B10 text9 CODE >85:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+B1A text9 CODE >86:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+B26 text9 CODE >88:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+B3A text9 CODE >89:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+B3E text9 CODE >90:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+B68 text9 CODE >91:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+B9A text9 CODE >92:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+BCC text9 CODE >93:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+BF6 text9 CODE >95:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C00 text9 CODE >96:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C0A text9 CODE >97:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C14 text9 CODE >98:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C1E text9 CODE >100:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C22 text9 CODE >101:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C26 text9 CODE >102:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C32 text9 CODE >103:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C36 text9 CODE >104:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C3E text9 CODE >105:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C68 text9 CODE >106:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C6C text9 CODE >108:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C70 text9 CODE >109:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+C78 text9 CODE >110:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+CAA text9 CODE >111:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+CBC text9 CODE >113:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+CCE text9 CODE >115:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+CDC text9 CODE >116:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+CFC text9 CODE >118:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+D00 text9 CODE >123:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+D12 text9 CODE >124:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+D22 text9 CODE >125:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+D24 text9 CODE >89:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+D34 text9 CODE >128:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1000 text8 CODE >32:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1000 text8 CODE >33:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1004 text8 CODE >34:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+100C text8 CODE >35:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1028 text8 CODE >36:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+102C text8 CODE >38:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1030 text8 CODE >39:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1034 text8 CODE >40:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1040 text8 CODE >41:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1072 text8 CODE >42:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+107A text8 CODE >43:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1088 text8 CODE >44:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1098 text8 CODE >45:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+109C text8 CODE >46:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10A0 text8 CODE >47:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10A6 text8 CODE >49:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10B4 text8 CODE >50:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10C6 text8 CODE >51:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10CA text8 CODE >52:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10CE text8 CODE >53:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10D4 text8 CODE >55:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10E2 text8 CODE >56:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10E6 text8 CODE >57:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10EA text8 CODE >68:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10F0 text8 CODE >69:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+10FA text8 CODE >70:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1106 text8 CODE >71:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1110 text8 CODE >72:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1124 text8 CODE >73:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+112E text8 CODE >74:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1136 text8 CODE >77:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+113A text8 CODE >79:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+18CE text7 CODE >89:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+18CE text7 CODE >91:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+18D2 text7 CODE >93:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+18D6 text7 CODE >94:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
+650 text6 CODE >54:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+650 text6 CODE >56:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+66C text6 CODE >57:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+69E text6 CODE >58:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+6C0 text6 CODE >59:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+6DC text6 CODE >60:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+712 text6 CODE >61:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+738 text6 CODE >62:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+754 text6 CODE >63:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+78A text6 CODE >64:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+7B0 text6 CODE >65:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+7CC text6 CODE >66:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+802 text6 CODE >67:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+828 text6 CODE >68:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+844 text6 CODE >69:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+87A text6 CODE >70:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+89C text6 CODE >73:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+1506 text5 CODE >87:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1506 text5 CODE >89:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+151A text5 CODE >90:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+152E text5 CODE >91:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1532 text5 CODE >94:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1536 text5 CODE >95:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+153A text5 CODE >96:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+153E text5 CODE >97:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1542 text5 CODE >98:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1546 text5 CODE >100:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+154C text5 CODE >101:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1550 text5 CODE >102:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1554 text5 CODE >103:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+155A text5 CODE >104:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+155E text5 CODE >105:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1564 text5 CODE >107:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+156A text5 CODE >108:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1570 text5 CODE >111:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1576 text5 CODE >112:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+157C text5 CODE >113:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+1856 text4 CODE >15:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+1856 text4 CODE >37:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+1862 text4 CODE >38:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+186A text4 CODE >39:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+1872 text4 CODE >52:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+187A text4 CODE >53:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+1818 text3 CODE >3:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
+1818 text3 CODE >5:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
+1820 text3 CODE >6:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
+1828 text3 CODE >7:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
+1854 text3 CODE >9:D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
+135A text2 CODE >23:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+135A text2 CODE >25:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+1362 text2 CODE >26:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+139C text2 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+13E0 text2 CODE >28:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+13FA text2 CODE >30:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+176E text1 CODE >101:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+176E text1 CODE >103:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+1782 text1 CODE >104:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+1796 text1 CODE >105:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+17AA text1 CODE >106:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+17BE text1 CODE >109:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+17C2 text1 CODE >111:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+13FC text0 CODE >9:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+13FC text0 CODE >10:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1400 text0 CODE >11:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1404 text0 CODE >12:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1408 text0 CODE >13:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+140C text0 CODE >14:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1412 text0 CODE >16:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+141C text0 CODE >17:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1428 text0 CODE >18:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1432 text0 CODE >19:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+143E text0 CODE >20:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+144A text0 CODE >22:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1450 text0 CODE >23:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+145A text0 CODE >24:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1466 text0 CODE >26:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1470 text0 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+147C text0 CODE >28:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1480 text0 CODE >29:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+165A cinit CODE >1937:C:\Users\gabri\AppData\Local\Temp\s8c.s
+165A cinit CODE >1939:C:\Users\gabri\AppData\Local\Temp\s8c.s
+165A cinit CODE >1942:C:\Users\gabri\AppData\Local\Temp\s8c.s
+165A cinit CODE >2044:C:\Users\gabri\AppData\Local\Temp\s8c.s
+165C cinit CODE >2045:C:\Users\gabri\AppData\Local\Temp\s8c.s
+165E cinit CODE >2046:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1660 cinit CODE >2047:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1662 cinit CODE >2048:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1664 cinit CODE >2049:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1666 cinit CODE >2050:C:\Users\gabri\AppData\Local\Temp\s8c.s
+166A cinit CODE >2051:C:\Users\gabri\AppData\Local\Temp\s8c.s
+166E cinit CODE >2052:C:\Users\gabri\AppData\Local\Temp\s8c.s
+166E cinit CODE >2053:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1670 cinit CODE >2054:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1674 cinit CODE >2055:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1676 cinit CODE >2056:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1678 cinit CODE >2057:C:\Users\gabri\AppData\Local\Temp\s8c.s
+167A cinit CODE >2061:C:\Users\gabri\AppData\Local\Temp\s8c.s
+167C cinit CODE >2062:C:\Users\gabri\AppData\Local\Temp\s8c.s
+167E cinit CODE >2063:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1680 cinit CODE >2064:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1682 cinit CODE >2065:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1684 cinit CODE >2066:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1686 cinit CODE >2067:C:\Users\gabri\AppData\Local\Temp\s8c.s
+168A cinit CODE >2068:C:\Users\gabri\AppData\Local\Temp\s8c.s
+168E cinit CODE >2069:C:\Users\gabri\AppData\Local\Temp\s8c.s
+168E cinit CODE >2070:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1690 cinit CODE >2071:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1694 cinit CODE >2072:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1696 cinit CODE >2073:C:\Users\gabri\AppData\Local\Temp\s8c.s
+1698 cinit CODE >2074:C:\Users\gabri\AppData\Local\Temp\s8c.s
+169A cinit CODE >2078:C:\Users\gabri\AppData\Local\Temp\s8c.s
+169E cinit CODE >2079:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16A0 cinit CODE >2080:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16A0 cinit CODE >2081:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16A2 cinit CODE >2082:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16A4 cinit CODE >2083:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16A6 cinit CODE >2086:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16AA cinit CODE >2087:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16AC cinit CODE >2088:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16AC cinit CODE >2089:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16AE cinit CODE >2090:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16B0 cinit CODE >2091:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16B2 cinit CODE >2097:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16B2 cinit CODE >2100:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16B4 cinit CODE >2101:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16B6 cinit CODE >2102:C:\Users\gabri\AppData\Local\Temp\s8c.s
+16B8 cinit CODE >2103:C:\Users\gabri\AppData\Local\Temp\s8c.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -401,102 +491,115 @@ FC0 text2 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-_i 2D 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_i 3D 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+___awdiv@counter 23 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __LdataBANK2 0 0 ABS 0 dataBANK2 dist/default/production\MP3.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MP3.X.production.o
-__Hspace_0 150A 0 ABS 0 - dist/default/production\MP3.X.production.o
+__Hspace_0 18E2 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Hspace_1 2AA 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Hspace_4 60000E 0 ABS 0 - dist/default/production\MP3.X.production.o
 __size_of_lcdData 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __size_of_lcdInit 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __HidataBANK2 0 0 ABS 0 idataBANK2 dist/default/production\MP3.X.production.o
-lcdCommand@old_D 34 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+lcdCommand@old_D 25 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\MP3.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\gabri\AppData\Local\Temp\sb34.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\gabri\AppData\Local\Temp\s8c.o
 _musicas 100 0 BANK1 1 bssBANK1 dist/default/production\MP3.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MP3.X.production.o
-__end_of_atraso_ms 127E 0 CODE 0 text20 dist/default/production\MP3.X.production.o
-_ssdUpdate C56 0 CODE 0 text9 dist/default/production\MP3.X.production.o
-_v0 2A 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
-_v1 29 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
-_v2 28 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
-_v3 27 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_valor@keypad$F283 3A 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+__end_of_atraso_ms 165A 0 CODE 0 text21 dist/default/production\MP3.X.production.o
+_ssdUpdate EB0 0 CODE 0 text10 dist/default/production\MP3.X.production.o
+_v0 41 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_v1 40 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_v2 3F 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_v3 3E 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 __size_of_atraso_ms 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\sb34.o
-_cont 25 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
-_flag 24 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
-_main 1020 0 CODE 0 text0 dist/default/production\MP3.X.production.o
-start 0 0 CODE 0 init C:\Users\gabri\AppData\Local\Temp\sb34.o
+___sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s8c.o
+_cont 4A 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_flag 49 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_main 13FC 0 CODE 0 text0 dist/default/production\MP3.X.production.o
+start 0 0 CODE 0 init C:\Users\gabri\AppData\Local\Temp\s8c.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\MP3.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\MP3.X.production.o
 __size_of_lcdCommand 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-?___wmul 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-_atraso_ms 121A 0 CODE 0 text20 dist/default/production\MP3.X.production.o
-kpDebounce@i 37 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-kpDebounce@j 36 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-kpDebounce@k 34 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+?___wmul 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_atraso_ms 15F6 0 CODE 0 text21 dist/default/production\MP3.X.production.o
+kpDebounce@i 28 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+kpDebounce@j 27 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+kpDebounce@k 25 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __LidataBANK2 0 0 ABS 0 idataBANK2 dist/default/production\MP3.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\MP3.X.production.o
-lcdPosition@coluna 36 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-_kpDebounce ADC 0 CODE 0 text19 dist/default/production\MP3.X.production.o
+lcdPosition@coluna 27 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_kpDebounce D36 0 CODE 0 text20 dist/default/production\MP3.X.production.o
+___awmod@sign 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\MP3.X.production.o
-_lcdPosition 133C 0 CODE 0 text13 dist/default/production\MP3.X.production.o
-__accesstop 80 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\sb34.o
-intlevel0 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\sb34.o
-intlevel1 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\sb34.o
-intlevel2 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\sb34.o
-intlevel3 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\sb34.o
+_lcdPosition 16BC 0 CODE 0 text14 dist/default/production\MP3.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s8c.o
+intlevel0 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\s8c.o
+intlevel1 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\s8c.o
+intlevel2 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\s8c.o
+intlevel3 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\s8c.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\MP3.X.production.o
-kpDebounce@old_D 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-kpDebounce@tempo 2C 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+kpDebounce@old_D 24 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+kpDebounce@tempo 3C 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\MP3.X.production.o
+_playSong$949 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_playSong$950 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\MP3.X.production.o
+___awdiv@sign 24 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\MP3.X.production.o
-__pidataCOMRAM 14A4 0 CODE 0 idataCOMRAM dist/default/production\MP3.X.production.o
-___wmul@multiplicand 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-_chooseSong D96 0 CODE 0 text8 dist/default/production\MP3.X.production.o
+__pidataCOMRAM 187C 0 CODE 0 idataCOMRAM dist/default/production\MP3.X.production.o
+___wmul@multiplicand 21 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_chooseSong 1000 0 CODE 0 text8 dist/default/production\MP3.X.production.o
 __size_of_Delay2ms 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-Delay2ms@i 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-?_kpRead 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-__end_of_Delay40us 14F6 0 CODE 0 text17 dist/default/production\MP3.X.production.o
-__end_of_lcdData 1440 0 CODE 0 text12 dist/default/production\MP3.X.production.o
-__end_of_lcdInit 11A2 0 CODE 0 text5 dist/default/production\MP3.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\sb34.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\sb34.o
+Delay2ms@i 20 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+?_kpRead 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__end_of_Delay40us 18CE 0 CODE 0 text18 dist/default/production\MP3.X.production.o
+__end_of_lcdData 1818 0 CODE 0 text13 dist/default/production\MP3.X.production.o
+__end_of_lcdInit 157E 0 CODE 0 text5 dist/default/production\MP3.X.production.o
+___awdiv@dividend 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s8c.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s8c.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\MP3.X.production.o
 __size_of_Delay40us 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-kpDebounce@valorAntigo 1E 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
-_display 2B 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+kpDebounce@valorAntigo 36 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_display 42 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\MP3.X.production.o
-__end_of___wmul 14A4 0 CODE 0 text4 dist/default/production\MP3.X.production.o
+__end_of___wmul 187C 0 CODE 0 text4 dist/default/production\MP3.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MP3.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MP3.X.production.o
-__end_of_kpDebounce C56 0 CODE 0 text19 dist/default/production\MP3.X.production.o
+__end_of_kpDebounce EB0 0 CODE 0 text20 dist/default/production\MP3.X.production.o
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\MP3.X.production.o
-_Delay40us 14DE 0 CODE 0 text17 dist/default/production\MP3.X.production.o
+___awdiv@divisor 21 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__end_of___awdiv 1200 0 CODE 0 text23 dist/default/production\MP3.X.production.o
+__end_of___awmod 12B0 0 CODE 0 text22 dist/default/production\MP3.X.production.o
+_Delay40us 18B6 0 CODE 0 text18 dist/default/production\MP3.X.production.o
 __size_of_ssdInit 0 0 ABS 0 - dist/default/production\MP3.X.production.o
+_INTCON FF2 0 ABS 0 - dist/default/production\MP3.X.production.o
 __size_of_pinMode 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-lcdPosition@linha 37 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+lcdPosition@linha 28 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\MP3.X.production.o
-atraso_ms@i 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-atraso_ms@j 32 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-atraso_ms@k 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-atraso_ms@t 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-lcdStr@str 36 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+atraso_ms@i 21 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+atraso_ms@j 23 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+atraso_ms@k 24 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+atraso_ms@t 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+lcdStr@str 27 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\MP3.X.production.o
-_Delay2ms 14C2 0 CODE 0 text16 dist/default/production\MP3.X.production.o
-start_initialization 127E 0 CODE 0 cinit dist/default/production\MP3.X.production.o
-__end_of_chooseSong ED4 0 CODE 0 text8 dist/default/production\MP3.X.production.o
+_Delay2ms 189A 0 CODE 0 text17 dist/default/production\MP3.X.production.o
+start_initialization 165A 0 CODE 0 cinit dist/default/production\MP3.X.production.o
+__end_of_chooseSong 113C 0 CODE 0 text8 dist/default/production\MP3.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\MP3.X.production.o
-__end_of_kpInit 1500 0 CODE 0 text7 dist/default/production\MP3.X.production.o
-__end_of_kpRead 150A 0 CODE 0 text18 dist/default/production\MP3.X.production.o
-_digitalWrite 88E 0 CODE 0 text15 dist/default/production\MP3.X.production.o
-__end_of_Delay2ms 14DE 0 CODE 0 text16 dist/default/production\MP3.X.production.o
-__end_of_lcdStr 121A 0 CODE 0 text11 dist/default/production\MP3.X.production.o
+__end_of_kpInit 18D8 0 CODE 0 text7 dist/default/production\MP3.X.production.o
+__end_of_kpRead 18E2 0 CODE 0 text19 dist/default/production\MP3.X.production.o
+_digitalWrite 89E 0 CODE 0 text16 dist/default/production\MP3.X.production.o
+__end_of_Delay2ms 18B6 0 CODE 0 text17 dist/default/production\MP3.X.production.o
+__end_of_lcdStr 15F6 0 CODE 0 text12 dist/default/production\MP3.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\MP3.X.production.o
-pinMode@pin 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+pinMode@pin 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\MP3.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\MP3.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\MP3.X.production.o
@@ -505,7 +608,7 @@ __Hbank4 0 0 ABS 0 bank4 dist/default/production\MP3.X.production.o
 __Hbank5 0 0 ABS 0 bank5 dist/default/production\MP3.X.production.o
 __Hcinit 0 0 ABS 0 cinit dist/default/production\MP3.X.production.o
 __Hconst 0 0 CONST 0 const dist/default/production\MP3.X.production.o
-__end_of_strcpy 147E 0 CODE 0 text3 dist/default/production\MP3.X.production.o
+__end_of_strcpy 1856 0 CODE 0 text3 dist/default/production\MP3.X.production.o
 __Hidata 0 0 CODE 0 idata dist/default/production\MP3.X.production.o
 __Hidloc 200008 0 IDLOC 5 idloc dist/default/production\MP3.X.production.o
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\MP3.X.production.o
@@ -524,7 +627,7 @@ __Htext8 0 0 ABS 0 text8 dist/default/production\MP3.X.production.o
 __Htext9 0 0 ABS 0 text9 dist/default/production\MP3.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MP3.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\MP3.X.production.o
-__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\gabri\AppData\Local\Temp\sb34.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\gabri\AppData\Local\Temp\s8c.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\MP3.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production\MP3.X.production.o
 __size_of_digitalWrite 0 0 ABS 0 - dist/default/production\MP3.X.production.o
@@ -552,10 +655,10 @@ __Ltext6 0 0 ABS 0 text6 dist/default/production\MP3.X.production.o
 __Ltext7 0 0 ABS 0 text7 dist/default/production\MP3.X.production.o
 __Ltext8 0 0 ABS 0 text8 dist/default/production\MP3.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\MP3.X.production.o
-__end_of_ssdInit 13EC 0 CODE 0 text1 dist/default/production\MP3.X.production.o
+__end_of_ssdInit 17C4 0 CODE 0 text1 dist/default/production\MP3.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\MP3.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\MP3.X.production.o
-__end_of_pinMode 88E 0 CODE 0 text6 dist/default/production\MP3.X.production.o
+__end_of_pinMode 89E 0 CODE 0 text6 dist/default/production\MP3.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\MP3.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\MP3.X.production.o
 __Hinit 4 0 CODE 0 init dist/default/production\MP3.X.production.o
@@ -563,7 +666,7 @@ __Hrbit 0 0 COMRAM 1 rbit dist/default/production\MP3.X.production.o
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\MP3.X.production.o
 __Htemp 0 0 COMRAM 1 temp dist/default/production\MP3.X.production.o
 __Htext 0 0 ABS 0 text dist/default/production\MP3.X.production.o
-__end_of_songsInit 1020 0 CODE 0 text2 dist/default/production\MP3.X.production.o
+__end_of_songsInit 13FC 0 CODE 0 text2 dist/default/production\MP3.X.production.o
 __Labs1 0 0 ABS 0 abs1 dist/default/production\MP3.X.production.o
 __Ldata 0 0 ABS 0 data dist/default/production\MP3.X.production.o
 __Linit 0 0 CODE 0 init dist/default/production\MP3.X.production.o
@@ -571,33 +674,34 @@ __Lrbit 0 0 COMRAM 1 rbit dist/default/production\MP3.X.production.o
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\MP3.X.production.o
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\MP3.X.production.o
 __Ltext 0 0 ABS 0 text dist/default/production\MP3.X.production.o
-kpDebounce@valorNovo 20 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
-Delay40us@i 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-___wmul 147E 0 CODE 0 text4 dist/default/production\MP3.X.production.o
+kpDebounce@valorNovo 38 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+Delay40us@i 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+___wmul 1856 0 CODE 0 text4 dist/default/production\MP3.X.production.o
 __size_of_songsInit 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\MP3.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\MP3.X.production.o
-__S0 150A 0 ABS 0 - dist/default/production\MP3.X.production.o
+__S0 18E2 0 ABS 0 - dist/default/production\MP3.X.production.o
 __S1 2AA 0 ABS 0 - dist/default/production\MP3.X.production.o
 __S2 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-__end_of_digitalWrite ADC 0 CODE 0 text15 dist/default/production\MP3.X.production.o
-__end_of_lcdPosition 1396 0 CODE 0 text13 dist/default/production\MP3.X.production.o
-_songsInit F7E 0 CODE 0 text2 dist/default/production\MP3.X.production.o
+_cnt 43 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+__end_of_digitalWrite AEC 0 CODE 0 text16 dist/default/production\MP3.X.production.o
+__end_of_lcdPosition 1716 0 CODE 0 text14 dist/default/production\MP3.X.production.o
+_songsInit 135A 0 CODE 0 text2 dist/default/production\MP3.X.production.o
 __HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\MP3.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MP3.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\MP3.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\MP3.X.production.o
 __size_of_kpDebounce 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-strcpy@d 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-strcpy@s 38 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-_lcdData 13EC 0 CODE 0 text12 dist/default/production\MP3.X.production.o
-_lcdInit 112A 0 CODE 0 text5 dist/default/production\MP3.X.production.o
+strcpy@d 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+strcpy@s 29 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_lcdData 17C4 0 CODE 0 text13 dist/default/production\MP3.X.production.o
+_lcdInit 1506 0 CODE 0 text5 dist/default/production\MP3.X.production.o
 __Hramtop 600 0 RAM 0 ramtop dist/default/production\MP3.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\MP3.X.production.o
-_indice 26 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_indice 4B 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 __pdataBANK2 200 0 BANK2 1 dataBANK2 dist/default/production\MP3.X.production.o
 __activetblptr 2 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\MP3.X.production.o
@@ -614,75 +718,88 @@ __Htext17 0 0 ABS 0 text17 dist/default/production\MP3.X.production.o
 __Htext18 0 0 ABS 0 text18 dist/default/production\MP3.X.production.o
 __Htext19 0 0 ABS 0 text19 dist/default/production\MP3.X.production.o
 __Htext20 0 0 ABS 0 text20 dist/default/production\MP3.X.production.o
-_kpInit 14F6 0 CODE 0 text7 dist/default/production\MP3.X.production.o
-_kpRead 1500 0 CODE 0 text18 dist/default/production\MP3.X.production.o
-lcdPosition@comando 38 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-_lcdStr 11A2 0 CODE 0 text11 dist/default/production\MP3.X.production.o
-_valor@ssd$F104 601 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
-__ptext10 12E0 0 CODE 0 text10 dist/default/production\MP3.X.production.o
-__ptext11 11A2 0 CODE 0 text11 dist/default/production\MP3.X.production.o
-__ptext12 13EC 0 CODE 0 text12 dist/default/production\MP3.X.production.o
-__ptext13 133C 0 CODE 0 text13 dist/default/production\MP3.X.production.o
-__ptext14 10AC 0 CODE 0 text14 dist/default/production\MP3.X.production.o
-__ptext15 88E 0 CODE 0 text15 dist/default/production\MP3.X.production.o
-__ptext16 14C2 0 CODE 0 text16 dist/default/production\MP3.X.production.o
-__ptext17 14DE 0 CODE 0 text17 dist/default/production\MP3.X.production.o
-__ptext18 1500 0 CODE 0 text18 dist/default/production\MP3.X.production.o
-__ptext19 ADC 0 CODE 0 text19 dist/default/production\MP3.X.production.o
-__ptext20 121A 0 CODE 0 text20 dist/default/production\MP3.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\MP3.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\MP3.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\MP3.X.production.o
+_kpInit 18CE 0 CODE 0 text7 dist/default/production\MP3.X.production.o
+_kpRead 18D8 0 CODE 0 text19 dist/default/production\MP3.X.production.o
+lcdPosition@comando 29 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_lcdStr 157E 0 CODE 0 text12 dist/default/production\MP3.X.production.o
+___awmod@counter 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__ptext10 EB0 0 CODE 0 text10 dist/default/production\MP3.X.production.o
+__ptext11 1716 0 CODE 0 text11 dist/default/production\MP3.X.production.o
+__ptext12 157E 0 CODE 0 text12 dist/default/production\MP3.X.production.o
+__ptext13 17C4 0 CODE 0 text13 dist/default/production\MP3.X.production.o
+__ptext14 16BC 0 CODE 0 text14 dist/default/production\MP3.X.production.o
+__ptext15 1488 0 CODE 0 text15 dist/default/production\MP3.X.production.o
+__ptext16 89E 0 CODE 0 text16 dist/default/production\MP3.X.production.o
+__ptext17 189A 0 CODE 0 text17 dist/default/production\MP3.X.production.o
+__ptext18 18B6 0 CODE 0 text18 dist/default/production\MP3.X.production.o
+__ptext19 18D8 0 CODE 0 text19 dist/default/production\MP3.X.production.o
+__ptext20 D36 0 CODE 0 text20 dist/default/production\MP3.X.production.o
+__ptext21 15F6 0 CODE 0 text21 dist/default/production\MP3.X.production.o
+__ptext22 1200 0 CODE 0 text22 dist/default/production\MP3.X.production.o
+__ptext23 113C 0 CODE 0 text23 dist/default/production\MP3.X.production.o
+___awdiv 113C 0 CODE 0 text23 dist/default/production\MP3.X.production.o
+___awmod 1200 0 CODE 0 text22 dist/default/production\MP3.X.production.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MP3.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production\MP3.X.production.o
-ssdDigit@pos 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-ssdDigit@val 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+ssdDigit@pos 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+ssdDigit@val 20 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __size_of_chooseSong 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\MP3.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\MP3.X.production.o
-_lcdCommand 10AC 0 CODE 0 text14 dist/default/production\MP3.X.production.o
-___wmul@multiplier 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_lcdCommand 1488 0 CODE 0 text15 dist/default/production\MP3.X.production.o
+___wmul@multiplier 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_segundo1 45 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_segundo2 44 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\MP3.X.production.o
-_strcpy 1440 0 CODE 0 text3 dist/default/production\MP3.X.production.o
+_strcpy 1818 0 CODE 0 text3 dist/default/production\MP3.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\MP3.X.production.o
 _teclas 15 0 COMRAM 1 dataCOMRAM dist/default/production\MP3.X.production.o
-stackhi 5FF 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\sb34.o
-stacklo 2AA 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\sb34.o
-pinMode@type 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+stackhi 5FF 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s8c.o
+stacklo 2AA 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s8c.o
+pinMode@type 21 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\MP3.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\MP3.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\MP3.X.production.o
 __size_of_kpInit 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __size_of_kpRead 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __size_of_ssdDigit 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-strcpy@dest 34 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+strcpy@dest 25 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __size_of_lcdStr 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-__pbssCOMRAM 1E 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+__pbssCOMRAM 36 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 _duracoes 1 0 COMRAM 1 dataCOMRAM dist/default/production\MP3.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MP3.X.production.o
-__end_of_valor@ssd$F104 611 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
-end_of_initialization 12D6 0 CODE 0 cinit dist/default/production\MP3.X.production.o
+end_of_initialization 16B2 0 CODE 0 cinit dist/default/production\MP3.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\MP3.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\MP3.X.production.o
-digitalWrite@pin 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+digitalWrite@pin 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+___awdiv@quotient 25 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+?___awdiv 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+?___awmod 27 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\MP3.X.production.o
 __HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\MP3.X.production.o
+___awmod@dividend 27 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Lramtop 600 0 RAM 0 ramtop dist/default/production\MP3.X.production.o
 __size_of_strcpy 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\MP3.X.production.o
-__pcinit 127E 0 CODE 0 cinit dist/default/production\MP3.X.production.o
-__end_of_lcdCommand 112A 0 CODE 0 text14 dist/default/production\MP3.X.production.o
-__ptext0 1020 0 CODE 0 text0 dist/default/production\MP3.X.production.o
-__ptext1 1396 0 CODE 0 text1 dist/default/production\MP3.X.production.o
-__ptext2 F7E 0 CODE 0 text2 dist/default/production\MP3.X.production.o
-__ptext3 1440 0 CODE 0 text3 dist/default/production\MP3.X.production.o
-__ptext4 147E 0 CODE 0 text4 dist/default/production\MP3.X.production.o
-__ptext5 112A 0 CODE 0 text5 dist/default/production\MP3.X.production.o
-__ptext6 640 0 CODE 0 text6 dist/default/production\MP3.X.production.o
-__ptext7 14F6 0 CODE 0 text7 dist/default/production\MP3.X.production.o
-__ptext8 D96 0 CODE 0 text8 dist/default/production\MP3.X.production.o
-__ptext9 C56 0 CODE 0 text9 dist/default/production\MP3.X.production.o
+__pcinit 165A 0 CODE 0 cinit dist/default/production\MP3.X.production.o
+__end_of_lcdCommand 1506 0 CODE 0 text15 dist/default/production\MP3.X.production.o
+__ptext0 13FC 0 CODE 0 text0 dist/default/production\MP3.X.production.o
+__ptext1 176E 0 CODE 0 text1 dist/default/production\MP3.X.production.o
+__ptext2 135A 0 CODE 0 text2 dist/default/production\MP3.X.production.o
+__ptext3 1818 0 CODE 0 text3 dist/default/production\MP3.X.production.o
+__ptext4 1856 0 CODE 0 text4 dist/default/production\MP3.X.production.o
+__ptext5 1506 0 CODE 0 text5 dist/default/production\MP3.X.production.o
+__ptext6 650 0 CODE 0 text6 dist/default/production\MP3.X.production.o
+__ptext7 18CE 0 CODE 0 text7 dist/default/production\MP3.X.production.o
+__ptext8 1000 0 CODE 0 text8 dist/default/production\MP3.X.production.o
+__ptext9 AEC 0 CODE 0 text9 dist/default/production\MP3.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\MP3.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\MP3.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\MP3.X.production.o
@@ -695,37 +812,49 @@ __Ltext17 0 0 ABS 0 text17 dist/default/production\MP3.X.production.o
 __Ltext18 0 0 ABS 0 text18 dist/default/production\MP3.X.production.o
 __Ltext19 0 0 ABS 0 text19 dist/default/production\MP3.X.production.o
 __Ltext20 0 0 ABS 0 text20 dist/default/production\MP3.X.production.o
-__ramtop 600 0 RAM 0 ramtop C:\Users\gabri\AppData\Local\Temp\sb34.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\MP3.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\MP3.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\MP3.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\gabri\AppData\Local\Temp\s8c.o
 __size_of_lcdPosition 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\MP3.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MP3.X.production.o
+__size_of_playSong 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
-_ssdInit 1396 0 CODE 0 text1 dist/default/production\MP3.X.production.o
-_ssdDigit 12E0 0 CODE 0 text10 dist/default/production\MP3.X.production.o
+playSong@j 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+_ssdInit 176E 0 CODE 0 text1 dist/default/production\MP3.X.production.o
+_ssdDigit 1716 0 CODE 0 text11 dist/default/production\MP3.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\MP3.X.production.o
-_pinMode 640 0 CODE 0 text6 dist/default/production\MP3.X.production.o
+_pinMode 650 0 CODE 0 text6 dist/default/production\MP3.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MP3.X.production.o
-strcpy@src 36 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-__end_of__initialization 12D6 0 CODE 0 cinit dist/default/production\MP3.X.production.o
-__end_of_ssdDigit 133C 0 CODE 0 text10 dist/default/production\MP3.X.production.o
+strcpy@src 27 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__end_of__initialization 16B2 0 CODE 0 cinit dist/default/production\MP3.X.production.o
+___awmod@divisor 29 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__end_of_ssdDigit 176E 0 CODE 0 text11 dist/default/production\MP3.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\MP3.X.production.o
-__pidataBANK2 ED4 0 CODE 0 idataBANK2 dist/default/production\MP3.X.production.o
-lcdStr@i 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__pidataBANK2 12B0 0 CODE 0 idataBANK2 dist/default/production\MP3.X.production.o
+lcdStr@i 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\MP3.X.production.o
-__pcstackCOMRAM 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-lcdCommand@cmd 35 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-__end_of_main 10AC 0 CODE 0 text0 dist/default/production\MP3.X.production.o
+__pcstackCOMRAM 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+lcdCommand@cmd 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__end_of_main 1488 0 CODE 0 text0 dist/default/production\MP3.X.production.o
 _PORTA F80 0 ABS 0 - dist/default/production\MP3.X.production.o
 _PORTB F81 0 ABS 0 - dist/default/production\MP3.X.production.o
 _PORTC F82 0 ABS 0 - dist/default/production\MP3.X.production.o
 _PORTD F83 0 ABS 0 - dist/default/production\MP3.X.production.o
 _PORTE F84 0 ABS 0 - dist/default/production\MP3.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production\MP3.X.production.o
+_TMR0H FD7 0 ABS 0 - dist/default/production\MP3.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\MP3.X.production.o
 _TRISA F92 0 ABS 0 - dist/default/production\MP3.X.production.o
 _TRISB F93 0 ABS 0 - dist/default/production\MP3.X.production.o
 _TRISC F94 0 ABS 0 - dist/default/production\MP3.X.production.o
 _TRISD F95 0 ABS 0 - dist/default/production\MP3.X.production.o
 _TRISE F96 0 ABS 0 - dist/default/production\MP3.X.production.o
+_minuto1 47 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_minuto2 46 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+__end_of_valor 611 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Hbss 0 0 RAM 1 bss dist/default/production\MP3.X.production.o
 __Hram 0 0 ABS 0 ram dist/default/production\MP3.X.production.o
@@ -735,24 +864,28 @@ __Lbss 0 0 RAM 1 bss dist/default/production\MP3.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\MP3.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\MP3.X.production.o
 _nomes 200 0 BANK2 1 dataBANK2 dist/default/production\MP3.X.production.o
-_tecla 1D 0 COMRAM 1 dataCOMRAM dist/default/production\MP3.X.production.o
-_valor 22 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_pause 1D 0 COMRAM 1 dataCOMRAM dist/default/production\MP3.X.production.o
+_playSong AEC 0 CODE 0 text9 dist/default/production\MP3.X.production.o
+_tecla 1E 0 COMRAM 1 dataCOMRAM dist/default/production\MP3.X.production.o
+_tempo 48 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
+_valor 601 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
 __HdataBANK2 0 0 ABS 0 dataBANK2 dist/default/production\MP3.X.production.o
-__initialization 127E 0 CODE 0 cinit dist/default/production\MP3.X.production.o
+__initialization 165A 0 CODE 0 cinit dist/default/production\MP3.X.production.o
+__end_of_playSong D36 0 CODE 0 text9 dist/default/production\MP3.X.production.o
 __pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\MP3.X.production.o
 __pdataCOMRAM 1 0 COMRAM 1 dataCOMRAM dist/default/production\MP3.X.production.o
-songsInit@i 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+songsInit@i 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\MP3.X.production.o
-___wmul@product 32 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-__Hsmallconst 640 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
+___wmul@product 23 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__Hsmallconst 650 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\MP3.X.production.o
-lcdData@old_D 35 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-lcdData@valor 34 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-__end_of_ssdUpdate D96 0 CODE 0 text9 dist/default/production\MP3.X.production.o
+lcdData@old_D 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+lcdData@valor 25 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+__end_of_ssdUpdate 1000 0 CODE 0 text10 dist/default/production\MP3.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MP3.X.production.o
 __Hintcode 0 0 CODE 0 intcode dist/default/production\MP3.X.production.o
 __size_of_ssdUpdate 0 0 ABS 0 - dist/default/production\MP3.X.production.o
-digitalWrite@value 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
+digitalWrite@value 21 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -777,13 +910,12 @@ digitalWrite@value 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.prod
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text6 0 640 640 E81 1
-text16 0 14C2 14C2 48 1
+text6 0 650 650 1292 1
 reset_vec 0 0 0 4 1
 bssBANK1 1 100 100 BE 1
-smallconst 0 600 600 40 1
+smallconst 0 600 600 50 1
 dataBANK2 1 200 200 AA 1
-dataCOMRAM 1 1 1 3D 1
+dataCOMRAM 1 1 1 4B 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

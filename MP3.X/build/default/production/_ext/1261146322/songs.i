@@ -13,6 +13,7 @@
 
 void songsInit(void);
 void chooseSong(void);
+void playSong(void);
 # 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
 
 # 1 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\stdlib.h" 1 3
@@ -332,10 +333,10 @@ typedef struct {
 
 unsigned char nomes[10][17] = {"Estamos Vivos", "Cheia de Manias", "E Tarde Demais", "Sozinho", "Cigana", "Ciumes de Voce", "Extrapolei",
     "Deus me Livre", "Maravilha", "Medida Exata"};
-unsigned int duracoes[10] = {180, 180, 180, 180, 180, 180, 180, 180, 180, 180};
+unsigned int duracoes[10] = {1800, 1800, 180, 180, 180, 180, 180, 180, 180, 180};
 musica musicas[10];
 
-unsigned char tecla = 16, indice = 0, cont = 0, flag = 0;
+unsigned char tecla = 16, indice = 0, cont = 0, flag = 0, tempo, minuto1, minuto2, segundo1, segundo2, cnt = 0, pause = 1;
 
 void songsInit(void) {
 
@@ -349,35 +350,89 @@ void songsInit(void) {
 void chooseSong(void) {
     kpDebounce();
     tecla = kpRead();
-    if (((tecla) & (1<<(3)))||((tecla) & (1<<(7)))) {
+    if (((tecla) & (1<<(3))) || ((tecla) & (1<<(7)))) {
         flag = 1;
         for (;;) {
             ssdUpdate();
             kpDebounce();
             atraso_ms(10);
-            if ((kpRead() != tecla)||flag == 1) {
+            if ((kpRead() != tecla) || flag == 1) {
                 tecla = kpRead();
                 if (((tecla) & (1<<(3)))) {
-                    if (indice == 0) {indice = 9;}
-                    else {indice -= 1;}
+                    if (indice == 0) {
+                        indice = 9;
+                    } else {
+                        indice -= 1;
+                    }
                 } else if (((tecla) & (1<<(7)))) {
-                    if (indice == 9) {indice = 0;}
-                    else {indice += 1;}
+                    if (indice == 9) {
+                        indice = 0;
+                    } else {
+                        indice += 1;
+                    }
                 } else if (((tecla) & (1<<(0)))) {
+                    flag = 0;
                     break;
                 }
-# 61 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
+# 68 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
                 lcdCommand(0x01);
                 lcdPosition(1, 0);
                 lcdStr("<-(1) (*)  (2)->");
                 lcdPosition(0, 0);
-
-
                 lcdStr(musicas[indice].nome);
                 ssdDigit(indice, 3);
                 flag = 0;
             }
         }
-        lcdPosition(0, 0);
+        playSong();
+    }
+}
+
+void playSong() {
+    lcdCommand(0x01);
+    lcdPosition(0, 0);
+    lcdStr(musicas[indice].nome);
+    lcdPosition(1, 0);
+    lcdStr("+(1)  (*)  (2)-");
+
+    tempo = musicas[indice].duracao;
+    while (tempo != 0) {
+        minuto1 = (tempo / 60) % 10;
+        minuto2 = (tempo / 60) / 10;
+        segundo1 = (tempo % 60) % 10;
+        segundo2 = (tempo % 60) / 10;
+
+        ssdDigit(minuto2, 0);
+        ssdDigit(minuto1, 1);
+        ssdDigit(segundo2, 2);
+        ssdDigit(segundo1, 3);
+
+        for (unsigned char j = 0; j < 100; j++) {
+            ssdUpdate();
+            atraso_ms(10);
+            kpDebounce();
+            tecla = kpRead();
+            if (((tecla) & (1<<(3))) || ((tecla) & (1<<(7))) || ((tecla) & (1<<(0)))) {
+                flag=1;
+                for(;;) {
+                    kpDebounce();
+                    tecla = kpRead();
+                    if ((kpRead() != tecla) || flag == 1) {
+                        if (((tecla) & (1<<(3)))) {
+                            break;
+                        } else if (((tecla) & (1<<(7)))) {
+                            break;
+                        } else if (((tecla) & (1<<(0)))) {
+                            if(pause==0) {pause=1;} else {pause = 0;}
+                            break;
+                        }
+                    }
+                }
+
+            }
+        }
+        if (pause == 0) {
+            tempo -= 1;
+        }
     }
 }

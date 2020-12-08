@@ -1,16 +1,16 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"632 C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h
-[; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 632: extern volatile unsigned char PORTD __attribute__((address(0xF83)));
-[v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
-"2143
-[; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 2143: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
-[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
-"1699
-[; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 1699: extern volatile unsigned char TRISB __attribute__((address(0xF93)));
-[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
-"271
-[; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 271: extern volatile unsigned char PORTB __attribute__((address(0xF81)));
-[v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
+"6692 C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h
+[; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 6692: extern volatile unsigned char INTCON __attribute__((address(0xFF2)));
+[v _INTCON `Vuc ~T0 @X0 0 e@4082 ]
+"6265
+[; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 6265: extern volatile unsigned char TMR0H __attribute__((address(0xFD7)));
+[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
+"6258
+[; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 6258: extern volatile unsigned char TMR0L __attribute__((address(0xFD6)));
+[v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
+"6168
+[; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 6168: extern volatile unsigned char T0CON __attribute__((address(0xFD5)));
+[v _T0CON `Vuc ~T0 @X0 0 e@4053 ]
 "54 C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h
 [; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 54: __asm("PORTA equ 0F80h");
 [; <" PORTA equ 0F80h ;# ">
@@ -425,209 +425,92 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7001
 [; ;C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h: 7001: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"25 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 25: static unsigned int valor = 0x0000;
-[v _valor `ui ~T0 @X0 1 s ]
-[i _valor
--> -> 0 `i `ui
-]
-"26
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 26: unsigned char teclas[8] = {10,7,4,1,0,8,5,2};
-[v _teclas `uc ~T0 @X0 -> 8 `i e ]
-[i _teclas
-:U ..
--> -> 10 `i `uc
--> -> 7 `i `uc
--> -> 4 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 8 `i `uc
--> -> 5 `i `uc
--> -> 2 `i `uc
-..
-]
+"26 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 26: char timerEnded(void)
+[v _timerEnded `(uc ~T0 @X0 1 ef ]
 "27
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 27: unsigned char i;
-[v _i `uc ~T0 @X0 1 e ]
-"37
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 37: unsigned int kpRead(void) {
-[v _kpRead `(ui ~T0 @X0 1 ef ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 27: {
 {
-[e :U _kpRead ]
+[e :U _timerEnded ]
 [f ]
-"38
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 38:     return valor;
-[e ) _valor ]
+"28
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 28:  return ((INTCON) & (1<<(2)));
+[e ) -> & -> _INTCON `i << -> 1 `i -> 2 `i `uc ]
 [e $UE 276  ]
-"39
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 39: }
+"29
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 29: }
 [e :UE 276 ]
 }
-"41
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 41: void kpDebounce(void) {
-[v _kpDebounce `(v ~T0 @X0 1 ef ]
+"31
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 31: void timerWait(void)
+[v _timerWait `(v ~T0 @X0 1 ef ]
+"32
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 32: {
 {
-[e :U _kpDebounce ]
+[e :U _timerWait ]
 [f ]
-"42
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 42:     unsigned char i, j;
-[v _i `uc ~T0 @X0 1 a ]
-[v _j `uc ~T0 @X0 1 a ]
-"43
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 43:     static unsigned char tempo;
-[v F2413 `uc ~T0 @X0 1 s tempo ]
-"44
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 44:     static unsigned int valorNovo = 0x0000;
-[v F2414 `ui ~T0 @X0 1 s valorNovo ]
-[i F2414
--> -> 0 `i `ui
-]
-"45
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 45:     static unsigned int valorAntigo = 0x0000;
-[v F2415 `ui ~T0 @X0 1 s valorAntigo ]
-[i F2415
--> -> 0 `i `ui
-]
-"48
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 48:     unsigned char old_D;
-[v _old_D `uc ~T0 @X0 1 a ]
-"49
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 49:     old_D = PORTD;
-[e = _old_D _PORTD ]
-"53
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 53:     TRISD |= 0x0f;
-[e =| _TRISD -> -> 15 `i `Vuc ]
-"55
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 55:     for (i = 0; i < 3; i++) {
-{
-[e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `i -> 3 `i 278  ]
-[e $U 279  ]
-[e :U 278 ]
-{
-"57
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 57:         TRISB &= 0xF8;
-[e =& _TRISB -> -> 248 `i `Vuc ]
-"59
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 59:         ((TRISB) |= (1<<(i)));
-[e =| _TRISB -> << -> 1 `i -> _i `i `Vuc ]
-"61
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 61:         PORTB |= 0x07;
-[e =| _PORTB -> -> 7 `i `Vuc ]
-"62
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 62:         ((PORTB) &= ~(1<<(i)));
-[e =& _PORTB -> ~ << -> 1 `i -> _i `i `Vuc ]
-"65
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 65:         for (int k = 0; k < 10; k++);
-{
-[v _k `i ~T0 @X0 1 a ]
-[e = _k -> 0 `i ]
-[e $ < _k -> 10 `i 281  ]
-[e $U 282  ]
-[e :U 281 ]
-[e ++ _k -> 1 `i ]
-[e $ < _k -> 10 `i 281  ]
-[e :U 282 ]
-}
-"68
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 68:         for (j = 0; j < 4; j++) {
-{
-[e = _j -> -> 0 `i `uc ]
-[e $ < -> _j `i -> 4 `i 284  ]
-[e $U 285  ]
-[e :U 284 ]
-{
-"69
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 69:             if (!((PORTD) & (1<<(j)))) {
-[e $ ! ! != & -> _PORTD `i << -> 1 `i -> _j `i -> 0 `i 287  ]
-{
-"70
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 70:                 ((valorNovo) |= (1<<((i * 4) + j)));
-[e =| F2414 -> << -> 1 `i + * -> _i `i -> 4 `i -> _j `i `ui ]
-"71
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 71:             } else {
-}
-[e $U 288  ]
-[e :U 287 ]
-{
-"72
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 72:                 ((valorNovo) &= ~(1<<((i * 4) + j)));
-[e =& F2414 -> ~ << -> 1 `i + * -> _i `i -> 4 `i -> _j `i `ui ]
-"73
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 73:             }
-}
-[e :U 288 ]
-"74
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 74:         }
-}
-[e ++ _j -> -> 1 `i `uc ]
-[e $ < -> _j `i -> 4 `i 284  ]
-[e :U 285 ]
-}
-"75
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 75:     }
-}
-[e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 3 `i 278  ]
+"33
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 33:  while(!((INTCON) & (1<<(2))));
+[e $U 278  ]
 [e :U 279 ]
-}
-"76
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 76:     if (valorAntigo == valorNovo) {
-[e $ ! == F2415 F2414 289  ]
-{
-"77
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 77:         tempo--;
-[e -- F2413 -> -> 1 `i `uc ]
-"78
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 78:     } else {
-}
-[e $U 290  ]
-[e :U 289 ]
-{
-"79
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 79:         tempo = 10;
-[e = F2413 -> -> 10 `i `uc ]
-"80
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 80:         valorAntigo = valorNovo;
-[e = F2415 F2414 ]
-"81
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 81:     }
-}
-[e :U 290 ]
-"82
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 82:     if (tempo == 0) {
-[e $ ! == -> F2413 `i -> 0 `i 291  ]
-{
-"83
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 83:         valor = valorAntigo;
-[e = _valor F2415 ]
-"84
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 84:     }
-}
-[e :U 291 ]
-"85
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 85:     PORTD = old_D;
-[e = _PORTD _old_D ]
-"86
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 86:     TRISD = 0x00;
-[e = _TRISD -> -> 0 `i `uc ]
-"87
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 87: }
+[e :U 278 ]
+[e $ ! != & -> _INTCON `i << -> 1 `i -> 2 `i -> 0 `i 279  ]
+[e :U 280 ]
+"34
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 34: }
 [e :UE 277 ]
 }
-"89
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 89: void kpInit(void) {
-[v _kpInit `(v ~T0 @X0 1 ef ]
+"37
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 37: void timerReset(unsigned int tempo)
+[v _timerReset `(v ~T0 @X0 1 ef1`ui ]
+"38
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 38: {
 {
-[e :U _kpInit ]
+[e :U _timerReset ]
+"37
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 37: void timerReset(unsigned int tempo)
+[v _tempo `ui ~T0 @X0 1 r1 ]
+"38
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 38: {
 [f ]
-"91
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 91:     TRISB &= 0x07;
-[e =& _TRISB -> -> 7 `i `Vuc ]
-"93
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 93:     TRISD |= 0x0f;
-[e =| _TRISD -> -> 15 `i `Vuc ]
-"94
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c: 94: }
-[e :UE 292 ]
+"40
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 40:  unsigned ciclos = tempo * 2;
+[v _ciclos `ui ~T0 @X0 1 a ]
+[e = _ciclos * _tempo -> -> 2 `i `ui ]
+"42
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 42:  ciclos = 65535 - ciclos;
+[e = _ciclos -> - -> 65535 `l -> _ciclos `l `ui ]
+"44
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 44:  ciclos -= 14;
+[e =- _ciclos -> -> 14 `i `ui ]
+"45
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 45:  TMR0H = (ciclos >> 8);
+[e = _TMR0H -> >> _ciclos -> 8 `i `uc ]
+"46
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 46:  TMR0L = (ciclos & 0x00FF);
+[e = _TMR0L -> & _ciclos -> -> 255 `i `ui `uc ]
+"48
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 48:  ((INTCON) &= ~(1<<(2)));
+[e =& _INTCON -> ~ << -> 1 `i -> 2 `i `Vuc ]
+"49
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 49: }
+[e :UE 281 ]
+}
+"51
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 51: void timerInit(void)
+[v _timerInit `(v ~T0 @X0 1 ef ]
+"52
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 52: {
+{
+[e :U _timerInit ]
+[f ]
+"53
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 53:  T0CON = 0b00001000;
+[e = _T0CON -> -> 8 `i `uc ]
+"54
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 54:  ((T0CON) |= (1<<(7)));
+[e =| _T0CON -> << -> 1 `i -> 7 `i `Vuc ]
+"55
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c: 55: }
+[e :UE 282 ]
 }

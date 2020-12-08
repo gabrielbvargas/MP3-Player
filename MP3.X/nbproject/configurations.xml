@@ -16,10 +16,7 @@
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/config.h</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.h</itemPath>
-      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.h</itemPath>
-      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c</itemPath>
-      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/display7s.c</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/display7s.h</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c</itemPath>
@@ -28,6 +25,11 @@
       <itemPath>lcd.h</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.h</itemPath>
+      <itemPath>ssd.c</itemPath>
+      <itemPath>ssd.h</itemPath>
+      <itemPath>keypad.c</itemPath>
+      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.c</itemPath>
+      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/timer.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

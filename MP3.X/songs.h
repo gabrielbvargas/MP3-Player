@@ -3,6 +3,7 @@
 
 void songsInit(void);
 void chooseSong(void);
+void playSong(void);
 
 #endif	/* SONGS_H */
 

@@ -36,7 +36,6 @@ static char display;
 static char v0, v1, v2, v3;
 
 void ssdDigit(char val, char pos) {
-    display = pos;
     if (pos == 0) {
         v0 = val;
     }
@@ -72,29 +71,29 @@ void ssdUpdate(void) {
         case 0:
             DATA = valor[v0];
             digitalWrite(DISP0,HIGH);
-            //display = 1;
+            display = 1;
             break;
 
         case 1:
             DATA = valor[v1];
             digitalWrite(DISP1,HIGH);
-            //display = 2;
+            display = 2;
             break;
 
         case 2:
             DATA = valor[v2];
             digitalWrite(DISP2,HIGH);
-            //display = 3;
+            display = 3;
             break;
 
         case 3:
             DATA = valor[v3];
             digitalWrite(DISP3,HIGH);
-            //display = 0;
+            display = 0;
             break;
 
         default:
-            //display = 0;
+            display = 0;
             break;
     }
 }

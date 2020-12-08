@@ -1,4 +1,4 @@
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c"
+# 1 "ssd.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,14 +6,29 @@
 # 1 "<built-in>" 2
 # 1 "C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c" 2
-# 20 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c"
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.h" 1
-# 23 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.h"
- unsigned int kpRead(void);
- void kpDebounce(void);
- void kpInit(void);
-# 20 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c" 2
+# 1 "ssd.c" 2
+# 21 "ssd.c"
+# 1 "./ssd.h" 1
+# 22 "./ssd.h"
+ void ssdDigit(char val, char pos);
+ void ssdUpdate(void);
+ void ssdInit(void);
+# 21 "ssd.c" 2
+
+# 1 "./io.h" 1
+# 12 "./io.h"
+enum pin_label{
+    PIN_A0,PIN_A1,PIN_A2,PIN_A3,PIN_A4,PIN_A5,PIN_A6,PIN_A7,
+    PIN_B0,PIN_B1,PIN_B2,PIN_B3,PIN_B4,PIN_B5,PIN_B6,PIN_B7,
+    PIN_C0,PIN_C1,PIN_C2,PIN_C3,PIN_C4,PIN_C5,PIN_C6,PIN_C7,
+    PIN_D0,PIN_D1,PIN_D2,PIN_D3,PIN_D4,PIN_D5,PIN_D6,PIN_D7,
+    PIN_E0,PIN_E1,PIN_E2,PIN_E3,PIN_E4,PIN_E5,PIN_E6,PIN_E7
+};
+
+void digitalWrite(int pin, int value);
+int digitalRead(int pin);
+void pinMode(int pin, int type);
+# 22 "ssd.c" 2
 
 # 1 "C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\proc\\pic18f4520.h" 1 3
 # 44 "C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\proc\\pic18f4520.h" 3
@@ -4363,86 +4378,85 @@ extern volatile __bit nWR __attribute__((address(0x7C21)));
 
 
 extern volatile __bit nWRITE __attribute__((address(0x7E3A)));
-# 21 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c" 2
+# 23 "ssd.c" 2
+# 32 "ssd.c"
+static const char valor[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F, 0x77, 0x7C, 0x39, 0x5E, 0x79, 0x71};
 
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.h" 1
-# 12 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.h"
-enum pin_label{
-    PIN_A0,PIN_A1,PIN_A2,PIN_A3,PIN_A4,PIN_A5,PIN_A6,PIN_A7,
-    PIN_B0,PIN_B1,PIN_B2,PIN_B3,PIN_B4,PIN_B5,PIN_B6,PIN_B7,
-    PIN_C0,PIN_C1,PIN_C2,PIN_C3,PIN_C4,PIN_C5,PIN_C6,PIN_C7,
-    PIN_D0,PIN_D1,PIN_D2,PIN_D3,PIN_D4,PIN_D5,PIN_D6,PIN_D7,
-    PIN_E0,PIN_E1,PIN_E2,PIN_E3,PIN_E4,PIN_E5,PIN_E6,PIN_E7
-};
+static char display;
 
-void digitalWrite(int pin, int value);
-int digitalRead(int pin);
-void pinMode(int pin, int type);
-# 22 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c" 2
+static char v0, v1, v2, v3;
 
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/bits.h" 1
-# 23 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c" 2
+void ssdDigit(char val, char pos) {
+    if (pos == 0) {
+        v0 = val;
+    }
+    if (pos == 1) {
+        v1 = val;
+    }
+    if (pos == 2) {
+        v2 = val;
+    }
+    if (pos == 3) {
+        v3 = val;
+    }
 
-
-static unsigned int valor = 0x0000;
-unsigned char teclas[8] = {10,7,4,1,0,8,5,2};
-unsigned char i;
-# 37 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c"
-unsigned int kpRead(void) {
-    return valor;
 }
 
-void kpDebounce(void) {
-    unsigned char i, j;
-    static unsigned char tempo;
-    static unsigned int valorNovo = 0x0000;
-    static unsigned int valorAntigo = 0x0000;
-
-
-    unsigned char old_D;
-    old_D = PORTD;
+void ssdUpdate(void) {
 
 
 
-    TRISD |= 0x0f;
+    TRISD= 0x00;
 
-    for (i = 0; i < 3; i++) {
-
-        TRISB &= 0xF8;
-
-        ((TRISB) |= (1<<(i)));
-
-        PORTB |= 0x07;
-        ((PORTB) &= ~(1<<(i)));
+    digitalWrite(PIN_A2,0);
+    digitalWrite(PIN_A3,0);
+    digitalWrite(PIN_A4,0);
+    digitalWrite(PIN_A5,0);
 
 
-        for (int k = 0; k < 10; k++);
+    PORTD = 0x00;
 
 
-        for (j = 0; j < 4; j++) {
-            if (!((PORTD) & (1<<(j)))) {
-                ((valorNovo) |= (1<<((i * 4) + j)));
-            } else {
-                ((valorNovo) &= ~(1<<((i * 4) + j)));
-            }
-        }
+    switch (display)
+    {
+        case 0:
+            PORTD = valor[v0];
+            digitalWrite(PIN_A2,1);
+            display = 1;
+            break;
+
+        case 1:
+            PORTD = valor[v1];
+            digitalWrite(PIN_A3,1);
+            display = 2;
+            break;
+
+        case 2:
+            PORTD = valor[v2];
+            digitalWrite(PIN_A4,1);
+            display = 3;
+            break;
+
+        case 3:
+            PORTD = valor[v3];
+            digitalWrite(PIN_A5,1);
+            display = 0;
+            break;
+
+        default:
+            display = 0;
+            break;
     }
-    if (valorAntigo == valorNovo) {
-        tempo--;
-    } else {
-        tempo = 10;
-        valorAntigo = valorNovo;
-    }
-    if (tempo == 0) {
-        valor = valorAntigo;
-    }
-    PORTD = old_D;
+}
+
+void ssdInit(void) {
+
+    pinMode(PIN_A2, 0);
+    pinMode(PIN_A3, 0);
+    pinMode(PIN_A4, 0);
+    pinMode(PIN_A5, 0);
+
+
     TRISD = 0x00;
-}
 
-void kpInit(void) {
-
-    TRISB &= 0x07;
-
-    TRISD |= 0x0f;
 }

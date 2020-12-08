@@ -30,10 +30,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h: 22:  void ssdDigit(char val, char pos);
 [v _ssdDigit `(v ~T0 @X0 0 ef2`uc`uc ]
-[v F657 `uc ~T0 @X0 -> 17 `i t ]
+"6 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.h
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.h: 6: void playSong(void);
+[v _playSong `(v ~T0 @X0 0 ef ]
+[v F658 `uc ~T0 @X0 -> 17 `i t ]
 "16 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 16: unsigned char nomes[10][17] = {"Estamos Vivos", "Cheia de Manias", "E Tarde Demais", "Sozinho", "Cigana", "Ciumes de Voce", "Extrapolei",
-[v _nomes `F657 ~T0 @X0 -> 10 `i e ]
+[v _nomes `F658 ~T0 @X0 -> 10 `i e ]
 [i _nomes
 :U ..
 :U ..
@@ -182,12 +185,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 "18
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 18: unsigned int duracoes[10] = {180, 180, 180, 180, 180, 180, 180, 180, 180, 180};
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 18: unsigned int duracoes[10] = {1800, 1800, 180, 180, 180, 180, 180, 180, 180, 180};
 [v _duracoes `ui ~T0 @X0 -> 10 `i e ]
 [i _duracoes
 :U ..
--> -> 180 `i `ui
--> -> 180 `i `ui
+-> -> 1800 `i `ui
+-> -> 1800 `i `ui
 -> -> 180 `i `ui
 -> -> 180 `i `ui
 -> -> 180 `i `ui
@@ -202,7 +205,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 19: musica musicas[10];
 [v _musicas `S9 ~T0 @X0 -> 10 `i e ]
 "21
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 21: unsigned char tecla = 16, indice = 0, cont = 0, flag = 0;
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 21: unsigned char tecla = 16, indice = 0, cont = 0, flag = 0, tempo, minuto1, minuto2, segundo1, segundo2, cnt = 0, pause = 1;
 [v _tecla `uc ~T0 @X0 1 e ]
 [i _tecla
 -> -> 16 `i `uc
@@ -218,6 +221,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _flag `uc ~T0 @X0 1 e ]
 [i _flag
 -> -> 0 `i `uc
+]
+[v _tempo `uc ~T0 @X0 1 e ]
+[v _minuto1 `uc ~T0 @X0 1 e ]
+[v _minuto2 `uc ~T0 @X0 1 e ]
+[v _segundo1 `uc ~T0 @X0 1 e ]
+[v _segundo2 `uc ~T0 @X0 1 e ]
+[v _cnt `uc ~T0 @X0 1 e ]
+[i _cnt
+-> -> 0 `i `uc
+]
+[v _pause `uc ~T0 @X0 1 e ]
+[i _pause
+-> -> 1 `i `uc
 ]
 "23
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 23: void songsInit(void) {
@@ -267,7 +283,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 34:     tecla = kpRead();
 [e = _tecla -> ( _kpRead ..  `uc ]
 "35
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 35:     if (((tecla) & (1<<(3)))||((tecla) & (1<<(7)))) {
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 35:     if (((tecla) & (1<<(3))) || ((tecla) & (1<<(7)))) {
 [e $ ! || != & -> _tecla `i << -> 1 `i -> 3 `i -> 0 `i != & -> _tecla `i << -> 1 `i -> 7 `i -> 0 `i 15  ]
 {
 "36
@@ -288,7 +304,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 40:             atraso_ms(10);
 [e ( _atraso_ms (1 -> 10 `i ]
 "41
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 41:             if ((kpRead() != tecla)||flag == 1) {
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 41:             if ((kpRead() != tecla) || flag == 1) {
 [e $ ! || != ( _kpRead ..  -> _tecla `ui == -> _flag `i -> 1 `i 19  ]
 {
 "42
@@ -299,96 +315,297 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != & -> _tecla `i << -> 1 `i -> 3 `i -> 0 `i 20  ]
 {
 "44
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 44:                     if (indice == 0) {indice = 9;}
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 44:                     if (indice == 0) {
 [e $ ! == -> _indice `i -> 0 `i 21  ]
 {
+"45
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 45:                         indice = 9;
 [e = _indice -> -> 9 `i `uc ]
+"46
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 46:                     } else {
 }
 [e $U 22  ]
-"45
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 45:                     else {indice -= 1;}
 [e :U 21 ]
 {
+"47
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 47:                         indice -= 1;
 [e =- _indice -> -> 1 `i `uc ]
+"48
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 48:                     }
 }
 [e :U 22 ]
-"46
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 46:                 } else if (((tecla) & (1<<(7)))) {
+"49
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 49:                 } else if (((tecla) & (1<<(7)))) {
 }
 [e $U 23  ]
 [e :U 20 ]
 [e $ ! != & -> _tecla `i << -> 1 `i -> 7 `i -> 0 `i 24  ]
 {
-"47
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 47:                     if (indice == 9) {indice = 0;}
+"50
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 50:                     if (indice == 9) {
 [e $ ! == -> _indice `i -> 9 `i 25  ]
 {
+"51
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 51:                         indice = 0;
 [e = _indice -> -> 0 `i `uc ]
+"52
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 52:                     } else {
 }
 [e $U 26  ]
-"48
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 48:                     else {indice += 1;}
 [e :U 25 ]
 {
+"53
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 53:                         indice += 1;
 [e =+ _indice -> -> 1 `i `uc ]
+"54
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 54:                     }
 }
 [e :U 26 ]
-"49
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 49:                 } else if (((tecla) & (1<<(0)))) {
+"55
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 55:                 } else if (((tecla) & (1<<(0)))) {
 }
 [e $U 27  ]
 [e :U 24 ]
 [e $ ! != & -> _tecla `i << -> 1 `i -> 0 `i -> 0 `i 28  ]
 {
-"50
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 50:                     break;
+"56
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 56:                     flag = 0;
+[e = _flag -> -> 0 `i `uc ]
+"57
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 57:                     break;
 [e $U 17  ]
-"51
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 51:                 }
+"58
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 58:                 }
 }
 [e :U 28 ]
 [e :U 27 ]
 [e :U 23 ]
-"61
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 61:                 lcdCommand(0x01);
-[e ( _lcdCommand (1 -> -> 1 `i `uc ]
-"62
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 62:                 lcdPosition(1, 0);
-[e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
-"63
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 63:                 lcdStr("<-(1) (*)  (2)->");
-[e ( _lcdStr (1 :s 1C ]
-"64
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 64:                 lcdPosition(0, 0);
-[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"67
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 67:                 lcdStr(musicas[indice].nome);
-[e ( _lcdStr (1 -> &U . *U + &U _musicas * -> _indice `ux -> -> # *U &U _musicas `ui `ux 1 `*Cuc ]
 "68
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 68:                 ssdDigit(indice, 3);
-[e ( _ssdDigit (2 , -> _indice `uc -> -> 3 `i `uc ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 68:                 lcdCommand(0x01);
+[e ( _lcdCommand (1 -> -> 1 `i `uc ]
 "69
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 69:                 flag = 0;
-[e = _flag -> -> 0 `i `uc ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 69:                 lcdPosition(1, 0);
+[e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 "70
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 70:             }
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 70:                 lcdStr("<-(1) (*)  (2)->");
+[e ( _lcdStr (1 :s 1C ]
+"71
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 71:                 lcdPosition(0, 0);
+[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"72
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 72:                 lcdStr(musicas[indice].nome);
+[e ( _lcdStr (1 -> &U . *U + &U _musicas * -> _indice `ux -> -> # *U &U _musicas `ui `ux 1 `*Cuc ]
+"73
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 73:                 ssdDigit(indice, 3);
+[e ( _ssdDigit (2 , -> _indice `uc -> -> 3 `i `uc ]
+"74
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 74:                 flag = 0;
+[e = _flag -> -> 0 `i `uc ]
+"75
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 75:             }
 }
 [e :U 19 ]
-"71
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 71:         }
+"76
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 76:         }
 }
 [e $U 16  ]
 [e :U 17 ]
 }
-"72
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 72:         lcdPosition(0, 0);
-[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"73
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 73:     }
+"77
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 77:         playSong();
+[e ( _playSong ..  ]
+"78
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 78:     }
 }
 [e :U 15 ]
-"74
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 74: }
+"79
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 79: }
 [e :UE 14 ]
 }
+"81
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 81: void playSong() {
+[v _playSong `(v ~T0 @X0 1 ef ]
+{
+[e :U _playSong ]
+[f ]
+"82
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 82:     lcdCommand(0x01);
+[e ( _lcdCommand (1 -> -> 1 `i `uc ]
+"83
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 83:     lcdPosition(0, 0);
+[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"84
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 84:     lcdStr(musicas[indice].nome);
+[e ( _lcdStr (1 -> &U . *U + &U _musicas * -> _indice `ux -> -> # *U &U _musicas `ui `ux 1 `*Cuc ]
+"85
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 85:     lcdPosition(1, 0);
+[e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"86
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 86:     lcdStr("+(1)  (*)  (2)-");
+[e ( _lcdStr (1 :s 2C ]
+"88
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 88:     tempo = musicas[indice].duracao;
+[e = _tempo -> . *U + &U _musicas * -> _indice `ux -> -> # *U &U _musicas `ui `ux 0 `uc ]
+"89
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 89:     while (tempo != 0) {
+[e $U 30  ]
+[e :U 31 ]
+{
+"90
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 90:         minuto1 = (tempo / 60) % 10;
+[e = _minuto1 -> % / -> _tempo `i -> 60 `i -> 10 `i `uc ]
+"91
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 91:         minuto2 = (tempo / 60) / 10;
+[e = _minuto2 -> / / -> _tempo `i -> 60 `i -> 10 `i `uc ]
+"92
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 92:         segundo1 = (tempo % 60) % 10;
+[e = _segundo1 -> % % -> _tempo `i -> 60 `i -> 10 `i `uc ]
+"93
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 93:         segundo2 = (tempo % 60) / 10;
+[e = _segundo2 -> / % -> _tempo `i -> 60 `i -> 10 `i `uc ]
+"95
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 95:         ssdDigit(minuto2, 0);
+[e ( _ssdDigit (2 , -> _minuto2 `uc -> -> 0 `i `uc ]
+"96
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 96:         ssdDigit(minuto1, 1);
+[e ( _ssdDigit (2 , -> _minuto1 `uc -> -> 1 `i `uc ]
+"97
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 97:         ssdDigit(segundo2, 2);
+[e ( _ssdDigit (2 , -> _segundo2 `uc -> -> 2 `i `uc ]
+"98
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 98:         ssdDigit(segundo1, 3);
+[e ( _ssdDigit (2 , -> _segundo1 `uc -> -> 3 `i `uc ]
+"100
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 100:         for (unsigned char j = 0; j < 100; j++) {
+{
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 100 `i 33  ]
+[e $U 34  ]
+[e :U 33 ]
+{
+"101
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 101:             ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"102
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 102:             atraso_ms(10);
+[e ( _atraso_ms (1 -> 10 `i ]
+"103
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 103:             kpDebounce();
+[e ( _kpDebounce ..  ]
+"104
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 104:             tecla = kpRead();
+[e = _tecla -> ( _kpRead ..  `uc ]
+"105
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 105:             if (((tecla) & (1<<(3))) || ((tecla) & (1<<(7))) || ((tecla) & (1<<(0)))) {
+[e $ ! || || != & -> _tecla `i << -> 1 `i -> 3 `i -> 0 `i != & -> _tecla `i << -> 1 `i -> 7 `i -> 0 `i != & -> _tecla `i << -> 1 `i -> 0 `i -> 0 `i 36  ]
+{
+"106
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 106:                 flag=1;
+[e = _flag -> -> 1 `i `uc ]
+"107
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 107:                 for(;;) {
+{
+[e :U 37 ]
+{
+"108
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 108:                     kpDebounce();
+[e ( _kpDebounce ..  ]
+"109
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 109:                     tecla = kpRead();
+[e = _tecla -> ( _kpRead ..  `uc ]
+"110
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 110:                     if ((kpRead() != tecla) || flag == 1) {
+[e $ ! || != ( _kpRead ..  -> _tecla `ui == -> _flag `i -> 1 `i 40  ]
+{
+"111
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 111:                         if (((tecla) & (1<<(3)))) {
+[e $ ! != & -> _tecla `i << -> 1 `i -> 3 `i -> 0 `i 41  ]
+{
+"112
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 112:                             break;
+[e $U 38  ]
+"113
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 113:                         } else if (((tecla) & (1<<(7)))) {
+}
+[e $U 42  ]
+[e :U 41 ]
+[e $ ! != & -> _tecla `i << -> 1 `i -> 7 `i -> 0 `i 43  ]
+{
+"114
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 114:                             break;
+[e $U 38  ]
+"115
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 115:                         } else if (((tecla) & (1<<(0)))) {
+}
+[e $U 44  ]
+[e :U 43 ]
+[e $ ! != & -> _tecla `i << -> 1 `i -> 0 `i -> 0 `i 45  ]
+{
+"116
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 116:                             if(pause==0) {pause=1;} else {pause = 0;}
+[e $ ! == -> _pause `i -> 0 `i 46  ]
+{
+[e = _pause -> -> 1 `i `uc ]
+}
+[e $U 47  ]
+[e :U 46 ]
+{
+[e = _pause -> -> 0 `i `uc ]
+}
+[e :U 47 ]
+"117
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 117:                             break;
+[e $U 38  ]
+"118
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 118:                         }
+}
+[e :U 45 ]
+[e :U 44 ]
+[e :U 42 ]
+"119
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 119:                     }
+}
+[e :U 40 ]
+"120
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 120:                 }
+}
+[e $U 37  ]
+[e :U 38 ]
+}
+"122
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 122:             }
+}
+[e :U 36 ]
+"123
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 123:         }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 100 `i 33  ]
+[e :U 34 ]
+}
+"124
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 124:         if (pause == 0) {
+[e $ ! == -> _pause `i -> 0 `i 48  ]
+{
+"125
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 125:             tempo -= 1;
+[e =- _tempo -> -> 1 `i `uc ]
+"126
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 126:         }
+}
+[e :U 48 ]
+"127
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 127:     }
+}
+[e :U 30 ]
+"89
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 89:     while (tempo != 0) {
+[e $ != -> _tempo `i -> 0 `i 31  ]
+[e :U 32 ]
+"128
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c: 128: }
+[e :UE 29 ]
+}
 [a 1C 60 45 40 49 41 32 40 42 41 32 32 40 50 41 45 62 0 ]
+[a 2C 43 40 49 41 32 32 40 42 41 32 32 40 50 41 45 0 ]
