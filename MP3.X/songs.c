@@ -12,9 +12,9 @@ typedef struct {
     unsigned char nome[17];
 } musica;
 
-unsigned char nomes[10][17] = {"Estamos Vivos", "Cheia de Manias", "E Tarde Demais", "Sozinho", "Cigana", "Ciumes de Voce", "Extrapolei",
+unsigned char nomes[10][17] = {"Temporal", "Cheia de Manias", "E Tarde Demais", "Sozinho", "Cigana", "Ciumes de Voce", "Extrapolei",
     "Deus me Livre", "Maravilha", "Medida Exata"};
-unsigned int duracoes[10] = {180, 180, 180, 180, 180, 180, 180, 180, 180, 180};
+unsigned int duracoes[10] = {70, 15, 120, 60, 10, 40, 20, 30, 140, 10};
 musica musicas[10];
 
 unsigned char tecla = 16, indice = 0, flag = 0, tempo, minuto1, minuto2, segundo1, segundo2, cnt = 0, pause = 1, volume = 3;
@@ -101,7 +101,7 @@ void playSong() {
                 }
                 alterarVolume(0);
             }
-            if (bitTst(tecla, 7)) {
+            else if (bitTst(tecla, 7)) {
                 while(bitTst(tecla, 7)) {
                     ssdUpdate();
                     kpDebounce();
@@ -109,7 +109,15 @@ void playSong() {
                 }
                 alterarVolume(1);
             }
-            if (bitTst(tecla, 0)) {
+            else if (bitTst(tecla, 0)) {
+                while(bitTst(tecla, 0)) {
+                    ssdUpdate();
+                    kpDebounce();
+                    tecla = kpRead();
+                }
+                if (pause == 0) {pause = 1;} else {pause = 0;}
+            } 
+            else if (bitTst(tecla, 0)) {
                 while(bitTst(tecla, 0)) {
                     ssdUpdate();
                     kpDebounce();
