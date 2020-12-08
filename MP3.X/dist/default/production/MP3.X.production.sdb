@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 18F4520 ]
 [d frameptr 4065 ]
-"60 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
+"61 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
 [e E7 pin_label `uc
 PIN_A0 0
 PIN_A1 1
@@ -95,18 +95,24 @@ PIN_E7 39
 [v _digitalWrite digitalWrite `(v  1 e 1 0 ]
 "54
 [v _pinMode pinMode `(v  1 e 1 0 ]
-"35 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
+"37 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
 [v _kpRead kpRead `(ui  1 e 2 0 ]
-"39
+"41
 [v _kpDebounce kpDebounce `(v  1 e 1 0 ]
-"87
+"89
 [v _kpInit kpInit `(v  1 e 1 0 ]
-"8 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+"9 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
 [v _main main `(v  1 e 1 0 ]
-"21 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+"23 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
 [v _songsInit songsInit `(v  1 e 1 0 ]
-"30
+"32
 [v _chooseSong chooseSong `(v  1 e 1 0 ]
+"38 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
+[v _ssdDigit ssdDigit `(v  1 e 1 0 ]
+"55
+[v _ssdUpdate ssdUpdate `(v  1 e 1 0 ]
+"102
+[v _ssdInit ssdInit `(v  1 e 1 0 ]
 "4 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\float.c
@@ -171,18 +177,19 @@ PIN_E7 39
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
 "25 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
 [v _valor valor `ui  1 s 2 valor ]
-"14 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+"16 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
 [v _nomes nomes `[10][17]uc  1 e 170 0 ]
-"16
+"18
 [v _duracoes duracoes `[10]ui  1 e 20 0 ]
-[s S229 . 19 `ui 1 duracao 2 0 `[17]uc 1 nome 17 2 ]
-"17
-[v _musicas musicas `[10]S229  1 e 190 0 ]
+[s S233 . 19 `ui 1 duracao 2 0 `[17]uc 1 nome 17 2 ]
 "19
+[v _musicas musicas `[10]S233  1 e 190 0 ]
+"21
 [v _tecla tecla `uc  1 e 1 0 ]
 [v _indice indice `uc  1 e 1 0 ]
+[v _flag flag `uc  1 e 1 0 ]
 "32 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-[v _valor@ssd$F102 valor `C[16]uc  1 s 16 valor ]
+[v _valor@ssd$F104 valor `C[16]uc  1 s 16 valor ]
 "34
 [v _display display `uc  1 s 1 display ]
 "36
@@ -190,17 +197,22 @@ PIN_E7 39
 [v _v1 v1 `uc  1 s 1 v1 ]
 [v _v2 v2 `uc  1 s 1 v2 ]
 [v _v3 v3 `uc  1 s 1 v3 ]
-"8 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+"9 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "30
 } 0
-"21 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+"102 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
+[v _ssdInit ssdInit `(v  1 e 1 0 ]
+{
+"112
+} 0
+"23 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
 [v _songsInit songsInit `(v  1 e 1 0 ]
 {
-"23
+"25
 [v songsInit@i i `ui  1 a 2 14 ]
-"28
+"30
 } 0
 "3 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
 [v _strcpy strcpy `(*.39uc  1 e 2 0 ]
@@ -236,15 +248,29 @@ PIN_E7 39
 [v pinMode@type type `i  1 p 2 2 ]
 "73
 } 0
-"87 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
+"89 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
 [v _kpInit kpInit `(v  1 e 1 0 ]
 {
-"92
+"94
 } 0
-"30 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+"32 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
 [v _chooseSong chooseSong `(v  1 e 1 0 ]
 {
-"67
+"74
+} 0
+"55 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
+[v _ssdUpdate ssdUpdate `(v  1 e 1 0 ]
+{
+"100
+} 0
+"38
+[v _ssdDigit ssdDigit `(v  1 e 1 0 ]
+{
+[v ssdDigit@val val `uc  1 a 1 wreg ]
+[v ssdDigit@val val `uc  1 a 1 wreg ]
+[v ssdDigit@pos pos `uc  1 p 1 0 ]
+[v ssdDigit@val val `uc  1 a 1 1 ]
+"53
 } 0
 "128 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
 [v _lcdStr lcdStr `(v  1 e 1 0 ]
@@ -312,28 +338,28 @@ PIN_E7 39
 [v Delay40us@i i `uc  1 a 1 0 ]
 "34
 } 0
-"35 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
+"37 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
 [v _kpRead kpRead `(ui  1 e 2 0 ]
 {
-"37
-} 0
 "39
+} 0
+"41
 [v _kpDebounce kpDebounce `(v  1 e 1 0 ]
 {
-"63
+"65
 [v kpDebounce@k k `i  1 a 2 6 ]
-"40
+"42
 [v kpDebounce@i i `uc  1 a 1 9 ]
 [v kpDebounce@j j `uc  1 a 1 8 ]
-"46
+"48
 [v kpDebounce@old_D old_D `uc  1 a 1 5 ]
-"41
-[v kpDebounce@tempo tempo `uc  1 s 1 tempo ]
-"42
-[v kpDebounce@valorNovo valorNovo `ui  1 s 2 valorNovo ]
 "43
+[v kpDebounce@tempo tempo `uc  1 s 1 tempo ]
+"44
+[v kpDebounce@valorNovo valorNovo `ui  1 s 2 valorNovo ]
+"45
 [v kpDebounce@valorAntigo valorAntigo `ui  1 s 2 valorAntigo ]
-"85
+"87
 } 0
 "3 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
 [v _atraso_ms atraso_ms `(v  1 e 1 0 ]

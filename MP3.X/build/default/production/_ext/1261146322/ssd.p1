@@ -5,8 +5,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.h
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.h: 20: void digitalWrite(int pin, int value);
 [v _digitalWrite `(v ~T0 @X0 0 ef2`i`i ]
-"60 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 60:     digitalWrite(PIN_A2,0);
+"61 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 61:     digitalWrite(PIN_A2,0);
 [c E7 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 .. ]
 [n E7 pin_label PIN_A0 PIN_A1 PIN_A2 PIN_A3 PIN_A4 PIN_A5 PIN_A6 PIN_A7 PIN_B0 PIN_B1 PIN_B2 PIN_B3 PIN_B4 PIN_B5 PIN_B6 PIN_B7 PIN_C0 PIN_C1 PIN_C2 PIN_C3 PIN_C4 PIN_C5 PIN_C6 PIN_C7 PIN_D0 PIN_D1 PIN_D2 PIN_D3 PIN_D4 PIN_D5 PIN_D6 PIN_D7 PIN_E0 PIN_E1 PIN_E2 PIN_E3 PIN_E4 PIN_E5 PIN_E6 PIN_E7  ]
 "632 C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h
@@ -470,154 +470,142 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _pos `uc ~T0 @X0 1 r2 ]
 [f ]
 "39
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 39:     if (pos == 0) {
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 39:     display = pos;
+[e = _display _pos ]
+"40
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 40:     if (pos == 0) {
 [e $ ! == -> _pos `i -> 0 `i 277  ]
 {
-"40
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 40:         v0 = val;
-[e = _v0 _val ]
 "41
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 41:     }
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 41:         v0 = val;
+[e = _v0 _val ]
+"42
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 42:     }
 }
 [e :U 277 ]
-"42
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 42:     if (pos == 1) {
+"43
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 43:     if (pos == 1) {
 [e $ ! == -> _pos `i -> 1 `i 278  ]
 {
-"43
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 43:         v1 = val;
-[e = _v1 _val ]
 "44
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 44:     }
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 44:         v1 = val;
+[e = _v1 _val ]
+"45
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 45:     }
 }
 [e :U 278 ]
-"45
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 45:     if (pos == 2) {
+"46
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 46:     if (pos == 2) {
 [e $ ! == -> _pos `i -> 2 `i 279  ]
 {
-"46
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 46:         v2 = val;
-[e = _v2 _val ]
 "47
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 47:     }
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 47:         v2 = val;
+[e = _v2 _val ]
+"48
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 48:     }
 }
 [e :U 279 ]
-"48
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 48:     if (pos == 3) {
+"49
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 49:     if (pos == 3) {
 [e $ ! == -> _pos `i -> 3 `i 280  ]
 {
-"49
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 49:         v3 = val;
-[e = _v3 _val ]
 "50
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 50:     }
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 50:         v3 = val;
+[e = _v3 _val ]
+"51
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 51:     }
 }
 [e :U 280 ]
-"52
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 52: }
+"53
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 53: }
 [e :UE 276 ]
 }
-"54
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 54: void ssdUpdate(void) {
+"55
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 55: void ssdUpdate(void) {
 [v _ssdUpdate `(v ~T0 @X0 1 ef ]
 {
 [e :U _ssdUpdate ]
 [f ]
-"58
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 58:     TRISD= 0x00;
+"59
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 59:     TRISD= 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"60
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 60:     digitalWrite(PIN_A2,0);
-[e ( _digitalWrite (2 , . `E7 2 -> 0 `i ]
 "61
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 61:     digitalWrite(PIN_A3,0);
-[e ( _digitalWrite (2 , . `E7 3 -> 0 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 61:     digitalWrite(PIN_A2,0);
+[e ( _digitalWrite (2 , . `E7 2 -> 0 `i ]
 "62
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 62:     digitalWrite(PIN_A4,0);
-[e ( _digitalWrite (2 , . `E7 4 -> 0 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 62:     digitalWrite(PIN_A3,0);
+[e ( _digitalWrite (2 , . `E7 3 -> 0 `i ]
 "63
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 63:     digitalWrite(PIN_A5,0);
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 63:     digitalWrite(PIN_A4,0);
+[e ( _digitalWrite (2 , . `E7 4 -> 0 `i ]
+"64
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 64:     digitalWrite(PIN_A5,0);
 [e ( _digitalWrite (2 , . `E7 5 -> 0 `i ]
-"66
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 66:     PORTD = 0x00;
+"67
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 67:     PORTD = 0x00;
 [e = _PORTD -> -> 0 `i `uc ]
-"69
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 69:     switch (display)
-[e $U 283  ]
 "70
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 70:     {
-{
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 70:     switch (display)
+[e $U 283  ]
 "71
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 71:         case 0:
-[e :U 284 ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 71:     {
+{
 "72
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 72:             PORTD = valor[v0];
-[e = _PORTD -> *U + &U _valor * -> _v0 `ux -> -> # *U &U _valor `ui `ux `uc ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 72:         case 0:
+[e :U 284 ]
 "73
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 73:             digitalWrite(PIN_A2,1);
-[e ( _digitalWrite (2 , . `E7 2 -> 1 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 73:             PORTD = valor[v0];
+[e = _PORTD -> *U + &U _valor * -> _v0 `ux -> -> # *U &U _valor `ui `ux `uc ]
 "74
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 74:             display = 1;
-[e = _display -> -> 1 `i `uc ]
-"75
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 75:             break;
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 74:             digitalWrite(PIN_A2,1);
+[e ( _digitalWrite (2 , . `E7 2 -> 1 `i ]
+"76
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 76:             break;
 [e $U 282  ]
-"77
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 77:         case 1:
-[e :U 285 ]
 "78
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 78:             PORTD = valor[v1];
-[e = _PORTD -> *U + &U _valor * -> _v1 `ux -> -> # *U &U _valor `ui `ux `uc ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 78:         case 1:
+[e :U 285 ]
 "79
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 79:             digitalWrite(PIN_A3,1);
-[e ( _digitalWrite (2 , . `E7 3 -> 1 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 79:             PORTD = valor[v1];
+[e = _PORTD -> *U + &U _valor * -> _v1 `ux -> -> # *U &U _valor `ui `ux `uc ]
 "80
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 80:             display = 2;
-[e = _display -> -> 2 `i `uc ]
-"81
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 81:             break;
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 80:             digitalWrite(PIN_A3,1);
+[e ( _digitalWrite (2 , . `E7 3 -> 1 `i ]
+"82
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 82:             break;
 [e $U 282  ]
-"83
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 83:         case 2:
-[e :U 286 ]
 "84
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 84:             PORTD = valor[v2];
-[e = _PORTD -> *U + &U _valor * -> _v2 `ux -> -> # *U &U _valor `ui `ux `uc ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 84:         case 2:
+[e :U 286 ]
 "85
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 85:             digitalWrite(PIN_A4,1);
-[e ( _digitalWrite (2 , . `E7 4 -> 1 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 85:             PORTD = valor[v2];
+[e = _PORTD -> *U + &U _valor * -> _v2 `ux -> -> # *U &U _valor `ui `ux `uc ]
 "86
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 86:             display = 3;
-[e = _display -> -> 3 `i `uc ]
-"87
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 87:             break;
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 86:             digitalWrite(PIN_A4,1);
+[e ( _digitalWrite (2 , . `E7 4 -> 1 `i ]
+"88
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 88:             break;
 [e $U 282  ]
-"89
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 89:         case 3:
-[e :U 287 ]
 "90
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 90:             PORTD = valor[v3];
-[e = _PORTD -> *U + &U _valor * -> _v3 `ux -> -> # *U &U _valor `ui `ux `uc ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 90:         case 3:
+[e :U 287 ]
 "91
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 91:             digitalWrite(PIN_A5,1);
-[e ( _digitalWrite (2 , . `E7 5 -> 1 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 91:             PORTD = valor[v3];
+[e = _PORTD -> *U + &U _valor * -> _v3 `ux -> -> # *U &U _valor `ui `ux `uc ]
 "92
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 92:             display = 0;
-[e = _display -> -> 0 `i `uc ]
-"93
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 93:             break;
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 92:             digitalWrite(PIN_A5,1);
+[e ( _digitalWrite (2 , . `E7 5 -> 1 `i ]
+"94
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 94:             break;
 [e $U 282  ]
-"95
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 95:         default:
-[e :U 288 ]
 "96
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 96:             display = 0;
-[e = _display -> -> 0 `i `uc ]
-"97
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 97:             break;
-[e $U 282  ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 96:         default:
+[e :U 288 ]
 "98
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 98:     }
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 98:             break;
+[e $U 282  ]
+"99
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 99:     }
 }
 [e $U 282  ]
 [e :U 283 ]
@@ -627,32 +615,32 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 3 `i 287
  288 ]
 [e :U 282 ]
-"99
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 99: }
+"100
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 100: }
 [e :UE 281 ]
 }
-"101
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 101: void ssdInit(void) {
+"102
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 102: void ssdInit(void) {
 [v _ssdInit `(v ~T0 @X0 1 ef ]
 {
 [e :U _ssdInit ]
 [f ]
-"103
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 103:     pinMode(PIN_A2, 0);
-[e ( _pinMode (2 , . `E7 2 -> 0 `i ]
 "104
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 104:     pinMode(PIN_A3, 0);
-[e ( _pinMode (2 , . `E7 3 -> 0 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 104:     pinMode(PIN_A2, 0);
+[e ( _pinMode (2 , . `E7 2 -> 0 `i ]
 "105
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 105:     pinMode(PIN_A4, 0);
-[e ( _pinMode (2 , . `E7 4 -> 0 `i ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 105:     pinMode(PIN_A3, 0);
+[e ( _pinMode (2 , . `E7 3 -> 0 `i ]
 "106
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 106:     pinMode(PIN_A5, 0);
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 106:     pinMode(PIN_A4, 0);
+[e ( _pinMode (2 , . `E7 4 -> 0 `i ]
+"107
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 107:     pinMode(PIN_A5, 0);
 [e ( _pinMode (2 , . `E7 5 -> 0 `i ]
-"109
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 109:     TRISD = 0x00;
+"110
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 110:     TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"111
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 111: }
+"112
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c: 112: }
 [e :UE 289 ]
 }

@@ -6,6 +6,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd.h
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd.h: 30:  void lcdInit(void);
 [v _lcdInit `(v ~T0 @X0 0 ef ]
+"24 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h: 24:  void ssdInit(void);
+[v _ssdInit `(v ~T0 @X0 0 ef ]
 "25 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.h
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.h: 25:  void kpInit(void);
 [v _kpInit `(v ~T0 @X0 0 ef ]
@@ -93,8 +96,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "62
 [p x EBTRB = OFF ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"8 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 8: void main(void) {
+"9 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 9: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
@@ -106,37 +109,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 11:     lcdInit();
 [e ( _lcdInit ..  ]
 "12
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 12:     kpInit();
-[e ( _kpInit ..  ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 12:     ssdInit();
+[e ( _ssdInit ..  ]
 "13
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 13:     lcdCommand(0x0F);
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 13:     kpInit();
+[e ( _kpInit ..  ]
+"14
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 14:     lcdCommand(0x0F);
 [e ( _lcdCommand (1 -> -> 15 `i `uc ]
-"15
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 15:     lcdPosition(0, 6);
-[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 6 `i `uc ]
 "16
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 16:     lcdStr("MP3");
-[e ( _lcdStr (1 :s 1C ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 16:     lcdPosition(0, 6);
+[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 6 `i `uc ]
 "17
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 17:     lcdPosition(1, 6);
-[e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 6 `i `uc ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 17:     lcdStr("MP3");
+[e ( _lcdStr (1 :s 1C ]
 "18
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 18:     lcdStr("Player");
-[e ( _lcdStr (1 :s 2C ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 18:     lcdPosition(1, 6);
+[e ( _lcdPosition (2 , -> -> 1 `i `uc -> -> 6 `i `uc ]
 "19
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 19:     atraso_ms(2000);
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 19:     lcdStr("Player");
+[e ( _lcdStr (1 :s 2C ]
+"20
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 20:     atraso_ms(2000);
 [e ( _atraso_ms (1 -> 2000 `i ]
-"21
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 21:     lcdCommand(0x01);
-[e ( _lcdCommand (1 -> -> 1 `i `uc ]
 "22
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 22:     lcdPosition(0, 0);
-[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 22:     lcdCommand(0x01);
+[e ( _lcdCommand (1 -> -> 1 `i `uc ]
 "23
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 23:     lcdStr("Escolha a musica");
-[e ( _lcdStr (1 :s 3C ]
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 23:     lcdPosition(0, 0);
+[e ( _lcdPosition (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
 "24
-[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 24:     for (;;) {
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 24:     lcdStr("Escolha a musica");
+[e ( _lcdStr (1 :s 3C ]
+"25
+[; ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 25:     for (;;) {
 {
 [e :U 2 ]
 {

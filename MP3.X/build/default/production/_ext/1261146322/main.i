@@ -82,11 +82,18 @@ void songsInit(void);
 void chooseSong(void);
 # 6 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" 2
 
+# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h" 1
+# 22 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h"
+ void ssdDigit(char val, char pos);
+ void ssdUpdate(void);
+ void ssdInit(void);
+# 7 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" 2
+
 
 void main(void) {
-
     songsInit();
     lcdInit();
+    ssdInit();
     kpInit();
     lcdCommand(0x0F);
 
@@ -100,7 +107,6 @@ void main(void) {
     lcdPosition(0, 0);
     lcdStr("Escolha a musica");
     for (;;) {
-
         lcdPosition(1, 0);
         lcdStr("<-(1) (*)  (2)->");
         chooseSong();

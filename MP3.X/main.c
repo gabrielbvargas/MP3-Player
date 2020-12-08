@@ -4,11 +4,12 @@
 #include "keypad.h"
 #include "delay.h"
 #include "songs.h"
+#include "ssd.h"
 
 void main(void) {
-    
     songsInit();
     lcdInit();
+    ssdInit();
     kpInit();
     lcdCommand(ON);
 
@@ -22,7 +23,6 @@ void main(void) {
     lcdPosition(0, 0);
     lcdStr("Escolha a musica");
     for (;;) {
-        
         lcdPosition(1, 0);
         lcdStr("<-(1) (*)  (2)->");
         chooseSong();

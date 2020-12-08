@@ -310,6 +310,20 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
  void kpInit(void);
 # 7 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
 
+# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h" 1
+# 22 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h"
+ void ssdDigit(char val, char pos);
+ void ssdUpdate(void);
+ void ssdInit(void);
+# 8 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
+
+# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.h" 1
+
+
+
+void atraso_ms(int t);
+# 9 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
+
 
 typedef struct {
     unsigned int duracao;
@@ -321,7 +335,7 @@ unsigned char nomes[10][17] = {"Estamos Vivos", "Cheia de Manias", "E Tarde Dema
 unsigned int duracoes[10] = {180, 180, 180, 180, 180, 180, 180, 180, 180, 180};
 musica musicas[10];
 
-unsigned char tecla = 16, indice = 0;
+unsigned char tecla = 16, indice = 0, cont = 0, flag = 0;
 
 void songsInit(void) {
 
@@ -335,10 +349,13 @@ void songsInit(void) {
 void chooseSong(void) {
     kpDebounce();
     tecla = kpRead();
-    if (((tecla) & (1<<(0)))) {
+    if (((tecla) & (1<<(3)))||((tecla) & (1<<(7)))) {
+        flag = 1;
         for (;;) {
+            ssdUpdate();
             kpDebounce();
-            if (kpRead() != tecla) {
+            atraso_ms(10);
+            if ((kpRead() != tecla)||flag == 1) {
                 tecla = kpRead();
                 if (((tecla) & (1<<(3)))) {
                     if (indice == 0) {indice = 9;}
@@ -346,10 +363,10 @@ void chooseSong(void) {
                 } else if (((tecla) & (1<<(7)))) {
                     if (indice == 9) {indice = 0;}
                     else {indice += 1;}
-                } else if (((tecla) & (1<<(1)))) {
+                } else if (((tecla) & (1<<(0)))) {
                     break;
                 }
-# 56 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
+# 61 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
                 lcdCommand(0x01);
                 lcdPosition(1, 0);
                 lcdStr("<-(1) (*)  (2)->");
@@ -357,6 +374,8 @@ void chooseSong(void) {
 
 
                 lcdStr(musicas[indice].nome);
+                ssdDigit(indice, 3);
+                flag = 0;
             }
         }
         lcdPosition(0, 0);

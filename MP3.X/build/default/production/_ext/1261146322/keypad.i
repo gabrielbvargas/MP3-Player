@@ -4385,7 +4385,9 @@ void pinMode(int pin, int type);
 
 
 static unsigned int valor = 0x0000;
-# 35 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c"
+unsigned char teclas[8] = {10,7,4,1,0,8,5,2};
+unsigned char i;
+# 37 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c"
 unsigned int kpRead(void) {
     return valor;
 }

@@ -23,6 +23,8 @@
 #include "bits.h"
 
 static unsigned int valor = 0x0000;
+unsigned char teclas[8] = {10,7,4,1,0,8,5,2};
+unsigned char i;
 
 #define LIN0 PIN_D0
 #define LIN1 PIN_D1
@@ -32,7 +34,7 @@ static unsigned int valor = 0x0000;
 #define COL1 PIN_B1
 #define COL2 PIN_B2
 
-unsigned int kpRead(void) {
+unsigned int kpRead(void) {    
     return valor;
 }
 

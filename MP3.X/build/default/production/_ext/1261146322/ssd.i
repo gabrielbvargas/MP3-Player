@@ -4387,6 +4387,7 @@ static char display;
 static char v0, v1, v2, v3;
 
 void ssdDigit(char val, char pos) {
+    display = pos;
     if (pos == 0) {
         v0 = val;
     }
@@ -4422,29 +4423,29 @@ void ssdUpdate(void) {
         case 0:
             PORTD = valor[v0];
             digitalWrite(PIN_A2,1);
-            display = 1;
+
             break;
 
         case 1:
             PORTD = valor[v1];
             digitalWrite(PIN_A3,1);
-            display = 2;
+
             break;
 
         case 2:
             PORTD = valor[v2];
             digitalWrite(PIN_A4,1);
-            display = 3;
+
             break;
 
         case 3:
             PORTD = valor[v3];
             digitalWrite(PIN_A5,1);
-            display = 0;
+
             break;
 
         default:
-            display = 0;
+
             break;
     }
 }
