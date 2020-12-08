@@ -46,49 +46,6 @@ PIN_E5 37
 PIN_E6 38
 PIN_E7 39
 ]
-"27 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/adc.c
-[e E2357 pin_label `uc
-PIN_A0 0
-PIN_A1 1
-PIN_A2 2
-PIN_A3 3
-PIN_A4 4
-PIN_A5 5
-PIN_A6 6
-PIN_A7 7
-PIN_B0 8
-PIN_B1 9
-PIN_B2 10
-PIN_B3 11
-PIN_B4 12
-PIN_B5 13
-PIN_B6 14
-PIN_B7 15
-PIN_C0 16
-PIN_C1 17
-PIN_C2 18
-PIN_C3 19
-PIN_C4 20
-PIN_C5 21
-PIN_C6 22
-PIN_C7 23
-PIN_D0 24
-PIN_D1 25
-PIN_D2 26
-PIN_D3 27
-PIN_D4 28
-PIN_D5 29
-PIN_D6 30
-PIN_D7 31
-PIN_E0 32
-PIN_E1 33
-PIN_E2 34
-PIN_E3 35
-PIN_E4 36
-PIN_E5 37
-PIN_E6 38
-PIN_E7 39
-]
 "50 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
 [e E2364 pin_label `uc
 PIN_A0 0
@@ -144,14 +101,12 @@ PIN_E7 39
 [v _kpDebounce kpDebounce `(v  1 e 1 0 ]
 "87
 [v _kpInit kpInit `(v  1 e 1 0 ]
-"6 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd_2.c
-[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
-"10
-[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
-"20
-[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
-"7 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+"8 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
 [v _main main `(v  1 e 1 0 ]
+"21 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+[v _songsInit songsInit `(v  1 e 1 0 ]
+"30
+[v _chooseSong chooseSong `(v  1 e 1 0 ]
 "4 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\float.c
@@ -172,6 +127,10 @@ PIN_E7 39
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
+"3 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+"15 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
 "15 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul64.c
@@ -210,16 +169,18 @@ PIN_E7 39
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "2365
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-"4619
-[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
-"4775
-[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-"4901
-[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
-"4908
-[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
 "25 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
 [v _valor valor `ui  1 s 2 valor ]
+"14 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+[v _nomes nomes `[10][17]uc  1 e 170 0 ]
+"16
+[v _duracoes duracoes `[10]ui  1 e 20 0 ]
+[s S229 . 19 `ui 1 duracao 2 0 `[17]uc 1 nome 17 2 ]
+"17
+[v _musicas musicas `[10]S229  1 e 190 0 ]
+"19
+[v _tecla tecla `uc  1 e 1 0 ]
+[v _indice indice `uc  1 e 1 0 ]
 "32 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c
 [v _valor@ssd$F102 valor `C[16]uc  1 s 16 valor ]
 "34
@@ -229,27 +190,61 @@ PIN_E7 39
 [v _v1 v1 `uc  1 s 1 v1 ]
 [v _v2 v2 `uc  1 s 1 v2 ]
 [v _v3 v3 `uc  1 s 1 v3 ]
-"7 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+"8 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"16
-[v main@segundo2 segundo2 `ul  1 a 4 37 ]
-"15
-[v main@segundo1 segundo1 `ul  1 a 4 33 ]
-"14
-[v main@minuto2 minuto2 `ul  1 a 4 29 ]
-"13
-[v main@minuto1 minuto1 `ul  1 a 4 25 ]
-"12
-[v main@hora2 hora2 `ul  1 a 4 21 ]
-"11
-[v main@hora1 hora1 `ul  1 a 4 17 ]
-"10
-[v main@cont cont `ul  1 a 4 13 ]
+"30
+} 0
+"21 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+[v _songsInit songsInit `(v  1 e 1 0 ]
+{
+"23
+[v songsInit@i i `ui  1 a 2 14 ]
+"28
+} 0
+"3 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+{
+"6
+[v strcpy@d d `*.39uc  1 a 2 12 ]
+"5
+[v strcpy@s s `*.39Cuc  1 a 2 10 ]
+"3
+[v strcpy@dest dest `*.39uc  1 p 2 6 ]
+[v strcpy@src src `*.39Cuc  1 p 2 8 ]
 "9
-[v main@linha linha `uc  1 a 1 44 ]
-[v main@coluna coluna `uc  1 a 1 43 ]
-"83
+} 0
+"15 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"87 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+[v _lcdInit lcdInit `(v  1 e 1 0 ]
+{
+"113
+} 0
+"54 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
+[v _pinMode pinMode `(v  1 e 1 0 ]
+{
+[v pinMode@pin pin `i  1 p 2 0 ]
+[v pinMode@type type `i  1 p 2 2 ]
+"73
+} 0
+"87 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
+[v _kpInit kpInit `(v  1 e 1 0 ]
+{
+"92
+} 0
+"30 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+[v _chooseSong chooseSong `(v  1 e 1 0 ]
+{
+"67
 } 0
 "128 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
 [v _lcdStr lcdStr `(v  1 e 1 0 ]
@@ -257,7 +252,7 @@ PIN_E7 39
 "129
 [v lcdStr@i i `uc  1 a 1 12 ]
 "128
-[v lcdStr@str str `*.25Cuc  1 p 2 8 ]
+[v lcdStr@str str `*.35Cuc  1 p 2 8 ]
 "135
 } 0
 "68
@@ -284,19 +279,7 @@ PIN_E7 39
 [v lcdPosition@linha linha `uc  1 a 1 9 ]
 "126
 } 0
-"87
-[v _lcdInit lcdInit `(v  1 e 1 0 ]
-{
-"113
-} 0
-"54 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-[v _pinMode pinMode `(v  1 e 1 0 ]
-{
-[v pinMode@pin pin `i  1 p 2 0 ]
-[v pinMode@type type `i  1 p 2 2 ]
-"73
-} 0
-"43 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\lcd.c
+"43
 [v _lcdCommand lcdCommand `(v  1 e 1 0 ]
 {
 [v lcdCommand@cmd cmd `uc  1 a 1 wreg ]
@@ -333,11 +316,6 @@ PIN_E7 39
 [v _kpRead kpRead `(ui  1 e 2 0 ]
 {
 "37
-} 0
-"87
-[v _kpInit kpInit `(v  1 e 1 0 ]
-{
-"92
 } 0
 "39
 [v _kpDebounce kpDebounce `(v  1 e 1 0 ]

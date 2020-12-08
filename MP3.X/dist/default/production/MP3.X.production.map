@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=D:\Programs\Microship\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\MP3.X.production.sym \
   --cmf=dist/default/production\MP3.X.production.cmf -z -Q18F4520 \
-  -oC:\Users\gabri\AppData\Local\Temp\skv0.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\gabri\AppData\Local\Temp\skag.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/MP3.X.production.map -E1 -ver=XC8 Compiler \
-  --acfsm=1493 -ASTACK=080h-05FFh -pstack=STACK -ACODE=00h-07FFFh \
+  --acfsm=1493 -ASTACK=02AAh-05FFh -pstack=STACK -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0600h-06FFhx122 \
   -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh -AABS1=00h-05FFh \
   -ABIGRAM=01h-05FFh -ARAM=080h-0FFh,0100h-01FFhx5 -ABANK0=080h-0FFh \
@@ -21,7 +21,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\gabri\AppData\Local\Temp\skv0.o \
+  C:\Users\gabri\AppData\Local\Temp\skag.o \
   dist/default/production\MP3.X.production.o 
 
 Object code version is 3.11
@@ -31,63 +31,79 @@ Machine type is 18F4520
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\gabri\AppData\Local\Temp\skv0.o
+C:\Users\gabri\AppData\Local\Temp\skag.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0
 dist/default/production\MP3.X.production.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
-                smallconst                          600      600       2E      300       0
-                text13                              E2E      E2E       64      317       0
-                text12                              ACA      ACA      17A      317       0
-                text11                              FE4      FE4        A      317       0
-                text10                              FDA      FDA        A      317       0
-                text9                               FAC      FAC       18      317       0
-                text8                               F90      F90       1C      317       0
-                text7                               87C      87C      24E      317       0
-                text6                               D38      D38       7E      317       0
-                text5                               62E      62E      24E      317       0
-                text4                               DB6      DB6       78      317       0
-                text3                               E92      E92       5A      317       0
-                text2                               EEC      EEC       54      317       0
-                text1                               F40      F40       50      317       0
-                text0                               C44      C44       F4      317       0
-                cstackCOMRAM                          1        1       2D        1       1
-                bssCOMRAM                            2E       2E        C        1       1
-                cinit                               FC4      FC4       16      317       0
+                smallconst                          600      600       40      300       0
+                text17                             1096     1096       64      320       0
+                text16                              ADC      ADC      17A      320       0
+                text15                             12C2     12C2        A      95C       0
+                text14                             128A     128A       18      320       0
+                text13                             126E     126E       1C      320       0
+                text12                              88E      88E      24E      320       0
+                text11                              F28      F28       7E      320       0
+                text10                             115C     115C       5A      320       0
+                text9                              11B6     11B6       54      320       0
+                text8                              101E     101E       78      320       0
+                text7                               C56      C56       FE      320       0
+                text6                              12B8     12B8        A      95C       0
+                text5                               640      640      24E      320       0
+                text4                               FA6      FA6       78      320       0
+                text3                              1248     1248       26      320       0
+                text2                              120A     120A       3E      320       0
+                text1                               DFE      DFE       A2      320       0
+                text0                               EA0      EA0       88      320       0
+                cstackCOMRAM                         16       16       10        1       1
+                dataBANK2                           200      200       AA      200       1
+                bssBANK1                            100      100       BE      100       1
+                dataCOMRAM                            1        1       15        1       1
+                bssCOMRAM                            26       26        D        1       1
+                cinit                              10FA     10FA       62      320       0
+                idataBANK2                          D54      D54       AA      320       0
+                idataCOMRAM                        12A2     12A2       15      320       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 init                                  0        0        4         0
-                text13                              E2E      E2E       64         0
-                text12                              ACA      ACA      17A         0
-                text11                              FE4      FE4        A         0
-                text10                              FDA      FDA        A         0
-                text9                               FAC      FAC       18         0
-                text8                               F90      F90       1C         0
-                text7                               87C      87C      24E         0
-                text6                               D38      D38       7E         0
-                text5                               62E      62E      24E         0
-                text4                               DB6      DB6       78         0
-                text3                               E92      E92       5A         0
-                text2                               EEC      EEC       54         0
-                text1                               F40      F40       50         0
-                text0                               C44      C44       F4         0
-                cinit                               FC4      FC4       16         0
+                text17                             1096     1096       64         0
+                text16                              ADC      ADC      17A         0
+                text15                             12C2     12C2        A         0
+                text14                             128A     128A       18         0
+                text13                             126E     126E       1C         0
+                text12                              88E      88E      24E         0
+                text11                              F28      F28       7E         0
+                text10                             115C     115C       5A         0
+                text9                              11B6     11B6       54         0
+                text8                              101E     101E       78         0
+                text7                               C56      C56       FE         0
+                text6                              12B8     12B8        A         0
+                text5                               640      640      24E         0
+                text4                               FA6      FA6       78         0
+                text3                              1248     1248       26         0
+                text2                              120A     120A       3E         0
+                text1                               DFE      DFE       A2         0
+                text0                               EA0      EA0       88         0
+                cinit                              10FA     10FA       62         0
+                idataBANK2                          D54      D54       AA         0
+                idataCOMRAM                        12A2     12A2       15         0
 
         CLASS   CONST          
 
         CLASS   SMALLCONST     
-                smallconst                          600      600       2E         0
+                smallconst                          600      600       40         0
 
         CLASS   MEDIUMCONST    
 
         CLASS   COMRAM         
-                cstackCOMRAM                          1        1       2D         1
-                bssCOMRAM                            2E       2E        C         1
+                cstackCOMRAM                         16       16       10         1
+                dataCOMRAM                            1        1       15         1
+                bssCOMRAM                            26       26        D         1
 
         CLASS   ABS1           
 
@@ -98,8 +114,10 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   BANK0          
 
         CLASS   BANK1          
+                bssBANK1                            100      100       BE         1
 
         CLASS   BANK2          
+                dataBANK2                           200      200       AA         1
 
         CLASS   BANK3          
 
@@ -124,44 +142,52 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                cstackCOMRAM                   000001  000039  00003A         1       1  COMRAM  
-                smallconst                     000600  00002E  00062E       300       0  SMALLCON
-                text5                          00062E  0009C0  000FEE       317       0  CODE    
+                dataCOMRAM                     000001  000032  000033         1       1  COMRAM  
+                bssBANK1                       000100  0000BE  0001BE       100       1  BANK1   
+                dataBANK2                      000200  0000AA  0002AA       200       1  BANK2   
+                smallconst                     000600  000040  000640       300       0  SMALLCON
+                text5                          000640  000C77  0012B7       320       0  CODE    
+                text6                          0012B8  000014  0012CC       95C       0  CODE    
 
 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
         BANK0            000080-0000FF               80
-        BANK1            000100-0001FF              100
-        BANK2            000200-0002FF              100
+        BANK1            0001BE-0001FF               42
+        BANK2            0002AA-0002FF               56
         BANK3            000300-0003FF              100
         BANK4            000400-0004FF              100
         BANK5            000500-0005FF              100
-        BIGRAM           00003A-0005FF              5C6
+        BIGRAM           000033-0000FF               CD
+                         0001BE-0001FF               42
+                         0002AA-0005FF              356
         CODE             000004-0005FF              5FC
-                         000FEE-007FFF             7012
-        COMRAM           00003A-00007F               46
+                         0012B7-0012B7                1
+                         0012CC-007FFF             6D34
+        COMRAM           000033-00007F               4D
         CONST            000004-0005FF              5FC
-                         000FEE-007FFF             7012
+                         0012B7-0012B7                1
+                         0012CC-007FFF             6D34
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      000FEE-007FFF             7012
-        RAM              000080-0005FF              100
+        MEDIUMCONST      0012B7-0012B7                1
+                         0012CC-007FFF             6D34
+        RAM              000080-0000FF               80
+                         0001BE-0001FF               42
+                         0002AA-0005FF              100
         SFR              000F80-000FFF               80
-        SMALLCONST       000FEE-007FFF              100
-        STACK            000080-0005FF              580
+        SMALLCONST       0012B7-0012B7                1
+                         0012CC-007FFF              100
+        STACK            0002AA-0005FF              356
 
                                   Symbol Table
 
-?_kpRead                 cstackCOMRAM 000001
-Delay2ms@i               cstackCOMRAM 000002
-Delay40us@i              cstackCOMRAM 000001
-_ADCON0                  (abs)        000FC2
-_ADCON2                  (abs)        000FC0
-_ADRESH                  (abs)        000FC4
-_ADRESL                  (abs)        000FC3
-_Delay2ms                text8        000F90
-_Delay40us               text9        000FAC
+?___wmul                 cstackCOMRAM 000016
+?_kpRead                 cstackCOMRAM 000016
+Delay2ms@i               cstackCOMRAM 000017
+Delay40us@i              cstackCOMRAM 000016
+_Delay2ms                text13       00126E
+_Delay40us               text14       00128A
 _PORTA                   (abs)        000F80
 _PORTB                   (abs)        000F81
 _PORTC                   (abs)        000F82
@@ -184,6 +210,7 @@ __Hbigbss                bigbss       000000
 __Hbigdata               bigdata      000000
 __Hbigram                bigram       000000
 __Hbss                   bss          000000
+__HbssBANK1              bssBANK1     000000
 __HbssCOMRAM             bssCOMRAM    000000
 __Hcinit                 cinit        000000
 __Hclrtext               clrtext      000000
@@ -192,11 +219,15 @@ __Hconfig                config       30000E
 __Hconst                 const        000000
 __HcstackCOMRAM          cstackCOMRAM 000000
 __Hdata                  data         000000
+__HdataBANK2             dataBANK2    000000
+__HdataCOMRAM            dataCOMRAM   000000
 __Heeprom_data           eeprom_data  000000
 __Hfarbss                farbss       000000
 __Hfardata               fardata      000000
 __Hibigdata              ibigdata     000000
 __Hidata                 idata        000000
+__HidataBANK2            idataBANK2   000000
+__HidataCOMRAM           idataCOMRAM  000000
 __Hidloc                 idloc        200008
 __Hifardata              ifardata     000000
 __Hinit                  init         000004
@@ -221,9 +252,9 @@ __Hrdata                 rdata        000000
 __Hreset_vec             reset_vec    000000
 __Hrparam                rparam       000000
 __Hsfr                   sfr          000000
-__Hsmallconst            smallconst   00062E
-__Hspace_0               (abs)        000FEE
-__Hspace_1               (abs)        00003A
+__Hsmallconst            smallconst   000640
+__Hspace_0               (abs)        0012CC
+__Hspace_1               (abs)        0002AA
 __Hspace_2               (abs)        000000
 __Hspace_4               (abs)        60000E
 __Hstack                 stack        000000
@@ -236,6 +267,10 @@ __Htext10                text10       000000
 __Htext11                text11       000000
 __Htext12                text12       000000
 __Htext13                text13       000000
+__Htext14                text14       000000
+__Htext15                text15       000000
+__Htext16                text16       000000
+__Htext17                text17       000000
 __Htext2                 text2        000000
 __Htext3                 text3        000000
 __Htext4                 text4        000000
@@ -256,6 +291,7 @@ __Lbigbss                bigbss       000000
 __Lbigdata               bigdata      000000
 __Lbigram                bigram       000000
 __Lbss                   bss          000000
+__LbssBANK1              bssBANK1     000000
 __LbssCOMRAM             bssCOMRAM    000000
 __Lcinit                 cinit        000000
 __Lclrtext               clrtext      000000
@@ -264,11 +300,15 @@ __Lconfig                config       000000
 __Lconst                 const        000000
 __LcstackCOMRAM          cstackCOMRAM 000000
 __Ldata                  data         000000
+__LdataBANK2             dataBANK2    000000
+__LdataCOMRAM            dataCOMRAM   000000
 __Leeprom_data           eeprom_data  000000
 __Lfarbss                farbss       000000
 __Lfardata               fardata      000000
 __Libigdata              ibigdata     000000
 __Lidata                 idata        000000
+__LidataBANK2            idataBANK2   000000
+__LidataCOMRAM           idataCOMRAM  000000
 __Lidloc                 idloc        000000
 __Lifardata              ifardata     000000
 __Linit                  init         000000
@@ -308,6 +348,10 @@ __Ltext10                text10       000000
 __Ltext11                text11       000000
 __Ltext12                text12       000000
 __Ltext13                text13       000000
+__Ltext14                text14       000000
+__Ltext15                text15       000000
+__Ltext16                text16       000000
+__Ltext17                text17       000000
 __Ltext2                 text2        000000
 __Ltext3                 text3        000000
 __Ltext4                 text4        000000
@@ -316,8 +360,8 @@ __Ltext6                 text6        000000
 __Ltext7                 text7        000000
 __Ltext8                 text8        000000
 __Ltext9                 text9        000000
-__S0                     (abs)        000FEE
-__S1                     (abs)        00003A
+__S0                     (abs)        0012CC
+__S1                     (abs)        0002AA
 __S2                     (abs)        000000
 __S4                     (abs)        000000
 __S5                     (abs)        000000
@@ -326,48 +370,67 @@ ___intlo_sp              stack        000000
 ___param_bank            (abs)        000000
 ___rparam_used           (abs)        000001
 ___sp                    stack        000000
+___wmul                  text3        001248
+___wmul@multiplicand     cstackCOMRAM 000018
+___wmul@multiplier       cstackCOMRAM 000016
+___wmul@product          cstackCOMRAM 00001A
 __accesstop              (abs)        000080
 __activetblptr           (abs)        000002
-__end_of_Delay2ms        text8        000FAC
-__end_of_Delay40us       text9        000FC4
-__end_of__initialization cinit        000FD0
-__end_of_atraso_ms       text13       000E92
-__end_of_digitalWrite    text7        000ACA
-__end_of_kpDebounce      text12       000C44
-__end_of_kpInit          text11       000FEE
-__end_of_kpRead          text10       000FE4
-__end_of_lcdCommand      text6        000DB6
-__end_of_lcdData         text2        000F40
-__end_of_lcdInit         text4        000E2E
-__end_of_lcdPosition     text3        000EEC
-__end_of_lcdStr          text1        000F90
-__end_of_main            text0        000D38
-__end_of_pinMode         text5        00087C
+__end_of_Delay2ms        text13       00128A
+__end_of_Delay40us       text14       0012A2
+__end_of___wmul          text3        00126E
+__end_of__initialization cinit        001152
+__end_of_atraso_ms       text17       0010FA
+__end_of_chooseSong      text7        000D54
+__end_of_digitalWrite    text12       000ADC
+__end_of_kpDebounce      text16       000C56
+__end_of_kpInit          text6        0012C2
+__end_of_kpRead          text15       0012CC
+__end_of_lcdCommand      text11       000FA6
+__end_of_lcdData         text9        00120A
+__end_of_lcdInit         text4        00101E
+__end_of_lcdPosition     text10       0011B6
+__end_of_lcdStr          text8        001096
+__end_of_main            text0        000F28
+__end_of_pinMode         text5        00088E
+__end_of_songsInit       text1        000EA0
+__end_of_strcpy          text2        001248
 __end_of_valor@ssd$F102  smallconst   000611
-__initialization         cinit        000FC4
+__initialization         cinit        0010FA
 __mediumconst            mediumconst  000000
-__pbssCOMRAM             bssCOMRAM    00002E
-__pcinit                 cinit        000FC4
-__pcstackCOMRAM          cstackCOMRAM 000001
+__pbssBANK1              bssBANK1     000100
+__pbssCOMRAM             bssCOMRAM    000026
+__pcinit                 cinit        0010FA
+__pcstackCOMRAM          cstackCOMRAM 000016
+__pdataBANK2             dataBANK2    000200
+__pdataCOMRAM            dataCOMRAM   000001
+__pidataBANK2            idataBANK2   000D54
+__pidataCOMRAM           idataCOMRAM  0012A2
 __psmallconst            smallconst   000600
-__ptext0                 text0        000C44
-__ptext1                 text1        000F40
-__ptext10                text10       000FDA
-__ptext11                text11       000FE4
-__ptext12                text12       000ACA
-__ptext13                text13       000E2E
-__ptext2                 text2        000EEC
-__ptext3                 text3        000E92
-__ptext4                 text4        000DB6
-__ptext5                 text5        00062E
-__ptext6                 text6        000D38
-__ptext7                 text7        00087C
-__ptext8                 text8        000F90
-__ptext9                 text9        000FAC
+__ptext0                 text0        000EA0
+__ptext1                 text1        000DFE
+__ptext10                text10       00115C
+__ptext11                text11       000F28
+__ptext12                text12       00088E
+__ptext13                text13       00126E
+__ptext14                text14       00128A
+__ptext15                text15       0012C2
+__ptext16                text16       000ADC
+__ptext17                text17       001096
+__ptext2                 text2        00120A
+__ptext3                 text3        001248
+__ptext4                 text4        000FA6
+__ptext5                 text5        000640
+__ptext6                 text6        0012B8
+__ptext7                 text7        000C56
+__ptext8                 text8        00101E
+__ptext9                 text9        0011B6
 __ramtop                 ramtop       000600
 __size_of_Delay2ms       (abs)        000000
 __size_of_Delay40us      (abs)        000000
+__size_of___wmul         (abs)        000000
 __size_of_atraso_ms      (abs)        000000
+__size_of_chooseSong     (abs)        000000
 __size_of_digitalWrite   (abs)        000000
 __size_of_kpDebounce     (abs)        000000
 __size_of_kpInit         (abs)        000000
@@ -379,114 +442,333 @@ __size_of_lcdPosition    (abs)        000000
 __size_of_lcdStr         (abs)        000000
 __size_of_main           (abs)        000000
 __size_of_pinMode        (abs)        000000
+__size_of_songsInit      (abs)        000000
+__size_of_strcpy         (abs)        000000
 __smallconst             smallconst   000600
-_atraso_ms               text13       000E2E
-_digitalWrite            text7        00087C
-_display                 bssCOMRAM    000038
-_kpDebounce              text12       000ACA
-_kpInit                  text11       000FE4
-_kpRead                  text10       000FDA
-_lcdCommand              text6        000D38
-_lcdData                 text2        000EEC
-_lcdInit                 text4        000DB6
-_lcdPosition             text3        000E92
-_lcdStr                  text1        000F40
-_main                    text0        000C44
-_pinMode                 text5        00062E
-_v0                      bssCOMRAM    000037
-_v1                      bssCOMRAM    000036
-_v2                      bssCOMRAM    000035
-_v3                      bssCOMRAM    000034
-_valor                   bssCOMRAM    000032
+_atraso_ms               text17       001096
+_chooseSong              text7        000C56
+_digitalWrite            text12       00088E
+_display                 bssCOMRAM    000031
+_duracoes                dataCOMRAM   000001
+_indice                  bssCOMRAM    00002C
+_kpDebounce              text16       000ADC
+_kpInit                  text6        0012B8
+_kpRead                  text15       0012C2
+_lcdCommand              text11       000F28
+_lcdData                 text9        0011B6
+_lcdInit                 text4        000FA6
+_lcdPosition             text10       00115C
+_lcdStr                  text8        00101E
+_main                    text0        000EA0
+_musicas                 bssBANK1     000100
+_nomes                   dataBANK2    000200
+_pinMode                 text5        000640
+_songsInit               text1        000DFE
+_strcpy                  text2        00120A
+_tecla                   dataCOMRAM   000015
+_v0                      bssCOMRAM    000030
+_v1                      bssCOMRAM    00002F
+_v2                      bssCOMRAM    00002E
+_v3                      bssCOMRAM    00002D
+_valor                   bssCOMRAM    00002A
 _valor@ssd$F102          smallconst   000601
-atraso_ms@i              cstackCOMRAM 000003
-atraso_ms@j              cstackCOMRAM 000005
-atraso_ms@k              cstackCOMRAM 000006
-atraso_ms@t              cstackCOMRAM 000001
-digitalWrite@pin         cstackCOMRAM 000001
-digitalWrite@value       cstackCOMRAM 000003
-end_of_initialization    cinit        000FD0
+atraso_ms@i              cstackCOMRAM 000018
+atraso_ms@j              cstackCOMRAM 00001A
+atraso_ms@k              cstackCOMRAM 00001B
+atraso_ms@t              cstackCOMRAM 000016
+digitalWrite@pin         cstackCOMRAM 000016
+digitalWrite@value       cstackCOMRAM 000018
+end_of_initialization    cinit        001152
 intlevel0                text         000000
 intlevel1                text         000000
 intlevel2                text         000000
 intlevel3                text         000000
-kpDebounce@i             cstackCOMRAM 00000A
-kpDebounce@j             cstackCOMRAM 000009
-kpDebounce@k             cstackCOMRAM 000007
-kpDebounce@old_D         cstackCOMRAM 000006
-kpDebounce@tempo         bssCOMRAM    000039
-kpDebounce@valorAntigo   bssCOMRAM    00002E
-kpDebounce@valorNovo     bssCOMRAM    000030
-lcdCommand@cmd           cstackCOMRAM 000008
-lcdCommand@old_D         cstackCOMRAM 000007
-lcdData@old_D            cstackCOMRAM 000008
-lcdData@valor            cstackCOMRAM 000007
-lcdPosition@coluna       cstackCOMRAM 000009
-lcdPosition@comando      cstackCOMRAM 00000B
-lcdPosition@linha        cstackCOMRAM 00000A
-lcdStr@i                 cstackCOMRAM 00000D
-lcdStr@str               cstackCOMRAM 000009
-main@coluna              cstackCOMRAM 00002C
-main@cont                cstackCOMRAM 00000E
-main@hora1               cstackCOMRAM 000012
-main@hora2               cstackCOMRAM 000016
-main@linha               cstackCOMRAM 00002D
-main@minuto1             cstackCOMRAM 00001A
-main@minuto2             cstackCOMRAM 00001E
-main@segundo1            cstackCOMRAM 000022
-main@segundo2            cstackCOMRAM 000026
-pinMode@pin              cstackCOMRAM 000001
-pinMode@type             cstackCOMRAM 000003
+kpDebounce@i             cstackCOMRAM 00001F
+kpDebounce@j             cstackCOMRAM 00001E
+kpDebounce@k             cstackCOMRAM 00001C
+kpDebounce@old_D         cstackCOMRAM 00001B
+kpDebounce@tempo         bssCOMRAM    000032
+kpDebounce@valorAntigo   bssCOMRAM    000026
+kpDebounce@valorNovo     bssCOMRAM    000028
+lcdCommand@cmd           cstackCOMRAM 00001D
+lcdCommand@old_D         cstackCOMRAM 00001C
+lcdData@old_D            cstackCOMRAM 00001D
+lcdData@valor            cstackCOMRAM 00001C
+lcdPosition@coluna       cstackCOMRAM 00001E
+lcdPosition@comando      cstackCOMRAM 000020
+lcdPosition@linha        cstackCOMRAM 00001F
+lcdStr@i                 cstackCOMRAM 000022
+lcdStr@str               cstackCOMRAM 00001E
+pinMode@pin              cstackCOMRAM 000016
+pinMode@type             cstackCOMRAM 000018
+songsInit@i              cstackCOMRAM 000024
 stackhi                  (abs)        0005FF
-stacklo                  (abs)        000080
+stacklo                  (abs)        0002AA
 start                    init         000000
-start_initialization     cinit        000FC4
+start_initialization     cinit        0010FA
+strcpy@d                 cstackCOMRAM 000022
+strcpy@dest              cstackCOMRAM 00001C
+strcpy@s                 cstackCOMRAM 000020
+strcpy@src               cstackCOMRAM 00001E
 
 
 FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 7 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c"
+		line 8 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  segundo2        4   37[COMRAM] unsigned long 
-  segundo1        4   33[COMRAM] unsigned long 
-  minuto2         4   29[COMRAM] unsigned long 
-  minuto1         4   25[COMRAM] unsigned long 
-  hora2           4   21[COMRAM] unsigned long 
-  hora1           4   17[COMRAM] unsigned long 
-  cont            4   13[COMRAM] unsigned long 
-  tecla           2    0        unsigned int 
-  linha           1   44[COMRAM] unsigned char 
-  coluna          1   43[COMRAM] unsigned char 
+		None
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
       Params:         0       0       0       0       0       0       0
-      Locals:        32       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0
-      Totals:        32       0       0       0       0       0       0
-Total ram usage:       32 bytes
- Hardware stack levels required when called:    4
+      Totals:         0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:    5
  This function calls:
 		_atraso_ms
-		_kpDebounce
+		_chooseSong
 		_kpInit
-		_kpRead
 		_lcdCommand
 		_lcdInit
 		_lcdPosition
 		_lcdStr
+		_songsInit
  This function is called by:
 		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _songsInit *****************
+ Defined at:
+		line 21 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2   14[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+      Params:         0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		___wmul
+		_strcpy
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _strcpy *****************
+ Defined at:
+		line 3 in file "D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c"
+ Parameters:    Size  Location     Type
+  dest            2    6[COMRAM] PTR unsigned char 
+		 -> musicas(190), 
+  src             2    8[COMRAM] PTR const unsigned char 
+		 -> nomes(170), 
+ Auto vars:     Size  Location     Type
+  d               2   12[COMRAM] PTR unsigned char 
+		 -> musicas(190), 
+  s               2   10[COMRAM] PTR const unsigned char 
+		 -> nomes(170), 
+ Return value:  Size  Location     Type
+                  2    6[COMRAM] PTR unsigned char 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+      Params:         4       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_songsInit
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 15 in file "D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c"
+ Parameters:    Size  Location     Type
+  multiplier      2    0[COMRAM] unsigned int 
+  multiplicand    2    2[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2    4[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+      Params:         4       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_songsInit
+ This function uses a non-reentrant model
+
+
+ *************** function _lcdInit *****************
+ Defined at:
+		line 87 in file "lcd.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+      Params:         0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_Delay2ms
+		_lcdCommand
+		_pinMode
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _pinMode *****************
+ Defined at:
+		line 54 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c"
+ Parameters:    Size  Location     Type
+  pin             2    0[COMRAM] int 
+  type            2    2[COMRAM] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+      Params:         4       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_lcdInit
+		_ssdInit
+ This function uses a non-reentrant model
+
+
+ *************** function _kpInit *****************
+ Defined at:
+		line 87 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+      Params:         0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _chooseSong *****************
+ Defined at:
+		line 30 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+      Params:         0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_kpDebounce
+		_kpRead
+		_lcdCommand
+		_lcdPosition
+		_lcdStr
+ This function is called by:
+		_main
  This function uses a non-reentrant model
 
 
@@ -495,13 +777,14 @@ Total ram usage:       32 bytes
 		line 128 in file "lcd.c"
  Parameters:    Size  Location     Type
   str             2    8[COMRAM] PTR const unsigned char 
+		 -> STR_5(17), musicas.nome(17), musicas(190), STR_4(17), 
 		 -> STR_3(17), STR_2(7), STR_1(4), 
  Auto vars:     Size  Location     Type
   i               1   12[COMRAM] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -518,6 +801,7 @@ Total ram usage:        5 bytes
 		_lcdData
  This function is called by:
 		_main
+		_chooseSong
  This function uses a non-reentrant model
 
 
@@ -582,70 +866,7 @@ Total ram usage:        3 bytes
 		_lcdCommand
  This function is called by:
 		_main
- This function uses a non-reentrant model
-
-
- *************** function _lcdInit *****************
- Defined at:
-		line 87 in file "lcd.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, status,2, status,0, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-      Params:         0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0
-Total ram usage:        0 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    3
- This function calls:
-		_Delay2ms
-		_lcdCommand
-		_pinMode
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _pinMode *****************
- Defined at:
-		line 54 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c"
- Parameters:    Size  Location     Type
-  pin             2    0[COMRAM] int 
-  type            2    2[COMRAM] int 
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-      Params:         4       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0
-      Temps:          2       0       0       0       0       0       0
-      Totals:         6       0       0       0       0       0       0
-Total ram usage:        6 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_lcdInit
-		_ssdInit
-		_adcInit
+		_chooseSong
  This function uses a non-reentrant model
 
 
@@ -681,6 +902,7 @@ Total ram usage:        2 bytes
 		_main
 		_lcdInit
 		_lcdPosition
+		_chooseSong
  This function uses a non-reentrant model
 
 
@@ -803,36 +1025,7 @@ Total ram usage:        2 bytes
  This function calls:
 		Nothing
  This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _kpInit *****************
- Defined at:
-		line 87 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-      Params:         0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0
-Total ram usage:        0 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_main
+		_chooseSong
  This function uses a non-reentrant model
 
 
@@ -864,7 +1057,7 @@ Total ram usage:       10 bytes
  This function calls:
 		Nothing
  This function is called by:
-		_main
+		_chooseSong
  This function uses a non-reentrant model
 
 
@@ -896,9 +1089,6 @@ Total ram usage:        6 bytes
 		Nothing
  This function is called by:
 		_main
-		_lcd_cmd
-		_lcd_dat
-		_lcd_init
  This function uses a non-reentrant model
 
 
@@ -906,43 +1096,59 @@ Total ram usage:        6 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
+D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c
+		___wmul        		CODE           	1248	0000	39
+
+D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\Umul16.c estimated size: 39
+
+D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+		_chooseSong    		CODE           	0C56	0000	255
+		_songsInit     		CODE           	0DFE	0000	163
+
+D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c estimated size: 418
+
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
-		_atraso_ms     		CODE           	0E2E	0000	101
+		_atraso_ms     		CODE           	1096	0000	101
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c estimated size: 101
 
+D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c
+		_strcpy        		CODE           	120A	0000	63
+
+D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\strcpy.c estimated size: 63
+
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c
-		_kpInit        		CODE           	0FE4	0000	11
-		_kpDebounce    		CODE           	0ACA	0000	379
-		_kpRead        		CODE           	0FDA	0000	11
+		_kpInit        		CODE           	12B8	0000	11
+		_kpDebounce    		CODE           	0ADC	0000	379
+		_kpRead        		CODE           	12C2	0000	11
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c estimated size: 401
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
-		_digitalWrite  		CODE           	087C	0000	591
-		_pinMode       		CODE           	062E	0000	591
+		_digitalWrite  		CODE           	088E	0000	591
+		_pinMode       		CODE           	0640	0000	591
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c estimated size: 1182
 
 shared
 		_valor@ssd$F102		SMALLCONST     	0601	0000	17
-		__initialization		CODE           	0FC4	0000	13
+		__initialization		CODE           	10FA	0000	89
 
-shared estimated size: 30
+shared estimated size: 106
 
 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-		_main          		CODE           	0C44	0000	245
+		_main          		CODE           	0EA0	0000	137
 
-D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c estimated size: 245
+D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c estimated size: 137
 
 lcd.c
-		_lcdCommand    		CODE           	0D38	0000	127
-		_lcdPosition   		CODE           	0E92	0000	91
-		_Delay40us     		CODE           	0FAC	0000	25
-		_lcdInit       		CODE           	0DB6	0000	121
-		_lcdData       		CODE           	0EEC	0000	85
-		_Delay2ms      		CODE           	0F90	0000	29
-		_lcdStr        		CODE           	0F40	0000	81
+		_lcdCommand    		CODE           	0F28	0000	127
+		_lcdPosition   		CODE           	115C	0000	91
+		_Delay40us     		CODE           	128A	0000	25
+		_lcdInit       		CODE           	0FA6	0000	121
+		_lcdData       		CODE           	11B6	0000	85
+		_Delay2ms      		CODE           	126E	0000	29
+		_lcdStr        		CODE           	101E	0000	121
 
-lcd.c estimated size: 559
+lcd.c estimated size: 599
 

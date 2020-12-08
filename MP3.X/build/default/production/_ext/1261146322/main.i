@@ -74,17 +74,18 @@
 void atraso_ms(int t);
 # 5 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" 2
 
+# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.h" 1
+
+
+
+void songsInit(void);
+void chooseSong(void);
+# 6 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" 2
+
 
 void main(void) {
-    unsigned int tecla = 16;
-    unsigned char coluna = 0, linha = 0;
-    unsigned long int cont = 0;
-    unsigned long int hora1 = 0;
-    unsigned long int hora2 = 0;
-    unsigned long int minuto1 = 0;
-    unsigned long int minuto2 = 0;
-    unsigned long int segundo1 = 0;
-    unsigned long int segundo2 = 0;
+
+    songsInit();
     lcdInit();
     kpInit();
     lcdCommand(0x0F);
@@ -97,13 +98,11 @@ void main(void) {
 
     lcdCommand(0x01);
     lcdPosition(0, 0);
+    lcdStr("Escolha a musica");
     for (;;) {
 
-        lcdStr("Escolha a musica");
-        lcdPosition(0, 0);
-
-        kpDebounce();
-        tecla = kpRead();
-# 82 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c"
+        lcdPosition(1, 0);
+        lcdStr("<-(1) (*)  (2)->");
+        chooseSong();
     }
 }

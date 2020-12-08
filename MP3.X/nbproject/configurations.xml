@@ -24,12 +24,10 @@
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/display7s.h</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c</itemPath>
       <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.h</itemPath>
-      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/adc.c</itemPath>
-      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/adc.h</itemPath>
-      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd_2.c</itemPath>
-      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd_2.h</itemPath>
       <itemPath>lcd.c</itemPath>
       <itemPath>lcd.h</itemPath>
+      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c</itemPath>
+      <itemPath>D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED="D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/display7s.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/adc.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd_2.c" lcd.c
+SOURCEFILES_QUOTED_IF_SPACED="D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/display7s.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c" "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" lcd.c "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1261146322/io.p1 ${OBJECTDIR}/_ext/1261146322/keypad.p1 ${OBJECTDIR}/_ext/1261146322/ssd.p1 ${OBJECTDIR}/_ext/1261146322/display7s.p1 ${OBJECTDIR}/_ext/1261146322/delay.p1 ${OBJECTDIR}/_ext/1261146322/adc.p1 ${OBJECTDIR}/_ext/1261146322/main.p1 ${OBJECTDIR}/_ext/1261146322/lcd_2.p1 ${OBJECTDIR}/lcd.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1261146322/io.p1.d ${OBJECTDIR}/_ext/1261146322/keypad.p1.d ${OBJECTDIR}/_ext/1261146322/ssd.p1.d ${OBJECTDIR}/_ext/1261146322/display7s.p1.d ${OBJECTDIR}/_ext/1261146322/delay.p1.d ${OBJECTDIR}/_ext/1261146322/adc.p1.d ${OBJECTDIR}/_ext/1261146322/main.p1.d ${OBJECTDIR}/_ext/1261146322/lcd_2.p1.d ${OBJECTDIR}/lcd.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1261146322/io.p1 ${OBJECTDIR}/_ext/1261146322/keypad.p1 ${OBJECTDIR}/_ext/1261146322/ssd.p1 ${OBJECTDIR}/_ext/1261146322/display7s.p1 ${OBJECTDIR}/_ext/1261146322/delay.p1 ${OBJECTDIR}/_ext/1261146322/main.p1 ${OBJECTDIR}/lcd.p1 ${OBJECTDIR}/_ext/1261146322/songs.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1261146322/io.p1.d ${OBJECTDIR}/_ext/1261146322/keypad.p1.d ${OBJECTDIR}/_ext/1261146322/ssd.p1.d ${OBJECTDIR}/_ext/1261146322/display7s.p1.d ${OBJECTDIR}/_ext/1261146322/delay.p1.d ${OBJECTDIR}/_ext/1261146322/main.p1.d ${OBJECTDIR}/lcd.p1.d ${OBJECTDIR}/_ext/1261146322/songs.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1261146322/io.p1 ${OBJECTDIR}/_ext/1261146322/keypad.p1 ${OBJECTDIR}/_ext/1261146322/ssd.p1 ${OBJECTDIR}/_ext/1261146322/display7s.p1 ${OBJECTDIR}/_ext/1261146322/delay.p1 ${OBJECTDIR}/_ext/1261146322/adc.p1 ${OBJECTDIR}/_ext/1261146322/main.p1 ${OBJECTDIR}/_ext/1261146322/lcd_2.p1 ${OBJECTDIR}/lcd.p1
+OBJECTFILES=${OBJECTDIR}/_ext/1261146322/io.p1 ${OBJECTDIR}/_ext/1261146322/keypad.p1 ${OBJECTDIR}/_ext/1261146322/ssd.p1 ${OBJECTDIR}/_ext/1261146322/display7s.p1 ${OBJECTDIR}/_ext/1261146322/delay.p1 ${OBJECTDIR}/_ext/1261146322/main.p1 ${OBJECTDIR}/lcd.p1 ${OBJECTDIR}/_ext/1261146322/songs.p1
 
 # Source Files
-SOURCEFILES=D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/display7s.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/adc.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd_2.c lcd.c
+SOURCEFILES=D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/display7s.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c lcd.c D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
 
 
 
@@ -134,14 +134,6 @@ ${OBJECTDIR}/_ext/1261146322/delay.p1: D\:/Documents/MPLABX\ Projects/MP3-Player
 	@-${MV} ${OBJECTDIR}/_ext/1261146322/delay.d ${OBJECTDIR}/_ext/1261146322/delay.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/delay.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1261146322/adc.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/adc.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1261146322" 
-	@${RM} ${OBJECTDIR}/_ext/1261146322/adc.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1261146322/adc.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"../../../../Programs/Microship/xc8/v2.20/pic/include/proc" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1261146322/adc.p1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/adc.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1261146322/adc.d ${OBJECTDIR}/_ext/1261146322/adc.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/adc.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/_ext/1261146322/main.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1261146322" 
 	@${RM} ${OBJECTDIR}/_ext/1261146322/main.p1.d 
@@ -150,14 +142,6 @@ ${OBJECTDIR}/_ext/1261146322/main.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/
 	@-${MV} ${OBJECTDIR}/_ext/1261146322/main.d ${OBJECTDIR}/_ext/1261146322/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1261146322/lcd_2.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/lcd_2.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1261146322" 
-	@${RM} ${OBJECTDIR}/_ext/1261146322/lcd_2.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1261146322/lcd_2.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"../../../../Programs/Microship/xc8/v2.20/pic/include/proc" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1261146322/lcd_2.p1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd_2.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1261146322/lcd_2.d ${OBJECTDIR}/_ext/1261146322/lcd_2.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/lcd_2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/lcd.p1: lcd.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/lcd.p1.d 
@@ -165,6 +149,14 @@ ${OBJECTDIR}/lcd.p1: lcd.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"../../../../Programs/Microship/xc8/v2.20/pic/include/proc" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/lcd.p1 lcd.c 
 	@-${MV} ${OBJECTDIR}/lcd.d ${OBJECTDIR}/lcd.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/lcd.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/_ext/1261146322/songs.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/songs.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1261146322" 
+	@${RM} ${OBJECTDIR}/_ext/1261146322/songs.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1261146322/songs.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"../../../../Programs/Microship/xc8/v2.20/pic/include/proc" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1261146322/songs.p1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 
+	@-${MV} ${OBJECTDIR}/_ext/1261146322/songs.d ${OBJECTDIR}/_ext/1261146322/songs.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/songs.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 else
 ${OBJECTDIR}/_ext/1261146322/io.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/io.c  nbproject/Makefile-${CND_CONF}.mk
@@ -207,14 +199,6 @@ ${OBJECTDIR}/_ext/1261146322/delay.p1: D\:/Documents/MPLABX\ Projects/MP3-Player
 	@-${MV} ${OBJECTDIR}/_ext/1261146322/delay.d ${OBJECTDIR}/_ext/1261146322/delay.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/delay.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1261146322/adc.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/adc.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1261146322" 
-	@${RM} ${OBJECTDIR}/_ext/1261146322/adc.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1261146322/adc.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"../../../../Programs/Microship/xc8/v2.20/pic/include/proc" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1261146322/adc.p1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/adc.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1261146322/adc.d ${OBJECTDIR}/_ext/1261146322/adc.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/adc.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/_ext/1261146322/main.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1261146322" 
 	@${RM} ${OBJECTDIR}/_ext/1261146322/main.p1.d 
@@ -223,14 +207,6 @@ ${OBJECTDIR}/_ext/1261146322/main.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/
 	@-${MV} ${OBJECTDIR}/_ext/1261146322/main.d ${OBJECTDIR}/_ext/1261146322/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1261146322/lcd_2.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/lcd_2.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1261146322" 
-	@${RM} ${OBJECTDIR}/_ext/1261146322/lcd_2.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1261146322/lcd_2.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"../../../../Programs/Microship/xc8/v2.20/pic/include/proc" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1261146322/lcd_2.p1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd_2.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1261146322/lcd_2.d ${OBJECTDIR}/_ext/1261146322/lcd_2.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/lcd_2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/lcd.p1: lcd.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/lcd.p1.d 
@@ -238,6 +214,14 @@ ${OBJECTDIR}/lcd.p1: lcd.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"../../../../Programs/Microship/xc8/v2.20/pic/include/proc" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/lcd.p1 lcd.c 
 	@-${MV} ${OBJECTDIR}/lcd.d ${OBJECTDIR}/lcd.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/lcd.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/_ext/1261146322/songs.p1: D\:/Documents/MPLABX\ Projects/MP3-Player/MP3.X/songs.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1261146322" 
+	@${RM} ${OBJECTDIR}/_ext/1261146322/songs.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1261146322/songs.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"../../../../Programs/Microship/xc8/v2.20/pic/include/proc" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1261146322/songs.p1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 
+	@-${MV} ${OBJECTDIR}/_ext/1261146322/songs.d ${OBJECTDIR}/_ext/1261146322/songs.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1261146322/songs.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
