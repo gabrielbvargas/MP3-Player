@@ -6,6 +6,7 @@
 #include "keypad.h"
 #include "ssd.h"
 #include "delay.h"
+#include "pwm.h"
 
 typedef struct {
     unsigned int duracao;
@@ -31,6 +32,7 @@ void songsInit(void) {
 void chooseSong(void) {
     kpDebounce();
     tecla = kpRead();
+    ssdUpdate();
     if (bitTst(tecla, 3) || bitTst(tecla, 7)) { //Tecla *
         flag = 1;
         for (;;) {
@@ -69,6 +71,7 @@ void chooseSong(void) {
 }
 
 void playSong() {
+    pwmInit();
     lcdCommand(CLR);
     lcdPosition(0, 0);
     lcdStr(musicas[indice].nome);
@@ -78,6 +81,7 @@ void playSong() {
     tempo = musicas[indice].duracao;
 
     while (tempo != 0) {
+        pwmSet(100);
         minuto1 = (tempo / 60) % 10;
         minuto2 = (tempo / 60) / 10;
         segundo1 = (tempo % 60) % 10;
@@ -134,9 +138,11 @@ void playSong() {
             tempo -= 1;
         }
     }
+    TRISA=0x00;
+    pwmSet(0);
     bitSet(TRISC, 1);
     atraso_ms(500);
-    bitSet(TRISC, 0);
+    bitClr(TRISC, 1);
     return;
 }
 
@@ -148,7 +154,6 @@ void alterarVolume(char opt) {
     }
     unsigned char old_D, old_A;
     old_D = TRISD;
-    //old_A = PORTA;
     
     PORTA=0x00;
     TRISD = 0x00;

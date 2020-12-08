@@ -1,4 +1,4 @@
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c"
+# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,92 +6,14 @@
 # 1 "<built-in>" 2
 # 1 "C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.h" 1
-
-
-
-void songsInit(void);
-void chooseSong(void);
-void playSong(void);
-void alterarVolume(char opt);
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
-
-# 1 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\string.h" 1 3
-
-
-
-# 1 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\string.h" 2 3
-
-
-
-
-
-
-# 1 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\features.h" 1 3
-# 10 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\string.h" 2 3
-# 25 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\string.h" 3
-# 1 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 122 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned size_t;
-# 168 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 204 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __uint24 uint24_t;
-# 411 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct __locale_struct * locale_t;
-# 25 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\string.h" 2 3
-
-
-void *memcpy (void *restrict, const void *restrict, size_t);
-void *memmove (void *, const void *, size_t);
-void *memset (void *, int, size_t);
-int memcmp (const void *, const void *, size_t);
-void *memchr (const void *, int, size_t);
-
-char *strcpy (char *restrict, const char *restrict);
-char *strncpy (char *restrict, const char *restrict, size_t);
-
-char *strcat (char *restrict, const char *restrict);
-char *strncat (char *restrict, const char *restrict, size_t);
-
-int strcmp (const char *, const char *);
-int strncmp (const char *, const char *, size_t);
-
-int strcoll (const char *, const char *);
-size_t strxfrm (char *restrict, const char *restrict, size_t);
-
-char *strchr (const char *, int);
-char *strrchr (const char *, int);
-
-size_t strcspn (const char *, const char *);
-size_t strspn (const char *, const char *);
-char *strpbrk (const char *, const char *);
-char *strstr (const char *, const char *);
-char *strtok (char *restrict, const char *restrict);
-
-size_t strlen (const char *);
-
-char *strerror (int);
-# 65 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\string.h" 3
-char *strtok_r (char *restrict, const char *restrict, char **restrict);
-int strerror_r (int, char *, size_t);
-char *stpcpy(char *restrict, const char *restrict);
-char *stpncpy(char *restrict, const char *restrict, size_t);
-size_t strnlen (const char *, size_t);
-char *strdup (const char *);
-char *strndup (const char *, size_t);
-char *strsignal(int);
-char *strerror_l (int, locale_t);
-int strcoll_l (const char *, const char *, locale_t);
-size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
-
-
-
-
-void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 2 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
+# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.c" 2
+# 20 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.c"
+# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.h" 1
+# 23 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.h"
+ void pwmSet(unsigned char porcento);
+ void pwmFrequency(unsigned int freq);
+ void pwmInit(void);
+# 20 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.c" 2
 
 # 1 "C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\proc\\pic18f4520.h" 1 3
 # 44 "C:/Users/gabri/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\proc\\pic18f4520.h" 3
@@ -4441,219 +4363,47 @@ extern volatile __bit nWR __attribute__((address(0x7C21)));
 
 
 extern volatile __bit nWRITE __attribute__((address(0x7E3A)));
-# 3 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
-
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd.h" 1
-# 28 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/lcd.h"
- void lcdCommand(unsigned char cmd);
- void lcdData(unsigned char valor);
- void lcdInit(void);
-    void lcdPosition(unsigned char linha, unsigned char coluna);
-    void lcdStr(const char* str);
-# 4 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
+# 21 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.c" 2
 
 # 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/bits.h" 1
-# 5 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
+# 22 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.c" 2
 
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.h" 1
-# 23 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/keypad.h"
- unsigned int kpRead(void);
- void kpDebounce(void);
- void kpInit(void);
-# 6 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
 
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h" 1
-# 22 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h"
- void ssdDigit(char val, char pos);
- void ssdUpdate(void);
- void ssdInit(void);
-# 7 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
-
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.h" 1
+void pwmSet(unsigned char porcento)
+{
 
 
 
-void atraso_ms(int t);
-# 8 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
-
-# 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.h" 1
-# 23 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/pwm.h"
- void pwmSet(unsigned char porcento);
- void pwmFrequency(unsigned int freq);
- void pwmInit(void);
-# 9 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
 
 
-typedef struct {
-    unsigned int duracao;
-    unsigned char nome[17];
-} musica;
+ unsigned int val = ((unsigned int)porcento) *(PR2+1);
 
-unsigned char nomes[10][17] = {"Temporal", "Cheia de Manias", "E Tarde Demais", "Sozinho", "Cigana", "Ciumes de Voce", "Extrapolei",
-    "Deus me Livre", "Maravilha", "Medida Exata"};
-unsigned int duracoes[10] = {70, 15, 120, 60, 10, 40, 20, 30, 140, 10};
-musica musicas[10];
+    val = val / 25;
 
-unsigned char tecla = 16, indice = 0, flag = 0, tempo, minuto1, minuto2, segundo1, segundo2, cnt = 0, pause = 1, volume = 3;
+ val &= 0x03ff;
 
-void songsInit(void) {
-    TRISC = 0x00;
-    for (unsigned int i = 0; i < 10; i++) {
-        musicas[i].duracao = duracoes[i];
-        strcpy(musicas[i].nome, (char*) nomes[i]);
-    }
-    return;
+ CCPR1L = val >> 2;
+
+ CCP1CON |= (val & 0x0003) << 4;
+
 }
 
-void chooseSong(void) {
-    kpDebounce();
-    tecla = kpRead();
-    ssdUpdate();
-    if (((tecla) & (1<<(3))) || ((tecla) & (1<<(7)))) {
-        flag = 1;
-        for (;;) {
-            ssdUpdate();
-            kpDebounce();
-            atraso_ms(10);
-            if ((kpRead() != tecla) || flag == 1) {
-                tecla = kpRead();
-                if (((tecla) & (1<<(3)))) {
-                    if (indice == 0) {
-                        indice = 9;
-                    } else {
-                        indice -= 1;
-                    }
-                } else if (((tecla) & (1<<(7)))) {
-                    if (indice == 9) {
-                        indice = 0;
-                    } else {
-                        indice += 1;
-                    }
-                } else if (((tecla) & (1<<(0)))) {
-                    flag = 0;
-                    break;
-                }
-                lcdCommand(0x01);
-                lcdPosition(1, 0);
-                lcdStr("<-(1) (*)  (2)->");
-                lcdPosition(0, 0);
-                lcdStr(musicas[indice].nome);
-                ssdDigit(indice, 3);
-                flag = 0;
-            }
-        }
-        playSong();
-    }
+
+void pwmFrequency(unsigned int freq)
+{
+
+
+ PR2 = (125000l/(freq)) - 1;
 }
 
-void playSong() {
-    pwmInit();
-    lcdCommand(0x01);
-    lcdPosition(0, 0);
-    lcdStr(musicas[indice].nome);
-    lcdPosition(1, 0);
-    lcdStr("-(1)  (*)  (2)+");
+void pwmInit(void)
+{
+ ((TRISC) &= ~(1<<(2)));
 
-    tempo = musicas[indice].duracao;
+ T2CON |= 0b00000011;
+ ((T2CON) |= (1<<(2)));
 
-    while (tempo != 0) {
-        pwmSet(100);
-        minuto1 = (tempo / 60) % 10;
-        minuto2 = (tempo / 60) / 10;
-        segundo1 = (tempo % 60) % 10;
-        segundo2 = (tempo % 60) / 10;
+ CCP1CON = 0b00001100;
 
-        ssdDigit(minuto2, 0);
-        ssdDigit(minuto1, 1);
-        ssdDigit(segundo2, 2);
-        ssdDigit(segundo1, 3);
-
-        for (unsigned char j = 0; j < 100; j++) {
-            ssdUpdate();
-            atraso_ms(10);
-            kpDebounce();
-            tecla = kpRead();
-            if (((tecla) & (1<<(3)))) {
-                while(((tecla) & (1<<(3)))) {
-                    ssdUpdate();
-                    kpDebounce();
-                    tecla = kpRead();
-                }
-                alterarVolume(0);
-            }
-            else if (((tecla) & (1<<(7)))) {
-                while(((tecla) & (1<<(7)))) {
-                    ssdUpdate();
-                    kpDebounce();
-                    tecla = kpRead();
-                }
-                alterarVolume(1);
-            }
-            else if (((tecla) & (1<<(0)))) {
-                while(((tecla) & (1<<(0)))) {
-                    ssdUpdate();
-                    kpDebounce();
-                    tecla = kpRead();
-                }
-                if (pause == 0) {pause = 1;} else {pause = 0;}
-            }
-            else if (((tecla) & (1<<(4)))) {
-                while(((tecla) & (1<<(4)))) {
-                    ssdUpdate();
-                    kpDebounce();
-                    tecla = kpRead();
-                }
-                ssdDigit(0, 0);
-                ssdDigit(0, 1);
-                ssdDigit(0, 2);
-                ssdDigit(0, 3);
-                return;
-            }
-        }
-        if (pause == 0) {
-            tempo -= 1;
-        }
-    }
-    TRISA=0x00;
-    pwmSet(0);
-    ((TRISC) |= (1<<(1)));
-    atraso_ms(500);
-    ((TRISC) &= ~(1<<(1)));
-    return;
-}
-
-void alterarVolume(char opt) {
-    if (opt == 1) {
-        if(volume!=8){volume += 1;}
-    } else {
-        if(volume!=0){volume -= 1;}
-    }
-    unsigned char old_D, old_A;
-    old_D = TRISD;
-
-
-    PORTA=0x00;
-    TRISD = 0x00;
-
-    if (volume == 0) {
-        PORTD = 0b00000000;
-    } else if (volume == 1) {
-        PORTD = 0b10000000;
-    } else if (volume == 2) {
-        PORTD = 0b11000000;
-    } else if (volume == 3) {
-        PORTD = 0b11100000;
-    } else if (volume == 4) {
-        PORTD = 0b11110000;
-    } else if (volume == 5) {
-        PORTD = 0b11111000;
-    } else if (volume == 6) {
-        PORTD = 0b11111100;
-    } else if (volume == 7) {
-        PORTD = 0b11111110;
-    } else if (volume == 8) {
-        PORTD = 0b11111111;
-    }
-    atraso_ms(500);
-    TRISD=old_D;
+    pwmFrequency(100);
 }
