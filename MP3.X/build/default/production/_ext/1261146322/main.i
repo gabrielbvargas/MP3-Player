@@ -81,6 +81,7 @@ void atraso_ms(int t);
 void songsInit(void);
 void chooseSong(void);
 void playSong(void);
+void alterarVolume(char opt);
 # 6 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" 2
 
 # 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/ssd.h" 1

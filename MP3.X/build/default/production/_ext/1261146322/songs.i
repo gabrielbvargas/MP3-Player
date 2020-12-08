@@ -14,6 +14,7 @@
 void songsInit(void);
 void chooseSong(void);
 void playSong(void);
+void alterarVolume(char opt);
 # 1 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c" 2
 
 # 1 "D:\\Programs\\Microship\\xc8\\v2.20\\pic\\include\\c99\\string.h" 1 3
@@ -4486,10 +4487,10 @@ unsigned char nomes[10][17] = {"Estamos Vivos", "Cheia de Manias", "E Tarde Dema
 unsigned int duracoes[10] = {180, 180, 180, 180, 180, 180, 180, 180, 180, 180};
 musica musicas[10];
 
-unsigned char tecla = 16, indice = 0, cont = 0, flag = 0, tempo, minuto1, minuto2, segundo1, segundo2, cnt = 0, pause = 1;
+unsigned char tecla = 16, indice = 0, flag = 0, tempo, minuto1, minuto2, segundo1, segundo2, cnt = 0, pause = 1, volume = 3;
 
 void songsInit(void) {
-    TRISC=0x00;
+    TRISC = 0x00;
     for (unsigned int i = 0; i < 10; i++) {
         musicas[i].duracao = duracoes[i];
         strcpy(musicas[i].nome, (char*) nomes[i]);
@@ -4562,23 +4563,29 @@ void playSong() {
             atraso_ms(10);
             kpDebounce();
             tecla = kpRead();
-            if (((tecla) & (1<<(3))) || ((tecla) & (1<<(7))) || ((tecla) & (1<<(0)))) {
-                flag=1;
-                for(;;) {
+            if (((tecla) & (1<<(3)))) {
+                while(((tecla) & (1<<(3)))) {
+                    ssdUpdate();
                     kpDebounce();
                     tecla = kpRead();
-                    if ((kpRead() != tecla) || flag == 1) {
-                        if (((tecla) & (1<<(3)))) {
-                            break;
-                        } else if (((tecla) & (1<<(7)))) {
-                            break;
-                        } else if (((tecla) & (1<<(0)))) {
-                            if(pause==0) {pause=1;} else {pause = 0;}
-                            break;
-                        }
-                    }
                 }
-
+                alterarVolume(0);
+            }
+            if (((tecla) & (1<<(7)))) {
+                while(((tecla) & (1<<(7)))) {
+                    ssdUpdate();
+                    kpDebounce();
+                    tecla = kpRead();
+                }
+                alterarVolume(1);
+            }
+            if (((tecla) & (1<<(0)))) {
+                while(((tecla) & (1<<(0)))) {
+                    ssdUpdate();
+                    kpDebounce();
+                    tecla = kpRead();
+                }
+                if (pause == 0) {pause = 1;} else {pause = 0;}
             }
         }
         if (pause == 0) {
@@ -4588,4 +4595,40 @@ void playSong() {
     ((TRISC) |= (1<<(1)));
     atraso_ms(500);
     ((TRISC) |= (1<<(0)));
+}
+
+void alterarVolume(char opt) {
+    if (opt == 1) {
+        if(volume!=8){volume += 1;}
+    } else {
+        if(volume!=0){volume -= 1;}
+    }
+    unsigned char old_D, old_A;
+    old_D = TRISD;
+
+
+    PORTA=0x00;
+    TRISD = 0x00;
+
+    if (volume == 0) {
+        PORTD = 0b00000000;
+    } else if (volume == 1) {
+        PORTD = 0b10000000;
+    } else if (volume == 2) {
+        PORTD = 0b11000000;
+    } else if (volume == 3) {
+        PORTD = 0b11100000;
+    } else if (volume == 4) {
+        PORTD = 0b11110000;
+    } else if (volume == 5) {
+        PORTD = 0b11111000;
+    } else if (volume == 6) {
+        PORTD = 0b11111100;
+    } else if (volume == 7) {
+        PORTD = 0b11111110;
+    } else if (volume == 8) {
+        PORTD = 0b11111111;
+    }
+    atraso_ms(500);
+    TRISD=old_D;
 }

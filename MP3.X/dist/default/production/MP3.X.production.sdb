@@ -103,6 +103,8 @@ PIN_E7 39
 [v _chooseSong chooseSong `(v  1 e 1 0 ]
 "71
 [v _playSong playSong `(v  1 e 1 0 ]
+"130
+[v _alterarVolume alterarVolume `(v  1 e 1 0 ]
 "7 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 "7 D:\Programs\Microship\xc8\v2.20\pic\sources\c99\common\awmod.c
@@ -193,9 +195,9 @@ PIN_E7 39
 [v _nomes nomes `[10][17]uc  1 e 170 0 ]
 "17
 [v _duracoes duracoes `[10]ui  1 e 20 0 ]
-[s S164 . 19 `ui 1 duracao 2 0 `[17]uc 1 nome 17 2 ]
+[s S162 . 19 `ui 1 duracao 2 0 `[17]uc 1 nome 17 2 ]
 "18
-[v _musicas musicas `[10]S164  1 e 190 0 ]
+[v _musicas musicas `[10]S162  1 e 190 0 ]
 "20
 [v _tecla tecla `uc  1 e 1 0 ]
 [v _indice indice `uc  1 e 1 0 ]
@@ -206,8 +208,9 @@ PIN_E7 39
 [v _segundo1 segundo1 `uc  1 e 1 0 ]
 [v _segundo2 segundo2 `uc  1 e 1 0 ]
 [v _pause pause `uc  1 e 1 0 ]
+[v _volume volume `uc  1 e 1 0 ]
 "25 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\keypad.c
-[v _valor@keypad$F284 valor `ui  1 s 2 valor ]
+[v _valor@keypad$F294 valor `ui  1 s 2 valor ]
 "32 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
 [v _valor valor `C[16]uc  1 s 16 valor ]
 "34
@@ -282,8 +285,8 @@ PIN_E7 39
 [v _playSong playSong `(v  1 e 1 0 ]
 {
 "91
-[v playSong@j j `uc  1 a 1 20 ]
-"122
+[v playSong@j j `uc  1 a 1 18 ]
+"128
 } 0
 "54 D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
 [v _ssdUpdate ssdUpdate `(v  1 e 1 0 ]
@@ -387,6 +390,17 @@ PIN_E7 39
 "45
 [v kpDebounce@valorAntigo valorAntigo `ui  1 s 2 valorAntigo ]
 "87
+} 0
+"130 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/songs.c
+[v _alterarVolume alterarVolume `(v  1 e 1 0 ]
+{
+[v alterarVolume@opt opt `uc  1 a 1 wreg ]
+"136
+[v alterarVolume@old_D old_D `uc  1 a 1 7 ]
+"130
+[v alterarVolume@opt opt `uc  1 a 1 wreg ]
+[v alterarVolume@opt opt `uc  1 a 1 6 ]
+"164
 } 0
 "3 D:/Documents/MPLABX Projects/MP3-Player/MP3.X/delay.c
 [v _atraso_ms atraso_ms `(v  1 e 1 0 ]
