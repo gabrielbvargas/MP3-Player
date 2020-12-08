@@ -4482,9 +4482,9 @@ typedef struct {
     unsigned char nome[17];
 } musica;
 
-unsigned char nomes[10][17] = {"Estamos Vivos", "Cheia de Manias", "E Tarde Demais", "Sozinho", "Cigana", "Ciumes de Voce", "Extrapolei",
+unsigned char nomes[10][17] = {"Temporal", "Cheia de Manias", "E Tarde Demais", "Sozinho", "Cigana", "Ciumes de Voce", "Extrapolei",
     "Deus me Livre", "Maravilha", "Medida Exata"};
-unsigned int duracoes[10] = {180, 180, 180, 180, 180, 180, 180, 180, 180, 180};
+unsigned int duracoes[10] = {70, 15, 120, 60, 10, 40, 20, 30, 140, 10};
 musica musicas[10];
 
 unsigned char tecla = 16, indice = 0, flag = 0, tempo, minuto1, minuto2, segundo1, segundo2, cnt = 0, pause = 1, volume = 3;
@@ -4571,7 +4571,7 @@ void playSong() {
                 }
                 alterarVolume(0);
             }
-            if (((tecla) & (1<<(7)))) {
+            else if (((tecla) & (1<<(7)))) {
                 while(((tecla) & (1<<(7)))) {
                     ssdUpdate();
                     kpDebounce();
@@ -4579,13 +4579,25 @@ void playSong() {
                 }
                 alterarVolume(1);
             }
-            if (((tecla) & (1<<(0)))) {
+            else if (((tecla) & (1<<(0)))) {
                 while(((tecla) & (1<<(0)))) {
                     ssdUpdate();
                     kpDebounce();
                     tecla = kpRead();
                 }
                 if (pause == 0) {pause = 1;} else {pause = 0;}
+            }
+            else if (((tecla) & (1<<(4)))) {
+                while(((tecla) & (1<<(4)))) {
+                    ssdUpdate();
+                    kpDebounce();
+                    tecla = kpRead();
+                }
+                ssdDigit(0, 0);
+                ssdDigit(0, 1);
+                ssdDigit(0, 2);
+                ssdDigit(0, 3);
+                return;
             }
         }
         if (pause == 0) {
@@ -4595,6 +4607,7 @@ void playSong() {
     ((TRISC) |= (1<<(1)));
     atraso_ms(500);
     ((TRISC) |= (1<<(0)));
+    return;
 }
 
 void alterarVolume(char opt) {

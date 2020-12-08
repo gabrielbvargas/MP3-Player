@@ -117,13 +117,17 @@ void playSong() {
                 }
                 if (pause == 0) {pause = 1;} else {pause = 0;}
             } 
-            else if (bitTst(tecla, 0)) {
-                while(bitTst(tecla, 0)) {
+            else if (bitTst(tecla, 4)) {
+                while(bitTst(tecla, 4)) {
                     ssdUpdate();
                     kpDebounce();
                     tecla = kpRead();
                 }
-                if (pause == 0) {pause = 1;} else {pause = 0;}
+                ssdDigit(0, 0);
+                ssdDigit(0, 1);
+                ssdDigit(0, 2);
+                ssdDigit(0, 3);
+                return;
             }
         }
         if (pause == 0) {
@@ -133,6 +137,7 @@ void playSong() {
     bitSet(TRISC, 1);
     atraso_ms(500);
     bitSet(TRISC, 0);
+    return;
 }
 
 void alterarVolume(char opt) {
