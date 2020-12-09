@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.20 build 20200408173844 
-                                                                                               Tue Dec 08 18:51:56 2020
+                                                                                               Tue Dec 08 21:01:31 2020
 
 Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1 
      1                           	processor	18F4520
@@ -773,7 +773,7 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
    759 ;;
    760 ;; *************** function _main *****************
    761 ;; Defined at:
-   762 ;;		line 11 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c"
+   762 ;;		line 9 in file "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c"
    763 ;; Parameters:    Size  Location     Type
    764 ;;		None
    765 ;; Auto vars:     Size  Location     Type
@@ -814,66 +814,66 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
    800  0016E0                     _main:
    801                           	callstack 25
    802  0016E0                     
-   803                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 13:     songsInit();
+   803                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 11:     songsInit();
    804  0016E0  EC1D  F00B         	call	_songsInit	;wreg free
    805  0016E4                     
-   806                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 14:     lcdInit();
+   806                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 12:     lcdInit();
    807  0016E4  ECF5  F00B         	call	_lcdInit	;wreg free
    808  0016E8                     
-   809                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 15:     ssdInit();
+   809                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 13:     ssdInit();
    810  0016E8  EC99  F00D         	call	_ssdInit	;wreg free
    811  0016EC                     
-   812                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 16:     kpInit();
+   812                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 14:     kpInit();
    813  0016EC  EC6A  F00E         	call	_kpInit	;wreg free
    814  0016F0                     
-   815                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 17:     lcdCommand(0x0F);
+   815                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 15:     lcdCommand(0x0F);
    816  0016F0  0E0F               	movlw	15
    817  0016F2  ECB6  F00B         	call	_lcdCommand
    818  0016F6                     
-   819                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 19:     lcdPosition(0, 6);
+   819                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 17:     lcdPosition(0, 6);
    820  0016F6  0E06               	movlw	6
    821  0016F8  6E28               	movwf	lcdPosition@coluna^0,c
    822  0016FA  0E00               	movlw	0
    823  0016FC  EC40  F00D         	call	_lcdPosition
    824  001700                     
-   825                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 20:     lcdStr("MP3");
+   825                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 18:     lcdStr("MP3");
    826  001700  0E4A               	movlw	low STR_3
    827  001702  6E28               	movwf	lcdStr@str^0,c
    828  001704  0E06               	movlw	high STR_3
    829  001706  6E29               	movwf	(lcdStr@str+1)^0,c
    830  001708  EC31  F00C         	call	_lcdStr	;wreg free
    831  00170C                     
-   832                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 21:     lcdPosition(1, 4);
+   832                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 19:     lcdPosition(1, 4);
    833  00170C  0E04               	movlw	4
    834  00170E  6E28               	movwf	lcdPosition@coluna^0,c
    835  001710  0E01               	movlw	1
    836  001712  EC40  F00D         	call	_lcdPosition
    837  001716                     
-   838                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 22:     lcdStr("Player");
+   838                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 20:     lcdStr("Player");
    839  001716  0E43               	movlw	low STR_4
    840  001718  6E28               	movwf	lcdStr@str^0,c
    841  00171A  0E06               	movlw	high STR_4
    842  00171C  6E29               	movwf	(lcdStr@str+1)^0,c
    843  00171E  EC31  F00C         	call	_lcdStr	;wreg free
    844  001722                     
-   845                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 23:     atraso_ms(5000);
+   845                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 21:     atraso_ms(5000);
    846  001722  0E13               	movlw	19
    847  001724  6E21               	movwf	(atraso_ms@t+1)^0,c
    848  001726  0E88               	movlw	136
    849  001728  6E20               	movwf	atraso_ms@t^0,c
    850  00172A  ECDD  F00C         	call	_atraso_ms	;wreg free
    851  00172E                     
-   852                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 25:     lcdCommand(0x01);
+   852                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 23:     lcdCommand(0x01);
    853  00172E  0E01               	movlw	1
    854  001730  ECB6  F00B         	call	_lcdCommand
    855  001734                     
-   856                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 26:     lcdPosition(0, 0);
+   856                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 24:     lcdPosition(0, 0);
    857  001734  0E00               	movlw	0
    858  001736  6E28               	movwf	lcdPosition@coluna^0,c
    859  001738  0E00               	movlw	0
    860  00173A  EC40  F00D         	call	_lcdPosition
    861  00173E                     
-   862                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 27:     lcdStr("Escolha a musica"
+   862                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 25:     lcdStr("Escolha a musica"
       +                          );
    863  00173E  0E11               	movlw	low STR_5
    864  001740  6E28               	movwf	lcdStr@str^0,c
@@ -882,13 +882,13 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
    867  001746  EC31  F00C         	call	_lcdStr	;wreg free
    868  00174A                     l2739:
    869                           
-   870                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 29:         lcdPosition(1, 0);
+   870                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 27:         lcdPosition(1, 0);
    871  00174A  0E00               	movlw	0
    872  00174C  6E28               	movwf	lcdPosition@coluna^0,c
    873  00174E  0E01               	movlw	1
    874  001750  EC40  F00D         	call	_lcdPosition
    875  001754                     
-   876                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 30:         lcdStr("<-(1) (*)  (2
+   876                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 28:         lcdStr("<-(1) (*)  (2
       +                          )->");
    877  001754  0E22               	movlw	low STR_1
    878  001756  6E28               	movwf	lcdStr@str^0,c
@@ -896,10 +896,10 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
    880  00175A  6E29               	movwf	(lcdStr@str+1)^0,c
    881  00175C  EC31  F00C         	call	_lcdStr	;wreg free
    882  001760                     
-   883                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 31:         chooseSong();
+   883                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 29:         chooseSong();
    884  001760  EC49  F008         	call	_chooseSong	;wreg free
    885                           
-   886                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 32:     }
+   886                           ;D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c: 30:     }
    887  001764  EFA5  F00B         	goto	l2739
    888  001768  EF00  F000         	goto	start
    889  00176C                     __end_of_main:
@@ -5709,7 +5709,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.20 build 20200408173844 
-Symbol Table                                                                                   Tue Dec 08 18:51:56 2020
+Symbol Table                                                                                   Tue Dec 08 21:01:31 2020
 
                       _i 003E          ??_alterarVolume 0026                       l42 0DC6  
                      l76 0B78                       l86 1A1C                       l99 1CD2  

@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\gabri\AppData\Local\Temp\snec.o
+$C:\Users\gabri\AppData\Local\Temp\s9ug.o
 idloc IDLOC 5 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 4 300000 300000 E 1
@@ -543,72 +543,72 @@ B78 text5 CODE >73:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/io.c
 1B6E text1 CODE >106:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
 1B82 text1 CODE >109:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
 1B86 text1 CODE >111:D:\Documents\MPLABX Projects\MP3-Player\MP3.X\ssd.c
+16E0 text0 CODE >9:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
 16E0 text0 CODE >11:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-16E0 text0 CODE >13:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-16E4 text0 CODE >14:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-16E8 text0 CODE >15:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-16EC text0 CODE >16:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-16F0 text0 CODE >17:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-16F6 text0 CODE >19:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1700 text0 CODE >20:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-170C text0 CODE >21:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1716 text0 CODE >22:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1722 text0 CODE >23:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-172E text0 CODE >25:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1734 text0 CODE >26:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-173E text0 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-174A text0 CODE >29:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1754 text0 CODE >30:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1760 text0 CODE >31:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1764 text0 CODE >32:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
-1A1E cinit CODE >2509:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A1E cinit CODE >2511:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A1E cinit CODE >2514:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A1E cinit CODE >2618:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A20 cinit CODE >2619:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A22 cinit CODE >2620:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A24 cinit CODE >2621:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A26 cinit CODE >2622:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A28 cinit CODE >2623:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A2A cinit CODE >2624:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A2E cinit CODE >2625:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A32 cinit CODE >2626:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A32 cinit CODE >2627:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A34 cinit CODE >2628:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A38 cinit CODE >2629:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A3A cinit CODE >2630:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A3C cinit CODE >2631:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A3E cinit CODE >2635:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A40 cinit CODE >2636:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A42 cinit CODE >2637:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A44 cinit CODE >2638:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A46 cinit CODE >2639:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A48 cinit CODE >2640:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A4A cinit CODE >2641:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A4E cinit CODE >2642:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A52 cinit CODE >2643:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A52 cinit CODE >2644:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A54 cinit CODE >2645:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A58 cinit CODE >2646:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A5A cinit CODE >2647:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A5C cinit CODE >2648:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A5E cinit CODE >2652:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A62 cinit CODE >2653:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A64 cinit CODE >2654:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A64 cinit CODE >2655:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A66 cinit CODE >2656:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A68 cinit CODE >2657:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A6A cinit CODE >2660:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A6E cinit CODE >2661:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A70 cinit CODE >2662:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A70 cinit CODE >2663:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A72 cinit CODE >2664:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A74 cinit CODE >2665:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A76 cinit CODE >2671:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A76 cinit CODE >2674:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A78 cinit CODE >2675:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A7A cinit CODE >2676:C:\Users\gabri\AppData\Local\Temp\snec.s
-1A7C cinit CODE >2677:C:\Users\gabri\AppData\Local\Temp\snec.s
+16E4 text0 CODE >12:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+16E8 text0 CODE >13:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+16EC text0 CODE >14:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+16F0 text0 CODE >15:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+16F6 text0 CODE >17:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1700 text0 CODE >18:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+170C text0 CODE >19:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1716 text0 CODE >20:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1722 text0 CODE >21:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+172E text0 CODE >23:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1734 text0 CODE >24:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+173E text0 CODE >25:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+174A text0 CODE >27:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1754 text0 CODE >28:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1760 text0 CODE >29:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1764 text0 CODE >30:D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c
+1A1E cinit CODE >2509:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A1E cinit CODE >2511:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A1E cinit CODE >2514:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A1E cinit CODE >2618:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A20 cinit CODE >2619:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A22 cinit CODE >2620:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A24 cinit CODE >2621:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A26 cinit CODE >2622:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A28 cinit CODE >2623:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A2A cinit CODE >2624:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A2E cinit CODE >2625:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A32 cinit CODE >2626:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A32 cinit CODE >2627:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A34 cinit CODE >2628:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A38 cinit CODE >2629:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A3A cinit CODE >2630:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A3C cinit CODE >2631:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A3E cinit CODE >2635:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A40 cinit CODE >2636:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A42 cinit CODE >2637:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A44 cinit CODE >2638:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A46 cinit CODE >2639:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A48 cinit CODE >2640:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A4A cinit CODE >2641:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A4E cinit CODE >2642:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A52 cinit CODE >2643:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A52 cinit CODE >2644:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A54 cinit CODE >2645:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A58 cinit CODE >2646:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A5A cinit CODE >2647:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A5C cinit CODE >2648:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A5E cinit CODE >2652:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A62 cinit CODE >2653:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A64 cinit CODE >2654:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A64 cinit CODE >2655:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A66 cinit CODE >2656:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A68 cinit CODE >2657:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A6A cinit CODE >2660:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A6E cinit CODE >2661:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A70 cinit CODE >2662:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A70 cinit CODE >2663:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A72 cinit CODE >2664:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A74 cinit CODE >2665:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A76 cinit CODE >2671:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A76 cinit CODE >2674:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A78 cinit CODE >2675:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A7A cinit CODE >2676:C:\Users\gabri\AppData\Local\Temp\s9ug.s
+1A7C cinit CODE >2677:C:\Users\gabri\AppData\Local\Temp\s9ug.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -634,7 +634,7 @@ __size_of_lcdInit 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __HidataBANK2 0 0 ABS 0 idataBANK2 dist/default/production\MP3.X.production.o
 lcdCommand@old_D 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\MP3.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\gabri\AppData\Local\Temp\snec.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\gabri\AppData\Local\Temp\s9ug.o
 _musicas 100 0 BANK1 1 bssBANK1 dist/default/production\MP3.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MP3.X.production.o
 _valor@keypad$F261 3B 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
@@ -646,10 +646,10 @@ _v2 40 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 _v3 3F 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 __size_of_atraso_ms 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\MP3.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\snec.o
+___sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s9ug.o
 _flag 4A 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
 _main 16E0 0 CODE 0 text0 dist/default/production\MP3.X.production.o
-start 0 0 CODE 0 init C:\Users\gabri\AppData\Local\Temp\snec.o
+start 0 0 CODE 0 init C:\Users\gabri\AppData\Local\Temp\s9ug.o
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __size_of___awmod 0 0 ABS 0 - dist/default/production\MP3.X.production.o
@@ -669,11 +669,11 @@ _kpDebounce DC8 0 CODE 0 text25 dist/default/production\MP3.X.production.o
 ___awmod@sign 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\MP3.X.production.o
 _lcdPosition 1A80 0 CODE 0 text19 dist/default/production\MP3.X.production.o
-__accesstop 80 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\snec.o
-intlevel0 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\snec.o
-intlevel1 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\snec.o
-intlevel2 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\snec.o
-intlevel3 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\snec.o
+__accesstop 80 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s9ug.o
+intlevel0 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\s9ug.o
+intlevel1 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\s9ug.o
+intlevel2 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\s9ug.o
+intlevel3 0 0 CODE 0 text C:\Users\gabri\AppData\Local\Temp\s9ug.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\MP3.X.production.o
 kpDebounce@old_D 25 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 ___aldiv@divisor 24 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
@@ -695,8 +695,8 @@ __end_of_Delay40us 1CD4 0 CODE 0 text23 dist/default/production\MP3.X.production
 __end_of_lcdData 1BDC 0 CODE 0 text18 dist/default/production\MP3.X.production.o
 __end_of_lcdInit 1862 0 CODE 0 text4 dist/default/production\MP3.X.production.o
 ___awdiv@dividend 20 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\snec.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\snec.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s9ug.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\gabri\AppData\Local\Temp\s9ug.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\MP3.X.production.o
 __size_of_Delay40us 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 kpDebounce@valorAntigo 37 0 COMRAM 1 bssCOMRAM dist/default/production\MP3.X.production.o
@@ -770,7 +770,7 @@ __Htext9 0 0 ABS 0 text9 dist/default/production\MP3.X.production.o
 ___lwdiv@counter 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MP3.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\MP3.X.production.o
-__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\gabri\AppData\Local\Temp\snec.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\gabri\AppData\Local\Temp\s9ug.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\MP3.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production\MP3.X.production.o
 __size_of_digitalWrite 0 0 ABS 0 - dist/default/production\MP3.X.production.o
@@ -926,8 +926,8 @@ _strcpy 1BDC 0 CODE 0 text3 dist/default/production\MP3.X.production.o
 __end_of_pwmFrequency 1C66 0 CODE 0 text15 dist/default/production\MP3.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\MP3.X.production.o
 _teclas 15 0 COMRAM 1 dataCOMRAM dist/default/production\MP3.X.production.o
-stackhi 5FF 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\snec.o
-stacklo 2AA 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\snec.o
+stackhi 5FF 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s9ug.o
+stacklo 2AA 0 ABS 0 - C:\Users\gabri\AppData\Local\Temp\s9ug.o
 pinMode@type 22 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\MP3.X.production.o
 _volume 1D 0 COMRAM 1 dataCOMRAM dist/default/production\MP3.X.production.o
@@ -995,7 +995,7 @@ __Ltext26 0 0 ABS 0 text26 dist/default/production\MP3.X.production.o
 __Ltext27 0 0 ABS 0 text27 dist/default/production\MP3.X.production.o
 __Ltext28 0 0 ABS 0 text28 dist/default/production\MP3.X.production.o
 __Ltext29 0 0 ABS 0 text29 dist/default/production\MP3.X.production.o
-__ramtop 600 0 RAM 0 ramtop C:\Users\gabri\AppData\Local\Temp\snec.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\gabri\AppData\Local\Temp\s9ug.o
 ___aldiv@dividend 20 0 COMRAM 1 cstackCOMRAM dist/default/production\MP3.X.production.o
 __size_of_lcdPosition 0 0 ABS 0 - dist/default/production\MP3.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\MP3.X.production.o

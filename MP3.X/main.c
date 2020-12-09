@@ -6,8 +6,6 @@
 #include "songs.h"
 #include "ssd.h"
 
-
-
 void main(void) {
     
     songsInit();

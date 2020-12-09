@@ -92,8 +92,6 @@ void alterarVolume(char opt);
 # 7 "D:/Documents/MPLABX Projects/MP3-Player/MP3.X/main.c" 2
 
 
-
-
 void main(void) {
 
     songsInit();
